@@ -1,0 +1,6 @@
+site_name: mission 1 mille nuits
+nav:
+  - Home: index.md
+  - About: about.md
+
+theme: readthedocs
