@@ -1,154 +1,1160 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>mission 1 mille nuits</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Home";
-        var mkdocs_page_input_path = "index.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="kali/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
+    
+      
+        <title>mission 1 mille nuits</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> mission 1 mille nuits
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#table-des-matieres">Table des Matières</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#01-routeur">01 — Routeur</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#quest-ce-quun-routeur">Qu'est-ce qu'un Routeur ?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#schema-reseau">Schéma Réseau</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-cisco-ios">Configuration — Cisco IOS</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#02-commutateur-reseau">02 — Commutateur Réseau</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#quest-ce-quun-commutateur">Qu'est-ce qu'un Commutateur ?</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#architecture-vlan">Architecture VLAN</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-commutateur-administrable-cisco">Configuration — Commutateur Administrable Cisco</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#03-serveur-ftp">03 — Serveur FTP</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#fonctionnement-du-ftp">Fonctionnement du FTP</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-vsftpd-sur-ubuntu">Configuration — vsftpd sur Ubuntu</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#04-serveur-dns">04 — Serveur DNS</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#fonctionnement-de-la-resolution-dns">Fonctionnement de la Résolution DNS</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#types-denregistrements-dns-courants">Types d'Enregistrements DNS Courants</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-bind9-sur-ubuntu">Configuration — BIND9 sur Ubuntu</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#05-serveur-dhcp">05 — Serveur DHCP</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#le-processus-dora">Le Processus DORA</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#ce-que-le-dhcp-attribue">Ce que le DHCP Attribue</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-isc-dhcp-server-sur-ubuntu">Configuration — isc-dhcp-server sur Ubuntu</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#06-point-dacces-sans-fil">06 — Point d'Accès Sans Fil</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#pap-vs-autres-equipements">PAP vs Autres Équipements</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#comparatif-des-normes-80211">Comparatif des Normes 802.11</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-interface-web-generique-ubiquiti-cisco-tp-link">Configuration — Interface Web Générique (Ubiquiti / Cisco / TP-Link)</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#07-serveur-web-apache-nginx">07 — Serveur Web (Apache / Nginx)</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#apache-vs-nginx">Apache vs Nginx</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#concept-dhote-virtuel">Concept d'Hôte Virtuel</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-apache2-sur-ubuntu">Configuration — Apache2 sur Ubuntu</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#configuration-nginx-sur-ubuntu">Configuration — Nginx sur Ubuntu</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#reference-rapide-ports-et-protocoles">Référence Rapide — Ports et Protocoles</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#commandes-de-diagnostic-utiles">Commandes de Diagnostic Utiles</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="" href="about.md">About</a>
-                </li>
-              </ul>
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guide-de-configuration-reseau" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="mission 1 mille nuits" class="md-header__button md-logo" aria-label="mission 1 mille nuits" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            mission 1 mille nuits
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guide de Configuration Réseau
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">mission 1 mille nuits</a>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
         
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
       </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Home</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guide de Configuration Réseau
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="kali/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guide Kali Linux &amp; Attaque de la Base SAM
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
               
-                <h1 id="guide-de-configuration-reseau">Guide de Configuration Réseau</h1>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="mission 1 mille nuits" class="md-nav__button md-logo" aria-label="mission 1 mille nuits" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    mission 1 mille nuits
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide de Configuration Réseau
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide de Configuration Réseau
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-des-matieres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table des Matières
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#01-routeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 — Routeur
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 — Routeur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quest-ce-quun-routeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qu'est-ce qu'un Routeur ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schéma Réseau
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-cisco-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Cisco IOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-commutateur-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 — Commutateur Réseau
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02 — Commutateur Réseau">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quest-ce-quun-commutateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qu'est-ce qu'un Commutateur ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-vlan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture VLAN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-commutateur-administrable-cisco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Commutateur Administrable Cisco
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-serveur-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 — Serveur FTP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 — Serveur FTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnement-du-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnement du FTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-vsftpd-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — vsftpd sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-serveur-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 — Serveur DNS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="04 — Serveur DNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnement-de-la-resolution-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnement de la Résolution DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-denregistrements-dns-courants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types d'Enregistrements DNS Courants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-bind9-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — BIND9 sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-serveur-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 — Serveur DHCP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 — Serveur DHCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-processus-dora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le Processus DORA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-le-dhcp-attribue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que le DHCP Attribue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-isc-dhcp-server-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — isc-dhcp-server sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-point-dacces-sans-fil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 — Point d'Accès Sans Fil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 — Point d&#39;Accès Sans Fil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pap-vs-autres-equipements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PAP vs Autres Équipements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparatif-des-normes-80211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparatif des Normes 802.11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-interface-web-generique-ubiquiti-cisco-tp-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Interface Web Générique (Ubiquiti / Cisco / TP-Link)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-serveur-web-apache-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 — Serveur Web (Apache / Nginx)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="07 — Serveur Web (Apache / Nginx)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache-vs-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache vs Nginx
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concept-dhote-virtuel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept d'Hôte Virtuel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-apache2-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Apache2 sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-nginx-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Nginx sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-rapide-ports-et-protocoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Référence Rapide — Ports et Protocoles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-de-diagnostic-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commandes de Diagnostic Utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kali/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide Kali Linux &amp; Attaque de la Base SAM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-des-matieres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table des Matières
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#01-routeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 — Routeur
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 — Routeur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quest-ce-quun-routeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qu'est-ce qu'un Routeur ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schéma Réseau
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-cisco-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Cisco IOS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-commutateur-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 — Commutateur Réseau
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02 — Commutateur Réseau">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quest-ce-quun-commutateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qu'est-ce qu'un Commutateur ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-vlan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture VLAN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-commutateur-administrable-cisco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Commutateur Administrable Cisco
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-serveur-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 — Serveur FTP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 — Serveur FTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnement-du-ftp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnement du FTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-vsftpd-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — vsftpd sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-serveur-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 — Serveur DNS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="04 — Serveur DNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnement-de-la-resolution-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnement de la Résolution DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-denregistrements-dns-courants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types d'Enregistrements DNS Courants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-bind9-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — BIND9 sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-serveur-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 — Serveur DHCP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 — Serveur DHCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-processus-dora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le Processus DORA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-le-dhcp-attribue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que le DHCP Attribue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-isc-dhcp-server-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — isc-dhcp-server sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-point-dacces-sans-fil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 — Point d'Accès Sans Fil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 — Point d&#39;Accès Sans Fil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pap-vs-autres-equipements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PAP vs Autres Équipements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparatif-des-normes-80211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparatif des Normes 802.11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-interface-web-generique-ubiquiti-cisco-tp-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Interface Web Générique (Ubiquiti / Cisco / TP-Link)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-serveur-web-apache-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 — Serveur Web (Apache / Nginx)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="07 — Serveur Web (Apache / Nginx)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache-vs-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache vs Nginx
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concept-dhote-virtuel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept d'Hôte Virtuel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-apache2-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Apache2 sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-nginx-sur-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration — Nginx sur Ubuntu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-rapide-ports-et-protocoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Référence Rapide — Ports et Protocoles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-de-diagnostic-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commandes de Diagnostic Utiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guide-de-configuration-reseau">Guide de Configuration Réseau</h1>
 <blockquote>
 <p>Référence pour Étudiants en Informatique — Configuration pratique des composants réseau essentiels</p>
 </blockquote>
@@ -877,48 +1883,66 @@ traceroute 8.8.8.8
 </code></pre>
 <hr />
 <p><em>Guide de Configuration Réseau · Référence pour Étudiants en Informatique · 2025</em></p>
-              
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-          </div><footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
           
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-  </span>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = ".";</script>
-    <script src="js/theme_extra.js"></script>
-    <script src="js/theme.js"></script>
-      <script src="search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.top", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2026-02-12 23:09:37.321159+00:00
--->

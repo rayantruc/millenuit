@@ -1,76 +1,1968 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Guide Kali Linux &amp; Attaque de la Base SAM - mission 1 mille nuits</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Guide Kali Linux \u0026amp; Attaque de la Base SAM";
-        var mkdocs_page_input_path = "kali.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
+    
+      
+        <title>Guide Kali Linux & Attaque de la Base SAM - mission 1 mille nuits</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> mission 1 mille nuits
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="" href="../about.md">About</a>
-                </li>
-              </ul>
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guide-kali-linux-attaque-de-la-base-sam" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mission 1 mille nuits" class="md-header__button md-logo" aria-label="mission 1 mille nuits" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            mission 1 mille nuits
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guide Kali Linux &amp; Attaque de la Base SAM
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">mission 1 mille nuits</a>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
         
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
       </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Guide Kali Linux &amp; Attaque de la Base SAM</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guide de Configuration Réseau
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guide Kali Linux &amp; Attaque de la Base SAM
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
               
-                <h1 id="guide-kali-linux-attaque-de-la-base-sam">Guide Kali Linux &amp; Attaque de la Base SAM</h1>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mission 1 mille nuits" class="md-nav__button md-logo" aria-label="mission 1 mille nuits" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    mission 1 mille nuits
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide de Configuration Réseau
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide Kali Linux &amp; Attaque de la Base SAM
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide Kali Linux &amp; Attaque de la Base SAM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-des-matieres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table des Matières
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#01-installation-de-kali-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 — Installation de Kali Linux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 — Installation de Kali Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dinstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options d'installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-a-installation-sur-virtualbox-recommandee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode A — Installation sur VirtualBox (recommandée)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Méthode A — Installation sur VirtualBox (recommandée)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-telecharger-liso-kali-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 — Télécharger l'ISO Kali Linux
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-creer-la-machine-virtuelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 — Créer la Machine Virtuelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-3-demarrer-linstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 3 — Démarrer l'Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-4-configuration-de-la-langue-et-du-clavier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 4 — Configuration de la langue et du clavier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-5-configuration-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 5 — Configuration réseau
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-6-creation-du-compte-utilisateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 6 — Création du compte utilisateur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-7-partitionnement-du-disque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 7 — Partitionnement du disque
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-8-installation-du-systeme-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 8 — Installation du système de base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-9-selection-des-logiciels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 9 — Sélection des logiciels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-10-installation-du-chargeur-de-demarrage-grub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 10 — Installation du chargeur de démarrage GRUB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-11-fin-de-linstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 11 — Fin de l'installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-b-image-virtualbox-pre-configuree-plus-rapide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode B — Image VirtualBox pré-configurée (plus rapide)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mise-a-jour-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mise à jour post-installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-presentation-de-la-base-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 — Présentation de la Base SAM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02 — Présentation de la Base SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quest-ce-que-la-base-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qu'est-ce que la base SAM ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-contient-la-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que contient la SAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-de-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture de protection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-extraction-des-hachages-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 — Extraction des Hachages SAM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 — Extraction des Hachages SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environnement-du-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environnement du lab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-1-extraction-via-volume-shadow-copy-depuis-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode 1 — Extraction via Volume Shadow Copy (depuis Windows)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Méthode 1 — Extraction via Volume Shadow Copy (depuis Windows)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-creer-un-cliche-instantane-du-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 — Créer un cliché instantané du volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-identifier-lid-du-cliche-cree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 — Identifier l'ID du cliché créé
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-3-copier-les-fichiers-sam-et-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 3 — Copier les fichiers SAM et SYSTEM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-4-transferer-les-fichiers-vers-kali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 4 — Transférer les fichiers vers Kali
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-2-extraction-avec-impacket-secretsdump-depuis-kali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode 2 — Extraction avec impacket-secretsdump (depuis Kali)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-3-extraction-avec-samdump2-fichiers-copies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode 3 — Extraction avec samdump2 (fichiers copiés)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-des-hachages-ntlm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format des hachages NTLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-attaque-par-dictionnaire-avec-john-the-ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 — Attaque par Dictionnaire avec John the Ripper
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="04 — Attaque par Dictionnaire avec John the Ripper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principe-de-lattaque-par-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principe de l'attaque par dictionnaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-et-verification-de-john" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation et vérification de John
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparer-le-fichier-de-hachages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Préparer le fichier de hachages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wordlist-rockyoutxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wordlist — Rockyou.txt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lancer-lattaque-par-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lancer l'attaque par dictionnaire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancer l&#39;attaque par dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attaque-basique-avec-rockyoutxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque basique avec rockyou.txt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-avec-format-auto-detecte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque avec format auto-détecté
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-avec-regles-de-transformation-mangling-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque avec règles de transformation (mangling rules)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-avec-un-dictionnaire-personnalise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque avec un dictionnaire personnalisé
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suivre-la-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suivre la progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-les-mots-de-passe-trouves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Afficher les mots de passe trouvés
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-attaque-par-force-brute-avec-john-the-ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 — Attaque par Force Brute avec John the Ripper
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 — Attaque par Force Brute avec John the Ripper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principe-de-lattaque-par-force-brute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principe de l'attaque par force brute
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modes-de-force-brute-dans-john" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes de force brute dans John
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modes de force brute dans John">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jeux-de-caracteres-disponibles-charsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jeux de caractères disponibles (charsets)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-force-brute-mode-incremental-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque force brute — Mode Incremental (automatique)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-force-brute-mode-masque-recommande" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque force brute — Mode Masque (recommandé)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attaque force brute — Mode Masque (recommandé)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-pratique-mot-de-passe-type-prenom2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple pratique — mot de passe type "Prenom2024"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combiner-force-brute-et-dictionnaire-attaque-hybride" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combiner force brute et dictionnaire (attaque hybride)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiter-le-temps-dexecution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiter le temps d'exécution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reprendre-une-attaque-interrompue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reprendre une attaque interrompue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-analyse-des-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 — Analyse des Résultats
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 — Analyse des Résultats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#afficher-tous-les-mots-de-passe-crackes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Afficher tous les mots de passe crackés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lire-le-fichier-pot-directement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lire le fichier .pot directement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparer-les-performances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparer les performances
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-les-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpréter les résultats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aller-plus-loin-hashcat-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aller plus loin — Hashcat (GPU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-commandes-de-reference-rapide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 — Commandes de Référence Rapide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="07 — Commandes de Référence Rapide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#john-the-ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        John the Ripper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraction-des-hachages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extraction des hachages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilitaires-divers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilitaires divers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesures-de-protection-perspective-defensive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesures de protection (perspective défensive)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-des-matieres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table des Matières
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#01-installation-de-kali-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 — Installation de Kali Linux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="01 — Installation de Kali Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-dinstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options d'installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-a-installation-sur-virtualbox-recommandee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode A — Installation sur VirtualBox (recommandée)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Méthode A — Installation sur VirtualBox (recommandée)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-telecharger-liso-kali-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 — Télécharger l'ISO Kali Linux
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-creer-la-machine-virtuelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 — Créer la Machine Virtuelle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-3-demarrer-linstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 3 — Démarrer l'Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-4-configuration-de-la-langue-et-du-clavier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 4 — Configuration de la langue et du clavier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-5-configuration-reseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 5 — Configuration réseau
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-6-creation-du-compte-utilisateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 6 — Création du compte utilisateur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-7-partitionnement-du-disque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 7 — Partitionnement du disque
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-8-installation-du-systeme-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 8 — Installation du système de base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-9-selection-des-logiciels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 9 — Sélection des logiciels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-10-installation-du-chargeur-de-demarrage-grub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 10 — Installation du chargeur de démarrage GRUB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-11-fin-de-linstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 11 — Fin de l'installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-b-image-virtualbox-pre-configuree-plus-rapide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode B — Image VirtualBox pré-configurée (plus rapide)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mise-a-jour-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mise à jour post-installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-presentation-de-la-base-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 — Présentation de la Base SAM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="02 — Présentation de la Base SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quest-ce-que-la-base-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qu'est-ce que la base SAM ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ce-que-contient-la-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ce que contient la SAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-de-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture de protection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-extraction-des-hachages-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 — Extraction des Hachages SAM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="03 — Extraction des Hachages SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environnement-du-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environnement du lab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-1-extraction-via-volume-shadow-copy-depuis-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode 1 — Extraction via Volume Shadow Copy (depuis Windows)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Méthode 1 — Extraction via Volume Shadow Copy (depuis Windows)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etape-1-creer-un-cliche-instantane-du-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 1 — Créer un cliché instantané du volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-2-identifier-lid-du-cliche-cree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 2 — Identifier l'ID du cliché créé
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-3-copier-les-fichiers-sam-et-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 3 — Copier les fichiers SAM et SYSTEM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-4-transferer-les-fichiers-vers-kali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Étape 4 — Transférer les fichiers vers Kali
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-2-extraction-avec-impacket-secretsdump-depuis-kali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode 2 — Extraction avec impacket-secretsdump (depuis Kali)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-3-extraction-avec-samdump2-fichiers-copies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Méthode 3 — Extraction avec samdump2 (fichiers copiés)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-des-hachages-ntlm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format des hachages NTLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04-attaque-par-dictionnaire-avec-john-the-ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 — Attaque par Dictionnaire avec John the Ripper
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="04 — Attaque par Dictionnaire avec John the Ripper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principe-de-lattaque-par-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principe de l'attaque par dictionnaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-et-verification-de-john" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation et vérification de John
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparer-le-fichier-de-hachages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Préparer le fichier de hachages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wordlist-rockyoutxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wordlist — Rockyou.txt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lancer-lattaque-par-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lancer l'attaque par dictionnaire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancer l&#39;attaque par dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attaque-basique-avec-rockyoutxt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque basique avec rockyou.txt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-avec-format-auto-detecte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque avec format auto-détecté
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-avec-regles-de-transformation-mangling-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque avec règles de transformation (mangling rules)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-avec-un-dictionnaire-personnalise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque avec un dictionnaire personnalisé
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suivre-la-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suivre la progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afficher-les-mots-de-passe-trouves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Afficher les mots de passe trouvés
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05-attaque-par-force-brute-avec-john-the-ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 — Attaque par Force Brute avec John the Ripper
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="05 — Attaque par Force Brute avec John the Ripper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principe-de-lattaque-par-force-brute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principe de l'attaque par force brute
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modes-de-force-brute-dans-john" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modes de force brute dans John
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modes de force brute dans John">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jeux-de-caracteres-disponibles-charsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jeux de caractères disponibles (charsets)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-force-brute-mode-incremental-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque force brute — Mode Incremental (automatique)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attaque-force-brute-mode-masque-recommande" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaque force brute — Mode Masque (recommandé)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attaque force brute — Mode Masque (recommandé)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-pratique-mot-de-passe-type-prenom2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple pratique — mot de passe type "Prenom2024"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combiner-force-brute-et-dictionnaire-attaque-hybride" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combiner force brute et dictionnaire (attaque hybride)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limiter-le-temps-dexecution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limiter le temps d'exécution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reprendre-une-attaque-interrompue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reprendre une attaque interrompue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#06-analyse-des-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 — Analyse des Résultats
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="06 — Analyse des Résultats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#afficher-tous-les-mots-de-passe-crackes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Afficher tous les mots de passe crackés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lire-le-fichier-pot-directement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lire le fichier .pot directement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparer-les-performances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparer les performances
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-les-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpréter les résultats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aller-plus-loin-hashcat-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aller plus loin — Hashcat (GPU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#07-commandes-de-reference-rapide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 — Commandes de Référence Rapide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="07 — Commandes de Référence Rapide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#john-the-ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        John the Ripper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraction-des-hachages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extraction des hachages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilitaires-divers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilitaires divers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesures-de-protection-perspective-defensive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesures de protection (perspective défensive)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guide-kali-linux-attaque-de-la-base-sam">Guide Kali Linux &amp; Attaque de la Base SAM</h1>
 <blockquote>
 <p>Référence pour Étudiants en Informatique — Sécurité offensive et tests de pénétration</p>
 <p>⚠️ <strong>Avertissement légal :</strong> Les techniques présentées dans ce document sont à des fins <strong>strictement éducatives</strong> dans un environnement de laboratoire isolé. Toute utilisation sur des systèmes sans autorisation explicite est <strong>illégale</strong> et passible de poursuites pénales. Ne pratiquez que sur vos propres machines ou dans un cadre pédagogique autorisé.</p>
@@ -764,43 +2656,66 @@ john --list=formats | grep -i NT
 </table>
 <hr />
 <p><em>Guide Kali Linux &amp; Attaque SAM · Référence pour Étudiants en Informatique · Usage pédagogique uniquement · 2025</em></p>
-              
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-          </div><footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
           
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-  </span>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
 </html>
