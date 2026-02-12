@@ -196,9 +196,18 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
-    "docs/about.md",
-    "docs/index.md",
     "mission/Untitled.md",
+    "docs/index.md",
+    "docs/about.md",
+    "site/search/search_index.json",
+    "site/about/index.html",
+    "site/about",
+    "site/index.html",
+    "site/sitemap.xml.gz",
+    "site/sitemap.xml",
+    "site/search.html",
+    "site/404.html",
+    "Untitled",
     "mission"
   ]
 }
