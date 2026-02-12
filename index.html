@@ -41,6 +41,84 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#table-des-matieres">Table des Matières</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#01-routeur">01 — Routeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#quest-ce-quun-routeur">Qu'est-ce qu'un Routeur ?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#schema-reseau">Schéma Réseau</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-cisco-ios">Configuration — Cisco IOS</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#02-commutateur-reseau">02 — Commutateur Réseau</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#quest-ce-quun-commutateur">Qu'est-ce qu'un Commutateur ?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#architecture-vlan">Architecture VLAN</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-commutateur-administrable-cisco">Configuration — Commutateur Administrable Cisco</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#03-serveur-ftp">03 — Serveur FTP</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fonctionnement-du-ftp">Fonctionnement du FTP</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-vsftpd-sur-ubuntu">Configuration — vsftpd sur Ubuntu</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#04-serveur-dns">04 — Serveur DNS</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fonctionnement-de-la-resolution-dns">Fonctionnement de la Résolution DNS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#types-denregistrements-dns-courants">Types d'Enregistrements DNS Courants</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-bind9-sur-ubuntu">Configuration — BIND9 sur Ubuntu</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#05-serveur-dhcp">05 — Serveur DHCP</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#le-processus-dora">Le Processus DORA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ce-que-le-dhcp-attribue">Ce que le DHCP Attribue</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-isc-dhcp-server-sur-ubuntu">Configuration — isc-dhcp-server sur Ubuntu</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#06-point-dacces-sans-fil">06 — Point d'Accès Sans Fil</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pap-vs-autres-equipements">PAP vs Autres Équipements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#comparatif-des-normes-80211">Comparatif des Normes 802.11</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-interface-web-generique-ubiquiti-cisco-tp-link">Configuration — Interface Web Générique (Ubiquiti / Cisco / TP-Link)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#07-serveur-web-apache-nginx">07 — Serveur Web (Apache / Nginx)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#apache-vs-nginx">Apache vs Nginx</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#concept-dhote-virtuel">Concept d'Hôte Virtuel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-apache2-sur-ubuntu">Configuration — Apache2 sur Ubuntu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configuration-nginx-sur-ubuntu">Configuration — Nginx sur Ubuntu</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reference-rapide-ports-et-protocoles">Référence Rapide — Ports et Protocoles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#commandes-de-diagnostic-utiles">Commandes de Diagnostic Utiles</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -70,8 +148,735 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>ybyubbyyyuyuyggftyfytfrfcrtcdtftftYHU
-YIBYUBYUB</p>
+                <h1 id="guide-de-configuration-reseau">Guide de Configuration Réseau</h1>
+<blockquote>
+<p>Référence pour Étudiants en Informatique — Configuration pratique des composants réseau essentiels</p>
+</blockquote>
+<hr />
+<h2 id="table-des-matieres">Table des Matières</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Sujet</th>
+<th>Protocole / Couche</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#01--routeur">Routeur</a></td>
+<td>Couche 3 — Routage IP</td>
+</tr>
+<tr>
+<td>02</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#02--commutateur-r%C3%A9seau">Commutateur réseau</a></td>
+<td>Couche 2 — MAC / VLANs</td>
+</tr>
+<tr>
+<td>03</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#03--serveur-ftp">Serveur FTP</a></td>
+<td>TCP Port 21</td>
+</tr>
+<tr>
+<td>04</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#04--serveur-dns">Serveur DNS</a></td>
+<td>UDP/TCP Port 53</td>
+</tr>
+<tr>
+<td>05</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#05--serveur-dhcp">Serveur DHCP</a></td>
+<td>UDP Port 67/68</td>
+</tr>
+<tr>
+<td>06</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#06--point-dacc%C3%A8s-sans-fil">Point d'Accès Sans Fil</a></td>
+<td>IEEE 802.11</td>
+</tr>
+<tr>
+<td>07</td>
+<td><a href="https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#07--serveur-web-apache--nginx">Serveur Web (Apache / Nginx)</a></td>
+<td>TCP Port 80 / 443</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="01-routeur">01 — Routeur</h2>
+<p><strong>Équipement de couche 3</strong> qui achemine les paquets entre différents réseaux en utilisant l'adressage IP et les tables de routage.</p>
+<h3 id="quest-ce-quun-routeur">Qu'est-ce qu'un Routeur ?</h3>
+<p>Un routeur fonctionne à la <strong>couche 3 (couche Réseau)</strong> du modèle OSI. Son rôle principal est de transférer les paquets de données entre différents réseaux — généralement entre votre réseau local (LAN) et Internet (WAN). Il utilise une <strong>table de routage</strong> pour déterminer le meilleur chemin pour chaque paquet.</p>
+<blockquote>
+<p><strong>Concept clé :</strong> Les routeurs séparent les domaines de diffusion. Chaque interface d'un routeur représente un segment réseau distinct.</p>
+</blockquote>
+<h3 id="schema-reseau">Schéma Réseau</h3>
+<pre><code>    [Internet / FAI]
+          │
+      ┌───┴───┐
+      │ROUTEUR│  ← 192.168.1.1 (passerelle)
+      └───┬───┘
+          │ LAN
+   ───────┴─────────────────
+      │         │          │
+   [PC1]      [PC2]    [Serveur]
+  .10          .20       .100
+</code></pre>
+<h3 id="configuration-cisco-ios">Configuration — Cisco IOS</h3>
+<p><strong>Étape 1 — Connexion via Console</strong></p>
+<p>Utilisez un câble console (rollover) entre votre PC et le port console du routeur. Ouvrez un émulateur de terminal (PuTTY, SecureCRT) à <strong>9600 bauds, 8N1</strong>.</p>
+<p><strong>Étape 2 — Passer en Mode Privilégié</strong></p>
+<pre><code class="language-ios">Router&gt; enable
+Router# configure terminal
+</code></pre>
+<p><strong>Étape 3 — Définir le Nom d'Hôte et le Mot de Passe</strong></p>
+<pre><code class="language-ios">Router(config)# hostname MonRouteur
+MonRouteur(config)# enable secret MotDePasseFort123
+MonRouteur(config)# service password-encryption
+</code></pre>
+<p><strong>Étape 4 — Configurer l'Interface LAN</strong></p>
+<pre><code class="language-ios">MonRouteur(config)# interface GigabitEthernet0/0
+MonRouteur(config-if)# ip address 192.168.1.1 255.255.255.0
+MonRouteur(config-if)# no shutdown
+MonRouteur(config-if)# description Interface LAN
+</code></pre>
+<p><strong>Étape 5 — Configurer l'Interface WAN et la Route par Défaut</strong></p>
+<pre><code class="language-ios">MonRouteur(config)# interface GigabitEthernet0/1
+MonRouteur(config-if)# ip address dhcp
+MonRouteur(config-if)# no shutdown
+MonRouteur(config)# ip route 0.0.0.0 0.0.0.0 GigabitEthernet0/1
+</code></pre>
+<p><strong>Étape 6 — Sauvegarder la Configuration</strong></p>
+<pre><code class="language-ios">MonRouteur# copy running-config startup-config
+</code></pre>
+<p><strong>Termes clés :</strong> <code>Table de routage</code> · <code>NAT</code> · <code>WAN</code> · <code>Passerelle par défaut</code> · <code>Cisco IOS</code></p>
+<hr />
+<h2 id="02-commutateur-reseau">02 — Commutateur Réseau</h2>
+<p><strong>Équipement de couche 2</strong> qui interconnecte les appareils d'un même réseau grâce à l'apprentissage des adresses MAC et à la segmentation optionnelle en VLANs.</p>
+<h3 id="quest-ce-quun-commutateur">Qu'est-ce qu'un Commutateur ?</h3>
+<p>Un commutateur fonctionne à la <strong>couche 2 (couche Liaison de données)</strong>. Il apprend les adresses MAC et transmet les trames uniquement vers le port destinataire — contrairement à un hub qui diffuse vers tous les ports. Les <strong>commutateurs administrables</strong> modernes supportent les VLANs, STP, QoS et la mise en miroir de ports.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Configuration</th>
+<th>Cas d'utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Non administrable</strong></td>
+<td>Aucune</td>
+<td>Petits réseaux domestiques/bureaux</td>
+</tr>
+<tr>
+<td><strong>Administrable</strong></td>
+<td>Requise (CLI ou interface web)</td>
+<td>Entreprise, VLANs, supervision</td>
+</tr>
+</tbody>
+</table>
+<h3 id="architecture-vlan">Architecture VLAN</h3>
+<pre><code>  Commutateur (24 ports)
+  ┌──────────────────────────┐
+  │  VLAN 10 — Ports  1–8   │  ← Personnel
+  │  VLAN 20 — Ports  9–16  │  ← Étudiants
+  │  VLAN 99 — Port   24    │  ← Gestion
+  └──────────────────────────┘
+        Port trunk → Routeur (marquage 802.1Q)
+</code></pre>
+<h3 id="configuration-commutateur-administrable-cisco">Configuration — Commutateur Administrable Cisco</h3>
+<p><strong>Étape 1 — Créer les VLANs</strong></p>
+<pre><code class="language-ios">Switch(config)# vlan 10
+Switch(config-vlan)# name PERSONNEL
+Switch(config)# vlan 20
+Switch(config-vlan)# name ETUDIANTS
+</code></pre>
+<p><strong>Étape 2 — Affecter les Ports d'Accès aux VLANs</strong></p>
+<pre><code class="language-ios">Switch(config)# interface range Fa0/1 - 8
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 10
+</code></pre>
+<p><strong>Étape 3 — Configurer le Port Trunk (vers le Routeur)</strong></p>
+<pre><code class="language-ios">Switch(config)# interface Fa0/24
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk allowed vlan 10,20,99
+</code></pre>
+<p><strong>Étape 4 — Définir l'Adresse IP de Gestion</strong></p>
+<pre><code class="language-ios">Switch(config)# interface vlan 99
+Switch(config-if)# ip address 192.168.99.2 255.255.255.0
+Switch(config-if)# no shutdown
+</code></pre>
+<blockquote>
+<p><strong>Remarque :</strong> Configurez toujours un VLAN de gestion distinct des VLANs utilisateurs pour l'accès distant via SSH ou l'interface web.</p>
+</blockquote>
+<p><strong>Termes clés :</strong> <code>VLAN</code> · <code>Trunk 802.1Q</code> · <code>STP</code> · <code>Table MAC</code> · <code>Port d'accès</code></p>
+<hr />
+<h2 id="03-serveur-ftp">03 — Serveur FTP</h2>
+<p><strong>File Transfer Protocol</strong> — permet le transfert de fichiers sur un réseau via <code>vsftpd</code> sous Linux.</p>
+<h3 id="fonctionnement-du-ftp">Fonctionnement du FTP</h3>
+<p>Le FTP utilise <strong>deux canaux distincts</strong> :</p>
+<ul>
+<li><strong>Canal de contrôle</strong> (port 21) — pour l'authentification et les commandes</li>
+<li><strong>Canal de données</strong> (port 20 actif / port négocié passif) — pour le transfert effectif des fichiers</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Connexion de données</th>
+<th>NAT/Pare-feu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Actif</strong></td>
+<td>Serveur → Client (port 20)</td>
+<td>❌ Échoue avec le NAT</td>
+</tr>
+<tr>
+<td><strong>Passif</strong></td>
+<td>Client → Serveur (port élevé)</td>
+<td>✅ Fonctionne avec le NAT</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Avertissement de sécurité :</strong> Le FTP standard transmet les identifiants en <strong>texte clair</strong>. En production, utilisez <strong>SFTP</strong> (port 22, via SSH) ou <strong>FTPS</strong> (FTP sur TLS). Réservez le FTP classique aux réseaux de laboratoire isolés.</p>
+</blockquote>
+<h3 id="configuration-vsftpd-sur-ubuntu">Configuration — vsftpd sur Ubuntu</h3>
+<p><strong>Étape 1 — Installer vsftpd</strong></p>
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt install vsftpd -y
+sudo systemctl enable vsftpd
+</code></pre>
+<p><strong>Étape 2 — Modifier le Fichier de Configuration</strong></p>
+<pre><code class="language-bash">sudo nano /etc/vsftpd.conf
+</code></pre>
+<p>Ajoutez ou décommentez les lignes suivantes :</p>
+<pre><code class="language-ini"># Autoriser les utilisateurs locaux à écrire des fichiers
+write_enable=YES
+
+# Confiner les utilisateurs dans leur répertoire personnel
+chroot_local_user=YES
+allow_writeable_chroot=YES
+
+# Activer le mode passif pour la compatibilité NAT
+pasv_enable=YES
+pasv_min_port=40000
+pasv_max_port=40100
+</code></pre>
+<p><strong>Étape 3 — Créer un Utilisateur FTP et son Répertoire</strong></p>
+<pre><code class="language-bash">sudo adduser utilisateurftp
+sudo mkdir -p /home/utilisateurftp/fichiers
+sudo chown nobody:nogroup /home/utilisateurftp
+sudo chown utilisateurftp:utilisateurftp /home/utilisateurftp/fichiers
+</code></pre>
+<p><strong>Étape 4 — Ouvrir les Ports du Pare-feu et Redémarrer</strong></p>
+<pre><code class="language-bash">sudo ufw allow 21/tcp
+sudo ufw allow 40000:40100/tcp
+sudo systemctl restart vsftpd
+</code></pre>
+<p><strong>Étape 5 — Tester la Connexion</strong></p>
+<pre><code class="language-bash">ftp 192.168.1.20
+# ou utiliser FileZilla avec le mode passif activé
+</code></pre>
+<p><strong>Termes clés :</strong> <code>vsftpd</code> · <code>Port 21</code> · <code>Mode passif</code> · <code>chroot</code> · <code>SFTP</code></p>
+<hr />
+<h2 id="04-serveur-dns">04 — Serveur DNS</h2>
+<p><strong>Domain Name System</strong> — résout les noms d'hôtes en adresses IP via <code>BIND9</code> sous Linux.</p>
+<h3 id="fonctionnement-de-la-resolution-dns">Fonctionnement de la Résolution DNS</h3>
+<pre><code> Le navigateur demande : &quot;quelle est l'IP de webserver.lab.local ?&quot;
+        │
+   ┌────▼─────┐
+   │Résolveur │  → vérifie le cache local d'abord
+   └────┬─────┘
+        │ absence dans le cache
+   ┌────▼──────────────┐
+   │    BIND9 DNS      │  192.168.1.53
+   │  (autoritaire)    │
+   └────┬──────────────┘
+        │ correspondance trouvée dans le fichier de zone
+        ▼
+   Retourne : 192.168.1.10  ✓
+</code></pre>
+<h3 id="types-denregistrements-dns-courants">Types d'Enregistrements DNS Courants</h3>
+<table>
+<thead>
+<tr>
+<th>Enregistrement</th>
+<th>Rôle</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A</code></td>
+<td>Nom d'hôte → IPv4</td>
+<td><code>webserver → 192.168.1.10</code></td>
+</tr>
+<tr>
+<td><code>AAAA</code></td>
+<td>Nom d'hôte → IPv6</td>
+<td><code>webserver → ::1</code></td>
+</tr>
+<tr>
+<td><code>CNAME</code></td>
+<td>Alias vers un autre nom d'hôte</td>
+<td><code>www → webserver</code></td>
+</tr>
+<tr>
+<td><code>MX</code></td>
+<td>Serveur de messagerie du domaine</td>
+<td><code>@ → mail.lab.local</code></td>
+</tr>
+<tr>
+<td><code>PTR</code></td>
+<td>Résolution inverse (IP → nom)</td>
+<td><code>10 → webserver.lab.local</code></td>
+</tr>
+<tr>
+<td><code>NS</code></td>
+<td>Serveur de noms autoritaire</td>
+<td><code>@ → ns1.lab.local</code></td>
+</tr>
+<tr>
+<td><code>SOA</code></td>
+<td>Enregistrement d'autorité de zone</td>
+<td>Début du fichier de zone</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuration-bind9-sur-ubuntu">Configuration — BIND9 sur Ubuntu</h3>
+<p><strong>Étape 1 — Installer BIND9</strong></p>
+<pre><code class="language-bash">sudo apt install bind9 bind9utils bind9-doc -y
+</code></pre>
+<p><strong>Étape 2 — Déclarer la Zone</strong></p>
+<p>Éditez <code>/etc/bind/named.conf.local</code> :</p>
+<pre><code>zone &quot;lab.local&quot; {
+    type master;
+    file &quot;/etc/bind/zones/db.lab.local&quot;;
+};
+</code></pre>
+<p><strong>Étape 3 — Créer le Fichier de Zone</strong></p>
+<pre><code class="language-bash">sudo mkdir -p /etc/bind/zones
+sudo nano /etc/bind/zones/db.lab.local
+</code></pre>
+<pre><code class="language-dns">$TTL    604800
+@  IN  SOA  ns1.lab.local. admin.lab.local. (
+              2025010101 ; Numéro de série  ← à incrémenter après chaque modification
+              604800     ; Rafraîchissement
+              86400      ; Nouvelle tentative
+              2419200    ; Expiration
+              604800 )   ; TTL minimum
+
+; Enregistrement du serveur de noms
+@       IN  NS    ns1.lab.local.
+ns1     IN  A     192.168.1.53
+
+; Enregistrements A des hôtes
+router      IN  A   192.168.1.1
+webserver   IN  A   192.168.1.10
+fileserver  IN  A   192.168.1.20
+
+; Alias CNAME
+www     IN  CNAME  webserver
+</code></pre>
+<p><strong>Étape 4 — Valider et Redémarrer</strong></p>
+<pre><code class="language-bash">sudo named-checkconf
+sudo named-checkzone lab.local /etc/bind/zones/db.lab.local
+
+sudo systemctl restart bind9
+</code></pre>
+<p><strong>Étape 5 — Tester la Résolution</strong></p>
+<pre><code class="language-bash">nslookup webserver.lab.local 192.168.1.53
+dig @192.168.1.53 www.lab.local
+</code></pre>
+<blockquote>
+<p><strong>Conseil :</strong> Incrémentez toujours le <strong>numéro de série</strong> après avoir modifié un fichier de zone, sinon les serveurs DNS secondaires ne prendront pas en compte vos changements.</p>
+</blockquote>
+<p><strong>Termes clés :</strong> <code>BIND9</code> · <code>Fichier de zone</code> · <code>Enregistrement A</code> · <code>SOA</code> · <code>Port 53</code> · <code>nslookup</code></p>
+<hr />
+<h2 id="05-serveur-dhcp">05 — Serveur DHCP</h2>
+<p><strong>Dynamic Host Configuration Protocol</strong> — attribue automatiquement des adresses IP et la configuration réseau aux clients via <code>isc-dhcp-server</code>.</p>
+<h3 id="le-processus-dora">Le Processus DORA</h3>
+<pre><code> Client                        Serveur DHCP
+   │                                │
+   ├──── DISCOVER ─────────────────▶│  &quot;Y a-t-il un serveur ? J'ai besoin d'une IP.&quot;
+   │◀─── OFFER ──────────────────── │  &quot;Je vous propose 192.168.1.105&quot;
+   ├──── REQUEST ───────────────────▶│  &quot;J'accepte 192.168.1.105, merci.&quot;
+   │◀─── ACK ───────────────────────┤  &quot;Confirmé — bail valide 24h.&quot;
+   │                                │
+</code></pre>
+<h3 id="ce-que-le-dhcp-attribue">Ce que le DHCP Attribue</h3>
+<ul>
+<li><strong>Adresse IP</strong> — depuis une plage définie (pool)</li>
+<li><strong>Masque de sous-réseau</strong> — pour le segment réseau</li>
+<li><strong>Passerelle par défaut</strong> — l'adresse IP du routeur</li>
+<li><strong>Serveur(s) DNS</strong> — pour la résolution de noms</li>
+<li><strong>Durée du bail</strong> — délai avant renouvellement</li>
+</ul>
+<h3 id="configuration-isc-dhcp-server-sur-ubuntu">Configuration — isc-dhcp-server sur Ubuntu</h3>
+<p><strong>Étape 1 — Installer le Paquet</strong></p>
+<pre><code class="language-bash">sudo apt install isc-dhcp-server -y
+</code></pre>
+<p><strong>Étape 2 — Définir l'Interface d'Écoute</strong></p>
+<p>Éditez <code>/etc/default/isc-dhcp-server</code> :</p>
+<pre><code class="language-ini">INTERFACESv4=&quot;eth0&quot;
+</code></pre>
+<p><strong>Étape 3 — Configurer le Sous-réseau et la Plage d'Adresses</strong></p>
+<p>Éditez <code>/etc/dhcp/dhcpd.conf</code> :</p>
+<pre><code>default-lease-time 86400;    # 24 heures
+max-lease-time 172800;       # 48 heures maximum
+
+subnet 192.168.1.0 netmask 255.255.255.0 {
+  range 192.168.1.100 192.168.1.200;        # plage d'adresses IP
+  option routers 192.168.1.1;               # passerelle par défaut
+  option domain-name-servers 192.168.1.53, 8.8.8.8;
+  option domain-name &quot;lab.local&quot;;
+}
+
+# Réservation statique par adresse MAC (ex. pour une imprimante)
+host imprimante {
+  hardware ethernet AA:BB:CC:DD:EE:FF;
+  fixed-address 192.168.1.50;
+}
+</code></pre>
+<p><strong>Étape 4 — Démarrer et Surveiller</strong></p>
+<pre><code class="language-bash">sudo systemctl restart isc-dhcp-server
+sudo systemctl status isc-dhcp-server
+
+# Afficher les baux actifs
+cat /var/lib/dhcp/dhcpd.leases
+</code></pre>
+<blockquote>
+<p><strong>Conseil pratique :</strong> Utilisez les <strong>réservations statiques</strong> (liaison IP + MAC) pour les serveurs et imprimantes afin qu'ils reçoivent toujours la même adresse IP sans configuration statique manuelle sur l'équipement.</p>
+</blockquote>
+<p><strong>Termes clés :</strong> <code>DORA</code> · <code>Bail</code> · <code>Plage IP</code> · <code>Réservation</code> · <code>Port 67/68</code></p>
+<hr />
+<h2 id="06-point-dacces-sans-fil">06 — Point d'Accès Sans Fil</h2>
+<p>Équipement <strong>IEEE 802.11</strong> qui étend un réseau filaire aux clients sans fil sans assurer de routage.</p>
+<h3 id="pap-vs-autres-equipements">PAP vs Autres Équipements</h3>
+<table>
+<thead>
+<tr>
+<th>Équipement</th>
+<th>Routage</th>
+<th>Wi-Fi</th>
+<th>Cas d'utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PAP (WAP)</strong></td>
+<td>❌</td>
+<td>✅</td>
+<td>Étend un LAN filaire existant</td>
+</tr>
+<tr>
+<td><strong>Routeur sans fil</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>Appareil tout-en-un pour la maison</td>
+</tr>
+<tr>
+<td><strong>Répéteur/Amplificateur</strong></td>
+<td>❌</td>
+<td>✅</td>
+<td>Rediffuse le signal existant (ajoute de la latence)</td>
+</tr>
+<tr>
+<td><strong>Nœud Mesh</strong></td>
+<td>❌</td>
+<td>✅</td>
+<td>Itinérance transparente sur de grandes surfaces</td>
+</tr>
+</tbody>
+</table>
+<h3 id="comparatif-des-normes-80211">Comparatif des Normes 802.11</h3>
+<table>
+<thead>
+<tr>
+<th>Norme</th>
+<th>Nom Wi-Fi</th>
+<th>Débit max</th>
+<th>Fréquence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>802.11n</td>
+<td>Wi-Fi 4</td>
+<td>600 Mbps</td>
+<td>2,4 / 5 GHz</td>
+</tr>
+<tr>
+<td>802.11ac</td>
+<td>Wi-Fi 5</td>
+<td>3,5 Gbps</td>
+<td>5 GHz</td>
+</tr>
+<tr>
+<td>802.11ax</td>
+<td>Wi-Fi 6</td>
+<td>9,6 Gbps</td>
+<td>2,4 / 5 / 6 GHz</td>
+</tr>
+<tr>
+<td>802.11be</td>
+<td>Wi-Fi 7</td>
+<td>46 Gbps</td>
+<td>Multi-bande</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Sécurité minimale :</strong> Utilisez toujours <strong>WPA2-Personal</strong> ou supérieur. Préférez <strong>WPA3</strong> si disponible. N'utilisez jamais WEP ni les réseaux ouverts.</p>
+</blockquote>
+<h3 id="configuration-interface-web-generique-ubiquiti-cisco-tp-link">Configuration — Interface Web Générique (Ubiquiti / Cisco / TP-Link)</h3>
+<p><strong>Étape 1 — Connexion Physique</strong></p>
+<p>Branchez le PAP sur un <strong>port de commutateur PoE</strong> (ou utilisez un injecteur PoE). Un seul câble Cat5e/Cat6 fournit à la fois l'alimentation et les données. Vérifiez que le port est bien affecté au bon VLAN.</p>
+<p><strong>Étape 2 — Accéder à l'Interface d'Administration</strong></p>
+<pre><code># Accès par défaut selon la marque :
+Ubiquiti UniFi  →  Adoption via l'application UniFi Controller
+Cisco WAP       →  https://192.168.1.1  (voir l'étiquette)
+TP-Link EAP     →  https://192.168.0.254
+
+Identifiants par défaut : admin / admin
+⚠ À modifier immédiatement après la première connexion !
+</code></pre>
+<p><strong>Étape 3 — Créer le Réseau Sans Fil (SSID)</strong></p>
+<pre><code>Nom SSID :    ReseauLabo_5G
+Bande :       5 GHz  (ou double bande)
+Sécurité :    WPA2-Personal  (WPA3 si disponible)
+Mot de passe : [minimum 12 caractères, mixte]
+Tag VLAN :    20  (optionnel, pour la segmentation réseau)
+</code></pre>
+<p><strong>Étape 4 — Configurer le Canal et la Puissance d'Émission</strong></p>
+<pre><code>2,4 GHz → Utiliser les canaux 1, 6 ou 11 (sans chevauchement)
+5 GHz   → Activer le Canal Auto (les canaux DFS sont acceptables)
+
+Largeur de canal :  40 MHz (2,4 GHz)  /  80 MHz (5 GHz)
+Puissance TX :      Auto ou Moyen  ← éviter le Maximum dans les environnements denses
+</code></pre>
+<p><strong>Étape 5 — Activer le Réseau Invité (Optionnel)</strong></p>
+<p>Créez un second SSID associé à un VLAN isolé. Activez <strong>l'isolation des clients</strong> pour empêcher les invités de communiquer entre eux ou d'accéder au LAN principal. Routez le trafic invité vers un sous-réseau distinct avec accès Internet uniquement.</p>
+<p><strong>Termes clés :</strong> <code>SSID</code> · <code>WPA3</code> · <code>PoE</code> · <code>Canal</code> · <code>VLAN</code> · <code>Isolation des clients</code></p>
+<hr />
+<h2 id="07-serveur-web-apache-nginx">07 — Serveur Web (Apache / Nginx)</h2>
+<p><strong>Serveur HTTP/HTTPS</strong> qui sert du contenu web aux navigateurs, configuré via Apache2 ou Nginx sous Linux.</p>
+<h3 id="apache-vs-nginx">Apache vs Nginx</h3>
+<table>
+<thead>
+<tr>
+<th>Fonctionnalité</th>
+<th>Apache</th>
+<th>Nginx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture</td>
+<td>Basée sur les processus</td>
+<td>Événementielle (asynchrone)</td>
+</tr>
+<tr>
+<td>Configuration</td>
+<td>Par répertoire <code>.htaccess</code></td>
+<td>Configuration centralisée</td>
+</tr>
+<tr>
+<td>Support PHP</td>
+<td>Natif (mod_php)</td>
+<td>Via PHP-FPM</td>
+</tr>
+<tr>
+<td>Performances</td>
+<td>Bon pour le contenu dynamique</td>
+<td>Excellent pour les fichiers statiques et la forte charge</td>
+</tr>
+<tr>
+<td>Proxy inverse</td>
+<td>Supporté</td>
+<td>Excellent</td>
+</tr>
+<tr>
+<td>Idéal pour</td>
+<td>Hébergement mutualisé, apps PHP</td>
+<td>Sites à fort trafic, microservices</td>
+</tr>
+</tbody>
+</table>
+<h3 id="concept-dhote-virtuel">Concept d'Hôte Virtuel</h3>
+<pre><code>  Requête entrante : GET http://site-a.lab.local
+
+        │
+  ┌─────▼───────────────────────────────┐
+  │           Serveur Web               │
+  │                                     │
+  │  VHost: site-a.lab.local  ─────────▶ /var/www/site-a  │
+  │  VHost: site-b.lab.local  ─────────▶ /var/www/site-b  │
+  └─────────────────────────────────────┘
+  Une seule adresse IP → Plusieurs sites web
+</code></pre>
+<h3 id="configuration-apache2-sur-ubuntu">Configuration — Apache2 sur Ubuntu</h3>
+<p><strong>Étape 1 — Installer Apache2</strong></p>
+<pre><code class="language-bash">sudo apt install apache2 -y
+sudo systemctl enable apache2
+# Vérification : ouvrir http://192.168.1.10 → page par défaut d'Apache
+</code></pre>
+<p><strong>Étape 2 — Créer un Fichier d'Hôte Virtuel</strong></p>
+<pre><code class="language-bash">sudo nano /etc/apache2/sites-available/site-a.conf
+</code></pre>
+<pre><code class="language-apache">&lt;VirtualHost *:80&gt;
+    ServerName    site-a.lab.local
+    DocumentRoot  /var/www/site-a
+
+    ErrorLog   ${APACHE_LOG_DIR}/site-a-error.log
+    CustomLog  ${APACHE_LOG_DIR}/site-a-access.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
+<p><strong>Étape 3 — Créer la Racine Web et Activer le Site</strong></p>
+<pre><code class="language-bash">sudo mkdir -p /var/www/site-a
+echo &quot;&lt;h1&gt;Le Site A fonctionne !&lt;/h1&gt;&quot; | sudo tee /var/www/site-a/index.html
+
+sudo a2ensite site-a.conf
+sudo systemctl reload apache2
+</code></pre>
+<p><strong>Étape 4 — Activer HTTPS</strong></p>
+<pre><code class="language-bash"># Option A — Certificat auto-signé (pour labs/usage interne) :
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+  -keyout /etc/ssl/private/lab.key \
+  -out /etc/ssl/certs/lab.crt
+
+sudo a2enmod ssl
+# Puis ajouter les directives SSL dans le VirtualHost sur le port 443
+
+# Option B — Let's Encrypt (pour les serveurs publics) :
+sudo apt install certbot python3-certbot-apache
+sudo certbot --apache
+</code></pre>
+<hr />
+<h3 id="configuration-nginx-sur-ubuntu">Configuration — Nginx sur Ubuntu</h3>
+<p><strong>Étape 1 — Installer Nginx</strong></p>
+<pre><code class="language-bash">sudo apt install nginx -y
+sudo systemctl enable nginx
+</code></pre>
+<p><strong>Étape 2 — Créer un Bloc Serveur</strong></p>
+<pre><code class="language-bash">sudo nano /etc/nginx/sites-available/site-a
+</code></pre>
+<pre><code class="language-nginx">server {
+    listen 80;
+    server_name site-a.lab.local;
+
+    root  /var/www/site-a;
+    index index.html;
+
+    access_log /var/log/nginx/site-a-access.log;
+    error_log  /var/log/nginx/site-a-error.log;
+}
+</code></pre>
+<p><strong>Étape 3 — Activer le Site et Recharger</strong></p>
+<pre><code class="language-bash">sudo ln -s /etc/nginx/sites-available/site-a /etc/nginx/sites-enabled/
+sudo nginx -t          # tester la syntaxe de la configuration
+sudo systemctl reload nginx
+</code></pre>
+<p><strong>Termes clés :</strong> <code>Hôte virtuel</code> · <code>DocumentRoot</code> · <code>TLS/SSL</code> · <code>Let's Encrypt</code> · <code>Port 80/443</code> · <code>Certbot</code></p>
+<hr />
+<h2 id="reference-rapide-ports-et-protocoles">Référence Rapide — Ports et Protocoles</h2>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Protocole</th>
+<th>Port(s)</th>
+<th>Remarques</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contrôle FTP</td>
+<td>TCP</td>
+<td>21</td>
+<td>Authentification et commandes</td>
+</tr>
+<tr>
+<td>Données FTP (Actif)</td>
+<td>TCP</td>
+<td>20</td>
+<td>Connexion initiée par le serveur</td>
+</tr>
+<tr>
+<td>Données FTP (Passif)</td>
+<td>TCP</td>
+<td>40000–40100</td>
+<td>Connexion initiée par le client ; compatible NAT</td>
+</tr>
+<tr>
+<td>SSH / SFTP</td>
+<td>TCP</td>
+<td>22</td>
+<td>Alternative chiffrée au FTP</td>
+</tr>
+<tr>
+<td>DNS</td>
+<td>UDP / TCP</td>
+<td>53</td>
+<td>UDP pour les requêtes, TCP pour les transferts de zone</td>
+</tr>
+<tr>
+<td>Serveur DHCP</td>
+<td>UDP</td>
+<td>67</td>
+<td>Le serveur écoute</td>
+</tr>
+<tr>
+<td>Client DHCP</td>
+<td>UDP</td>
+<td>68</td>
+<td>Le client écoute</td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td>TCP</td>
+<td>80</td>
+<td>Trafic web non chiffré</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>TCP</td>
+<td>443</td>
+<td>Trafic web chiffré via TLS</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="commandes-de-diagnostic-utiles">Commandes de Diagnostic Utiles</h2>
+<pre><code class="language-bash"># Tester la résolution DNS
+nslookup webserver.lab.local 192.168.1.53
+dig @192.168.1.53 site-a.lab.local
+
+# Vérifier les ports ouverts sur un serveur
+ss -tulnp
+netstat -tulnp
+
+# Tester la réponse HTTP
+curl -I http://site-a.lab.local
+
+# Afficher les baux DHCP
+cat /var/lib/dhcp/dhcpd.leases
+
+# Vérifier l'état d'un service (remplacer par le service souhaité)
+sudo systemctl status bind9
+sudo systemctl status apache2
+
+# Consulter les journaux en temps réel
+sudo tail -f /var/log/apache2/site-a-access.log
+sudo journalctl -u nginx -f
+
+# Ping / traceroute
+ping 192.168.1.1
+traceroute 8.8.8.8
+</code></pre>
+<hr />
+<p><em>Guide de Configuration Réseau · Référence pour Étudiants en Informatique · 2025</em></p>
               
             </div>
           </div><footer>
@@ -120,5 +925,5 @@ YIBYUBYUB</p>
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-02-12 21:54:08.494065+00:00
+Build Date UTC : 2026-02-12 23:04:24.017043+00:00
 -->
