@@ -1,6 +1,15 @@
 site_name: mission 1 mille nuits
-nav:
-  - Home: index.md
-  - About: about.md
 
-theme: readthedocs
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: cyan
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
