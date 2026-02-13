@@ -164,16 +164,6 @@
               "icon": "lucide-list",
               "title": "Outline of index"
             }
-          },
-          {
-            "id": "cdd77cca38ca85a0",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
         "currentTab": 3
@@ -194,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d302979e2538997",
+  "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
     "mission",
     "docs/kali.md",
