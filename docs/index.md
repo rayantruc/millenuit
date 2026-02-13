@@ -8,8 +8,8 @@
 
 | #   | Sujet                                                                                                                     | Protocole / Couche     |
 | --- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| 01  | [Routeur](https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#01--routeur)                                        | Couche 3 — Routage IP  |
-| 02  | [Commutateur réseau](https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#02--commutateur-r%C3%A9seau)             | Couche 2 — MAC / VLANs |
+| 01  | [[#01 — Routeur]]                                                                                                         | Couche 3 — Routage IP  |
+| 02  | [[#02 — Commutateur Réseau]]                                                                                              | Couche 2 — MAC / VLANs |
 | 03  | [Serveur FTP](https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#03--serveur-ftp)                                | TCP Port 21            |
 | 04  | [Serveur DNS](https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#04--serveur-dns)                                | UDP/TCP Port 53        |
 | 05  | [Serveur DHCP](https://claude.ai/chat/7da35f10-10b8-44da-967f-d5893375973b#05--serveur-dhcp)                              | UDP Port 67/68         |
