@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/Installation de nouveaux postes clients.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Installation de nouveaux postes clients"
             }
           }
         ]
@@ -186,8 +186,8 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
-    "docs/Installation de nouveaux postes clients.md",
     "docs/index.md",
+    "docs/Installation de nouveaux postes clients.md",
     "docs/kali.md",
     "docs/img/millenuitlogofinal.jpg",
     "docs/img",
