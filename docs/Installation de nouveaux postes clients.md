@@ -48,7 +48,7 @@ mot de passe : Mille_2026
 2.  Cliquer sur  Comptes
 3. Options de connexion
 4. Mot de passe 
-5. Modifier le mot de passe ou le crée
+5. Modifier le mot de passe ou le créer
 
 
 
