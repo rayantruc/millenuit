@@ -21,7 +21,8 @@ Suivre les instructions pour formater le disque et installer windows 11.
 
 **Liens :**
 [Firefox (dernière version)](https://www.firefox.com/fr/?utm_campaign=SET_DEFAULT_BROWSER)
-[Libre office (26.2.1)]
+[Libre office (26.2.1)](https://fr.libreoffice.org/download/telecharger-libreoffice/)
+[Adobe Acrobat Reader]
 
 
 
