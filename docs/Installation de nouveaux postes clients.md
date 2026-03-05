@@ -11,7 +11,9 @@ Premièrement, créer la machine virtuelle sur Oracle VirtualBox.
 -  80go stockage
 -  ram 6
 
-2. 
+2. **Lancement de la machine :** 
+
+3. 
 
 
 
