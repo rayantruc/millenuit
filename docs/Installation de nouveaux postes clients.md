@@ -17,6 +17,7 @@ Premièrement, créer la machine virtuelle sur Oracle VirtualBox.
 -  80go stockage
 -  ram 6
 
+![logo Millenuits](img/capa.png)
 
 2. **Lancement de la machine :** 
 
