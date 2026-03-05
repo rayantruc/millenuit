@@ -1,6 +1,6 @@
 
 
-![[docs/img/millenuitlogofinal.jpg]]
+
 
 ## Création du poste maître
 
