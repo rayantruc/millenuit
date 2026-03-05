@@ -3,6 +3,7 @@
 
 ### Installation de windows 11 
 
+Premièrement, créer la machine virtuelle su
 
 
 
