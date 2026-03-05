@@ -5,6 +5,7 @@
 
 Premièrement, créer la machine virtuelle sur Oracle VirtualBox.
 Paramétrage :
+Iso w11
 
 
 
