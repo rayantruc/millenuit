@@ -1,3 +1,0 @@
-# fnzqejof,qfzq
-
-jrehgeoigrjhioer
