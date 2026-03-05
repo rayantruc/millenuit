@@ -42,7 +42,13 @@ Suivre les instructions pour formater le disque et installer windows 11.
 
 ### Changer le mot de passe du l'utilisateur Administrateur local
 
-mdp : Mille_2026
+mot de passe : Mille_2026
+
+1. Aller dans paramètres 
+2.  Cliquer sur  Comptes
+3. Options de connexion
+4. Mot de passe 
+5. Modifier le mot de passe ou le crée
 
 
 
