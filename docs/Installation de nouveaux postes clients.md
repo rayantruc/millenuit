@@ -6,11 +6,12 @@
 
 Premièrement, créer la machine virtuelle sur Oracle VirtualBox.
 
-Paramétrage :
-1. Iso w11
-2. 80go stockage
-3. ram 6
+1. **Paramétrage :** 
+- Iso w11
+-  80go stockage
+-  ram 6
 
+2. 
 
 
 
