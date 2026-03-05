@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Millenuits.md",
+                "file": "docs/Millnuits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Millenuits"
+              "title": "Millnuits"
             }
           }
         ]
@@ -189,7 +189,7 @@
     "millenuitlogofinal.jpg",
     "docs/kali.md",
     "docs/index.md",
-    "docs/Millenuits.md",
+    "docs/Millnuits.md",
     "site/css/fonts/fontawesome-webfont.svg",
     "mission",
     "docs/about.md",
