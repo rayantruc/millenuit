@@ -11,8 +11,12 @@ Premièrement, créer la machine virtuelle sur Oracle VirtualBox.
 1. **Paramétrage :** 
 
 - Iso w11
+
+![logo Millenuits](img/isoimg.png)
+
 -  80go stockage
 -  ram 6
+
 
 2. **Lancement de la machine :** 
 
