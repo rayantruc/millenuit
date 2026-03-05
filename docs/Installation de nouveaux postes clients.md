@@ -19,7 +19,9 @@ Suivre les instructions pour formater le disque et installer windows 11.
 
 ### Installation des logiciels standards de l'entreprise
 
-** liens : **
+**Liens :**
+Firefox (dernière version): 
+
 
 
 
