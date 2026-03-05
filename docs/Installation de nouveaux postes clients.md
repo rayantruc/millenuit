@@ -23,7 +23,7 @@ Suivre les instructions pour formater le disque et installer windows 11.
 [Firefox (dernière version)](https://www.firefox.com/fr/?utm_campaign=SET_DEFAULT_BROWSER)
 [Libre office (26.2.1)](https://fr.libreoffice.org/download/telecharger-libreoffice/)
 [Adobe Acrobat Reader (PDF)](https://www.adobe.com/fr/acrobat/pdf-reader.html?mv=search&mv2=paidsearch&sdid=SGDJMC8N&ef_id=Cj0KCQiA8KTNBhD_ARIsAOvp6DIfVuBXBhXD422lGjPr9T55OpTjM0fXg7VQ5bXoBAa2CfQmqVMSghcaAtUVEALw_wcB:G:s&s_kwcid=AL!3085!3!759294729564!b!!g!!adobe%20acrobat%20reader!22688802426!184092151431&gad_source=1&gad_campaignid=22688802426&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DIfVuBXBhXD422lGjPr9T55OpTjM0fXg7VQ5bXoBAa2CfQmqVMSghcaAtUVEALw_wcB)
-[VLC Media Player]
+[VLC Media Player](https://images.videolan.org/vlc/index.fr.html)
 
 
 
