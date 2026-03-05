@@ -13,7 +13,8 @@ Premièrement, créer la machine virtuelle sur Oracle VirtualBox.
 
 2. **Lancement de la machine :** 
 
-3. 
+3. **Installation :**
+
 
 
 
