@@ -46,10 +46,10 @@ l'installation étant terminée il faut créer un dossier pour le markdown et s'
 
 Ceci vas créer un fichier yml et md il suffiras de modifier son fichier md et de lancer cette commande pour créer un site statique a partir du markdown:
 
-`mkdocs serve`
+`python -m mkdocs serve`
 
-
-## Création d'un dépot github
+le site vas ensuite etre créer et seras dispo
+## Mise en place finale
 
 ## 
 ```
