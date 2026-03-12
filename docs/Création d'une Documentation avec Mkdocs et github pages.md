@@ -133,6 +133,8 @@ jobs:
           publish_dir: ./site
 ```
 
-ce fichier nommé mkdocs.yml et deposé dans les workflows permets la création automatique d'un site avec mkdocs a chaque modification du depot 
+ce fichier nommé mkdocs.yml et déposé dans les workflows permets la création automatique d'un site avec mkdocs a chaque modification du dépôt.
+
+Le site est ensuite est ensuite disponible a l'adresse fournie par github pages
 
 
