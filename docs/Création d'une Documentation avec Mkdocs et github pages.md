@@ -1,6 +1,6 @@
 ![logo Millenuits|554](img/millenuitlogofinal.jpg)
 ## Installation de git et git desktop
-
+Git permetteras de stocker notre documentation dur un depôt publique et de la partag
 ### Installation de git
 L'installation de Git est plutôt simple et directe, il suffit de suivre le processus d'installation a partir du fichier d'installation disponible sur le site officiel
 
@@ -18,7 +18,7 @@ Nous avons maintenant accès a github et a nos dépôts publiques
 
 ## Installation d'obsidian
 
-Tout comme les autre
+Obsidian sert d'éditeur de texte en markdown
 ## Mise en place d'Mkdocs
 ## Création d'un dépot github
 
