@@ -14,7 +14,7 @@ Similairement il suffit d'utiliser le fichier de téléchargement officiel et de
 
 Nous avons maintenant accès a github et a nos dépôts publiques
 
-![[desktops.png]]
+![logo Millenuits|614](img/desktops.png)
 
 ## Installation d'obsidian
 
