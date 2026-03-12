@@ -41,7 +41,10 @@ nous permettras de lancer mkdocs pour vérifier son bon fonctionnement.
 
 l'installation étant terminée il faut créer un dossier pour le markdown avec cette commande:
 
-`python -m mkdocs new my-project`
+``
+``python -m mkdocs new my-projectcd my-project
+hgffffff`
+```
 
 
 ## Création d'un dépot github
