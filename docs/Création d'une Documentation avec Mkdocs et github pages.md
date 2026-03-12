@@ -94,3 +94,45 @@ Avec la configuration si dessus obsidian effecturas un pull pour mettre le depot
 
 Au lieu de manuellement créer le site avec mkdocs on automatisera sa création a travers un fichier yml déposé sur github qui serviras de bot afin de lancer les commandes nécessaires a la création du site, aussi il faut avoir au préalable activé github pages dans les workflow.
 
+```
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main   # change if your default branch is different
+
+permissions:
+  contents: write   # REQUIRED for deployment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material   # remove if not using material theme
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+```
+
+
+
+
