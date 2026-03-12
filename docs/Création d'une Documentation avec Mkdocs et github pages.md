@@ -48,11 +48,11 @@ Ceci vas créer un fichier yml et md il suffiras de modifier son fichier md et d
 
 `python -m mkdocs serve`
 
-le site vas ensuite etre créer et seras dispo
+le site vas ensuite être créer et seras disponible a l'adresse de l'hôte
 ## Mise en place finale
 
-## 
+### Arborescence 
 ```
-Ar
+
 ```
 
