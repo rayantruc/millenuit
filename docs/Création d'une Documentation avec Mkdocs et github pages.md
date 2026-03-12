@@ -32,14 +32,18 @@ Si l'ordinateur possède une version récente de python la commande est la suiva
 
 `python -m pip install mkdocs python -m mkdocs`
 
-celle si nous permetteras d'installer mkdocs.
+celle si nous permettras d'installer mkdocs.
 Ensuite:
 
 `python -m mkdocs`
 
-nous permetteras de lancer mkdocs pour vérifier son bon fonctionnement.
+nous permettras de lancer mkdocs pour vérifier son bon fonctionnement.
 
-l'installation étant terminée il faut créer un dossier pour le markdown en ouvrant le 
+l'installation étant terminée il faut créer un dossier pour le markdown avec cette commande:
+
+`python -m mkdocs new my-project`
+
+
 ## Création d'un dépot github
 
 ## 
