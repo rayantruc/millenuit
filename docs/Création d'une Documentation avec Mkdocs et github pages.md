@@ -92,4 +92,4 @@ Avec la configuration si dessus obsidian effecturas un pull pour mettre le depot
 
 ## L'automatisation d'Mkdocs sur github avec github actions
 
-Au lieu de 
+Au lieu de manuellement créer le site avec mkdocs on automatisera sa création a travers un fichier yml déposé sur github qui serviras de bot afin de lancer les commandes nécessaires a 
