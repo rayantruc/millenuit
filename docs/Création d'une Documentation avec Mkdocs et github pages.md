@@ -66,4 +66,6 @@ le site vas ensuite être créer et seras disponible a l'adresse de l'hôte
 
 ### créer un depot github
 
-![repo|614](img/o)
+Pour pouvoir synchroniser toutes les applications il faut d'a
+
+![repo|335](img/git_repo.png)
