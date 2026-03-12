@@ -38,6 +38,8 @@ Ensuite:
 `python -m mkdocs`
 
 nous permetteras de lancer mkdocs pour vérifier son bon fonctionnement.
+
+l'installation étant terminée il faut créer un dossier pour le markdown en ouvrant le 
 ## Création d'un dépot github
 
 ## 
