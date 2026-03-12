@@ -88,4 +88,5 @@ Pour pouvoir pousser nos création automatique vers le depot github après les a
 Si git est correctement mis en place on devrait pouvoir avoir accès a cette page.
 ![vault|537](img/module_git.png)
 
-avec la configuration si dessus obsidian effecturas un pull
+Avec la configuration si dessus obsidian effecturas un pull pour mettre le depot a jour, puis un commit des dernières modifications et un push vers le depot publique, ceci toutes les minutes.
+
