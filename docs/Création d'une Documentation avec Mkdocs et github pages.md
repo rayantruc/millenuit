@@ -18,7 +18,7 @@ Nous avons maintenant accès a github et a nos dépôts publiques
 
 ## Installation d'obsidian
 
-Obsidian sert d'éditeur de texte en markdown pour nous faciliter la création de la documentation, il permetteras aussi d'éffectuer le lien avec git a l'aide d'une éxtension et -
+Obsidian sert d'éditeur de texte en markdown pour nous faciliter la création de la documentation, il permettras aussi d'effectuer le lien avec git a l'aide d'une extension et de pull, commit et push automatiquement nos documentations pôur etre sur qu'elle soit
 ## Mise en place d'Mkdocs
 ## Création d'un dépot github
 
