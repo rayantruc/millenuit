@@ -90,3 +90,4 @@ Si git est correctement mis en place on devrait pouvoir avoir accès a cette pag
 
 Avec la configuration si dessus obsidian effecturas un pull pour mettre le depot a jour, puis un commit des dernières modifications et un push vers le depot publique, ceci toutes les minutes.
 
+## L'automatisation d'Mkdocs sur github avec
