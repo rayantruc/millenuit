@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Sans titre.md",
+                "file": "docs/Création d'une Documentation avec Mkdocs et github pages.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sans titre"
+              "title": "Création d'une Documentation avec Mkdocs et github pages"
             }
           }
         ]
@@ -187,7 +187,7 @@
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
     "docs/Installation de nouveaux postes clients.md",
-    "docs/Sans titre.md",
+    "docs/Création d'une Documentation avec Mkdocs et github pages.md",
     "docs/index.md",
     "docs/kali.md",
     "docs/Untitled.md",
