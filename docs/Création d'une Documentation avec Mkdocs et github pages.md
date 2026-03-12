@@ -18,7 +18,7 @@ Nous avons maintenant accès a github et a nos dépôts publiques
 
 ## Installation d'obsidian
 
-ob
+Tout comme les autre
 ## Mise en place d'Mkdocs
 ## Création d'un dépot github
 
