@@ -135,6 +135,8 @@ jobs:
 
 ce fichier nommé mkdocs.yml et déposé dans les workflows permets la création automatique d'un site avec mkdocs a chaque modification du dépôt.
 
-Le site est ensuite est ensuite disponible a l'adresse fournie par github pages
+Le site est ensuite est ensuite disponible a l'adresse fournie par github pages.
+
+A présent toute modification faite sur obsidian seras automatiquement envoyée ver le depot publique github qui lui c
 
 
