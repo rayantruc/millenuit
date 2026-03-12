@@ -71,4 +71,5 @@ Pour pouvoir synchroniser toutes les applications il faut d'abord transformer le
 
 ![repo|335](img/git_repo.png)
 
-après ca le dossie \.github seras créer et le dossier millenuit sseras consideré comme un depot
+après ca le dossier \.github seras créer et le dossier millenuit seras considéré comme un dépôt github, on pourras donc transformer ce dépot local en depot publique et poussser nos modifications.
+
