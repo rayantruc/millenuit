@@ -81,4 +81,4 @@ Il suffit de sélectionner "Ouvrir un dosser comme coffre" et de choisir le doss
 
 ### Connexion entre git et obsidian
 
-Pour pou
+Pour pouvoir pousser nos création automatique vers le depot github après les avoir modifiées sur obsidian il faudras installer l'éxtension Git dans obsidian et 
