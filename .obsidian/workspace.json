@@ -11,12 +11,14 @@
             "id": "55634162a8ffa2b4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "docs/img/Capture d'écran 2026-03-12 145125.png"
+                "file": "docs/Création d'une Documentation avec Mkdocs et github pages.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Capture d'écran 2026-03-12 145125"
+              "icon": "lucide-file",
+              "title": "Création d'une Documentation avec Mkdocs et github pages"
             }
           }
         ]
@@ -185,10 +187,12 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
-    "docs/Création d'une Documentation avec Mkdocs et github pages.md",
-    "docs/img/Capture d'écran 2026-03-12 145125.png",
-    "Pasted image 20260312142004.png",
+    "Pasted image 20260312145233.png",
     "docs/Installation de nouveaux postes clients.md",
+    "docs/kali.md",
+    "docs/img/git_repo.png",
+    "docs/Création d'une Documentation avec Mkdocs et github pages.md",
+    "Pasted image 20260312142004.png",
     "docs/img/desktops.png",
     "docs/img/obsidian.png",
     "docs/img/nepscocher.png",
@@ -197,7 +201,6 @@
     "docs/img/demarrage.png",
     "docs/img/desktop.png",
     "docs/img/git.png",
-    "docs/kali.md",
     "docs/index.md",
     "docs/Untitled.md",
     "docs/img/mille.md",
