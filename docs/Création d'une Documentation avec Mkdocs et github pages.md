@@ -75,7 +75,7 @@ après ca le dossier \.github seras créer et le dossier millenuit seras consid�
 
 ### créer un vault obsidian
 
-![vault|537](img/vault.png)
+![vault|588](img/vault.png)
 
 Il suffit de sélectionner "Ouvrir un dosser comme coffre" et de choisir le dossier principal donc /millenuit dans notre cas. Ceci vas créer le dossier /.obsidian et transformer le dossier en coffre obsidian.
 
@@ -83,7 +83,9 @@ Il suffit de sélectionner "Ouvrir un dosser comme coffre" et de choisir le doss
 
 Pour pouvoir pousser nos création automatique vers le depot github après les avoir modifiées sur obsidian il faudras installer le module Git dans obsidian en parcourant les modules complémentaires.
 
-![module|537](img/module.png)
+![module|536](img/module.png)
 
-si git est corréctement mis en place on devrait pouvoir avoir accès a cette page.
-![vault|537](img/modu_git.png)
+Si git est correctement mis en place on devrait pouvoir avoir accès a cette page.
+![vault|537](img/module_git.png)
+
+avec la configuration si dessus obsidian effecturas un pull
