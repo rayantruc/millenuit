@@ -1,7 +1,7 @@
 ![logo Millenuits|554](img/millenuitlogofinal.jpg)
 ## Installation de git
 
-L'installation de Git est plutot simple et directe, il suffit de suivre le processus d'installation a partir du fichier d'installation disponible sur le site officiel
+L'installation de Git est plutôt simple et directe, il suffit de suivre le processus d'installation a partir du fichier d'installation disponible sur le site officiel
 
 
 ## Installation d'obsidian
