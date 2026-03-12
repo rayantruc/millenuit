@@ -75,4 +75,6 @@ après ca le dossier \.github seras créer et le dossier millenuit seras consid�
 
 ### créer un vault obsidian
 
-![vault|335](img/git_repo.png)
+![vault|537](img/vault.png)
+
+Il suffit de selectionner "Ouvrir un dosser comme coffre" et de choisir le dossier princi
