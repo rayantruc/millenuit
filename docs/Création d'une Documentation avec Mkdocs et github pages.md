@@ -39,9 +39,8 @@ Ensuite:
 
 nous permettras de lancer mkdocs pour vérifier son bon fonctionnement.
 
-l'installation étant terminée il faut créer un dossier pour le markdown et s'y déplacer avec cette commande:
+l'installation étant terminée il faut créer un dossier pour le markdown et s'y déplacer avec ces commande:
 
-``
 `python -m mkdocs new my-project`
 `cd my-project`
 
