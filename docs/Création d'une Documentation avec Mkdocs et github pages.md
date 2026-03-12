@@ -35,6 +35,9 @@ Si l'ordinateur possède une version récente de python la commande est la suiva
 celle si nous permetteras d'installer mkdocs.
 Ensuite:
 
+`python -m mkdocs`
+
+nous permetteras de lancer mkdocs pour vérifier son bon fonctionnement
 ## Création d'un dépot github
 
 ## 
