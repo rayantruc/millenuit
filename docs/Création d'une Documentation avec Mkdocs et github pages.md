@@ -79,4 +79,6 @@ après ca le dossier \.github seras créer et le dossier millenuit seras consid�
 
 Il suffit de sélectionner "Ouvrir un dosser comme coffre" et de choisir le dossier principal donc /millenuit dans notre cas. Ceci vas créer le dossier /.obsidian et transformer le dossier en coffre obsidian.
 
-### 
+### Connexion entre git et obsidian
+
+Pour pou
