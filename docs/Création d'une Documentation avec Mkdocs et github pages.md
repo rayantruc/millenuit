@@ -66,8 +66,9 @@ le site vas ensuite être créer et seras disponible a l'adresse de l'hôte
 
 ### créer un depot github
 
-Pour pouvoir synchroniser toutes les applications il faut d'abord transformer le dossier mkdocs en dépôt gihub a l'aide de github desktop (ou du bash git)
+Pour pouvoir synchroniser toutes les applications il faut d'abord transformer le dossier mkdocs en dépôt github a l'aide de github desktop (ou du bash git)
 
 
 ![repo|335](img/git_repo.png)
 
+après ca le dossie \.github seras créer et le dossier millenuit sseras consideré comme un depot
