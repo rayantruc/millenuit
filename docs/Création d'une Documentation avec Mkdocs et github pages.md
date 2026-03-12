@@ -37,7 +37,7 @@ Ensuite:
 
 `python -m mkdocs`
 
-nous permetteras de lancer mkdocs pour vérifier son bon fonctionnement
+nous permetteras de lancer mkdocs pour vérifier son bon fonctionnement.
 ## Création d'un dépot github
 
 ## 
