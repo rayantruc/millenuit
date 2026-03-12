@@ -13,6 +13,9 @@ Similairement il suffit d'utiliser le fichier de téléchargement officiel et de
 ![logo Millenuits|614](img/desktop.png)
 
 
+
+![[desktops.png]]
+
 ## Installation d'obsidian
 
 
