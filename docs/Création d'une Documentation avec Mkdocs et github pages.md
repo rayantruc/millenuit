@@ -75,3 +75,4 @@ après ca le dossier \.github seras créer et le dossier millenuit seras consid�
 
 ### créer un vault obsidian
 
+![vault|335](img/git_repo.png)
