@@ -6,10 +6,9 @@ L'installation de Git est plutôt simple et directe, il suffit de suivre le proc
 
 ![logo Millenuits|363](img/git.png)
 
-### Installation de git desktop 
-Git desktop rendras plus facile la gestion du dépôt mais celle ci n'est pas nécessaire.
-
-
+### Installation de github desktop 
+Github desktop rendras plus facile la gestion du dépôt mais celle ci n'est pas nécessaire.
+Similairement il suffit d'utiliser le fichier de 
 ## Installation d'obsidian
 
 
