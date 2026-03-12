@@ -100,10 +100,10 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - main   # change if your default branch is different
+      - main   
 
 permissions:
-  contents: write   # REQUIRED for deployment
+  contents: write   
 
 jobs:
   deploy:
@@ -121,7 +121,7 @@ jobs:
       - name: Install MkDocs
         run: |
           pip install mkdocs
-          pip install mkdocs-material   # remove if not using material theme
+          pip install mkdocs-material  
 
       - name: Build site
         run: mkdocs build
@@ -137,6 +137,6 @@ ce fichier nommé mkdocs.yml et déposé dans les workflows permets la création
 
 Le site est ensuite est ensuite disponible a l'adresse fournie par github pages.
 
-A présent toute modification faite sur obsidian seras automatiquement envoyée ver le depot publique github qui lui c
+A présent toute modification faite sur obsidian seras automatiquement envoyée ver le dépôt publique github qui lui créeras automatiquement un site a partir des fichiers présents.
 
 
