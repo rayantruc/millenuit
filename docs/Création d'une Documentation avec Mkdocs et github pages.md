@@ -58,8 +58,9 @@ le site vas ensuite être créer et seras disponible a l'adresse de l'hôte
    |
    |__ \millenuit
            |
-           |_________________________________
-              |          |            |    
-              \.github   \.obsidian   \docs
+           |____________________________________
+              |            |                   |    
+              \.github     \.obsidian   \docs
+              repo github   vault obsidian
 ```
 
