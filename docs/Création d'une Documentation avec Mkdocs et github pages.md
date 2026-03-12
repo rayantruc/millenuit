@@ -41,8 +41,8 @@ nous permettras de lancer mkdocs pour vérifier son bon fonctionnement.
 
 l'installation étant terminée il faut créer un dossier pour le markdown et s'y déplacer avec ces commande:
 
-`python -m mkdocs new my-project`
-`cd my-project`
+`python -m mkdocs new millenuit`
+`cd millenuit
 
 Ceci vas créer un fichier yml et md il suffiras de modifier son fichier md et de lancer cette commande pour créer un site statique a partir du markdown:
 
