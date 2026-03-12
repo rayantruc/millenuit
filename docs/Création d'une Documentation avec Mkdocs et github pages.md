@@ -1,6 +1,6 @@
 ![logo Millenuits|554](img/millenuitlogofinal.jpg)
 ## Installation de git et git desktop
-Git permettras de modifier notre documentation sur un depot local et ensuite de pla  et de la partager a l'aide d'un lien avec github pages.
+Git permettras de modifier notre documentation sur un depot local, de la pousser sur un depot publique et de la partager a l'aide d'un lien avec github pages.
 ### Installation de git
 L'installation de Git est plutôt simple et directe, il suffit de suivre le processus d'installation a partir du fichier d'installation disponible sur le site officiel
 
