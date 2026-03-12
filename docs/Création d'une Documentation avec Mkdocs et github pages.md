@@ -14,13 +14,15 @@ Similairement il suffit d'utiliser le fichier de téléchargement officiel et de
 
 Nous avons maintenant accès a github et a nos dépôts publiques
 
-![logo Millenuits|614](img/desktops.png)
+![desktop|614](img/desktops.png)
 
 ## Installation d'obsidian
 
 Obsidian sert d'éditeur de texte en markdown pour nous faciliter la création de la documentation, il permettras aussi d'effectuer le lien avec git a l'aide d'une extension et de pull, commit et push automatiquement nos documentations pour être sur qu'elle soit toujours a jour.
 
 Comme le reste des applications l'installation d'obsisian se fait a travers le fichier d'installation disponible sur leur site officiel
+![obsidian|614](img/obsidian.png)
+
 
 ## Mise en place d'Mkdocs
 
