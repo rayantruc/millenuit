@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Installation de nouveaux postes clients.md",
+                "file": "docs/Création d'une Documentation avec Mkdocs et github pages.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Installation de nouveaux postes clients"
+              "title": "Création d'une Documentation avec Mkdocs et github pages"
             }
           }
         ]
@@ -186,10 +186,10 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
-    "docs/Création d'une Documentation avec Mkdocs et github pages.md",
-    "Pasted image 20260312131701.png",
     "docs/Installation de nouveaux postes clients.md",
+    "docs/Création d'une Documentation avec Mkdocs et github pages.md",
     "docs/index.md",
+    "Pasted image 20260312131701.png",
     "docs/kali.md",
     "docs/Untitled.md",
     "millenuitlogofinal.jpg",
