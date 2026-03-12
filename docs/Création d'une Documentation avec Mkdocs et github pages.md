@@ -133,6 +133,6 @@ jobs:
           publish_dir: ./site
 ```
 
-
+ce fichier nommé mkdocs.yml et deposé dans les workflows permets la création automatique d'un site avec mkdocs a chaque modification du depot 
 
 
