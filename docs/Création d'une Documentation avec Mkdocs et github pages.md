@@ -27,7 +27,13 @@ Comme le reste des applications l'installation d'obsisian se fait a travers le f
 ## Mise en place d'Mkdocs
 
 Mk docs est l'outil qui permettras de transformer le coffre fort obsidian markdown en site statique html.
+
+Si l'ordinateur possède une version récente de python la commande est la suivante:
+
 `python -m pip install mkdocs python -m mkdocs`
+
+celle si nous permetteras d'installer mkdocs.
+Ensuite:
 
 ## Création d'un dépot github
 
