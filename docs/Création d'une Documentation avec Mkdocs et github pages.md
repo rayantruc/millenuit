@@ -8,7 +8,8 @@ L'installation de Git est plutôt simple et directe, il suffit de suivre le proc
 
 ### Installation de github desktop 
 Github desktop rendras plus facile la gestion du dépôt mais celle ci n'est pas nécessaire.
-Similairement il suffit d'utiliser le fichier de télechargement officiel et de se connecter a son compte github afin d'avoir accès a ses dépôts.
+Similairement il suffit d'utiliser le fichier de téléchargement officiel et de se connecter a son compte github afin d'avoir accès a ses dépôts.
+
 
 
 ## Installation d'obsidian
