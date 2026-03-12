@@ -73,4 +73,5 @@ Pour pouvoir synchroniser toutes les applications il faut d'abord transformer le
 
 après ca le dossier \.github seras créer et le dossier millenuit seras considéré comme un dépôt github, on pourras donc transformer ce dépôt local en dépôt publique et pousser nos modifications.
 
-###créer un vault obsidian
+### créer un vault obsidian
+
