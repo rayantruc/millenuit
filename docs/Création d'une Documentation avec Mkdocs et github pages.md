@@ -44,7 +44,7 @@ l'installation étant terminée il faut créer un dossier pour le markdown et s'
 `python -m mkdocs new my-project`
 `cd my-project`
 
-ceci vas créer un fichier yml et 
+Ceci vas créer un fichier yml et md il suffiras de modifier son fichier 
 
 
 ## Création d'un dépot github
