@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/SP2-Mission2-Installation de nouveaux postes clients.md",
+                "file": "docs/SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SP2-Mission2-Installation de nouveaux postes clients"
+              "title": "SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages"
             }
           }
         ]
@@ -187,9 +187,9 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
-    "docs/SP2 - Mission 3 -  Recherche et mise en place d’un outil de déploiement des postes.md",
     "docs/SP2-Mission2-Installation de nouveaux postes clients.md",
     "docs/SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages.md",
+    "docs/SP2 - Mission 3 -  Recherche et mise en place d’un outil de déploiement des postes.md",
     "docs/index.md",
     "docs/kali.md",
     "docs/img/module_git.png",
