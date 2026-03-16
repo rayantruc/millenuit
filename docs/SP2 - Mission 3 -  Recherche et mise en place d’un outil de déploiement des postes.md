@@ -69,7 +69,7 @@ Une fois le script terminé en console, il demande de se rendre sur une page Web
     
     - **User :** `fog`
         
-    - **Password :** `fog`
+    - **Password :** `password`
         
 
 > **Sécurité :** La première action réalisée a été de changer le mot de passe par défaut dans _User Management_.
