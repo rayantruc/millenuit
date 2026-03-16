@@ -14,7 +14,6 @@ Avant d'installer FOG, le serveur Linux (Debian 11/12 ou Ubuntu Server) doit êt
 - **IP Statique :** 172.16.54.10 /24
 - **Passerelle** : 172.16.54.252 (.254 celui du réseau pédagogique)
 
-
 ## 2. Installation de FOG Project
 
 L'installation s'effectue en ligne de commande via le script officiel.
@@ -71,9 +70,9 @@ Une fois le script terminé en console, il demande de se rendre sur une page Web
     
 3. Se connecter avec les identifiants par défaut :
     
-    - **User :** `admin.sys`
+    - **User :** `fog`
         
-    - **Password :** `@dmin26!`
+    - **Password :** `fog`
         
 
 > **Sécurité :** La première action réalisée a été de changer le mot de passe par défaut dans _User Management_.
@@ -86,7 +85,7 @@ Pour répondre à la mission de déploiement des 20 postes , voici la procédure
 
 ### A. Enregistrement du Master (Inventory)
 
-1. Démarrer la VM "Master-MilleNuits-W11" en **PXE** (Network Boot).
+1. Démarrer la VM Master en **PXE** (Network Boot).
     
 2. Dans le menu FOG qui apparaît, choisir **"Quick Registration"**.
     
