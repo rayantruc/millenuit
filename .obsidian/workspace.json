@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/SP2 - Mission 3 -  Recherche et mise en place d’un outil de déploiement des postes.md",
+                "file": "docs/SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SP2 - Mission 3 -  Recherche et mise en place d’un outil de déploiement des postes"
+              "title": "SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages"
             }
           }
         ]
@@ -187,12 +187,12 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
+    "docs/SP2 - Mission 3 -  Recherche et mise en place d’un outil de déploiement des postes.md",
     "Pasted image 20260312150058.png",
     "Pasted image 20260312145233.png",
     "Pasted image 20260312142004.png",
     "Pasted image 20260312135612.png",
     "Pasted image 20260312131701.png",
-    "docs/SP2 - Mission 3 -  Recherche et mise en place d’un outil de déploiement des postes.md",
     "docs/SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages.md",
     "docs/SP2-Mission2-Installation de nouveaux postes clients.md",
     "docs/index.md",
@@ -202,7 +202,6 @@
     "docs/img/vault.png",
     "docs/img/git_repo.png",
     "docs/img/desktops.png",
-    "docs/img/obsidian.png",
     "docs/Untitled.md",
     "docs/img/mille.md",
     "docs/img",
