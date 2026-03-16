@@ -1,10 +1,5 @@
 ![logo Millenuits](img/millenuitlogofinal.jpg)
 
-
-Cette documentation décrit la procédure technique pour transformer le serveur **MN08** en serveur de déploiement FOG Project, conformément aux besoins de l'infrastructure **Mille Nuits**.
-
----
-
 ## 1. Prérequis Serveur
 
 Avant d'installer FOG, le serveur Linux (Debian 11/12 ou Ubuntu Server) doit être configuré avec une **adresse IP Statique**. FOG ne peut pas fonctionner correctement avec une IP dynamique (DHCP).
@@ -13,6 +8,8 @@ Avant d'installer FOG, le serveur Linux (Debian 11/12 ou Ubuntu Server) doit êt
 - **OS :** Linux (Debian 13)
 - **IP Statique :** 172.16.54.10 /24
 - **Passerelle** : 172.16.54.252 (.254 celui du réseau pédagogique)
+
+---
 
 ## 2. Installation de FOG Project
 
