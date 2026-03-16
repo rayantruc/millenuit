@@ -13,3 +13,8 @@ theme:
     - navigation.tabs
     - navigation.top
     - content.code.copy
+
+nav:
+  Mission 1 - Documentation : 
+  Installation MkDocs : docs/SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages.md
+
