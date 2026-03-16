@@ -18,11 +18,11 @@ nav:
   - Accueil: docs/index.md
 
   - Mission 1 - Documentation:
-      - Installation MkDocs: docs/SP2-Mission-1-Création d'une Documentation avec Mkdocs et github pages.md
+      - Installation MkDocs: docs/mission1.md
 
   - Mission 2 - Documentation:
-      - Installation Poste client: docs/SP2-Mission2-Installation de nouveaux postes clients.md
+      - Installation Poste client: docs/mission2.md
 
   - Mission 3 - Documentation:
-      - Mise en place FOG: docs/SP2 - Mission 3 -  Recherche et mise en place d’un outil de déploiement des postes.md
+      - Mise en place FOG: docs/mission3.md
 
