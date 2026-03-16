@@ -15,14 +15,14 @@ theme:
     - content.code.copy
 
 nav:
-  - Accueil: docs/index.md
+  - Accueil: index.md
 
   - Mission 1 - Documentation:
-      - Installation MkDocs: docs/mission1.md
+      - Installation MkDocs: mission1.md
 
   - Mission 2 - Documentation:
-      - Installation Poste client: docs/mission2.md
+      - Installation Poste client: mission2.md
 
   - Mission 3 - Documentation:
-      - Mise en place FOG: docs/mission3.md
-      - Comparatif & Solutions: docs/comparatif.md
+      - Mise en place FOG: mission3.md
+      - Comparatif & Solutions: comparatif.md
