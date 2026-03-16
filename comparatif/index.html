@@ -19,7 +19,7 @@
     
     
       
-        <title>Mission2 - MilleNuits</title>
+        <title>Comparatif des Solutions de Déploiement - MilleNuits</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creation-du-poste-maitre" class="md-skip">
+        <a href="#comparatif-des-solutions-de-deploiement" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mission2
+              Comparatif des Solutions de Déploiement
             
           </span>
         </div>
@@ -608,6 +608,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -616,22 +618,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creation-du-poste-maitre" class="md-nav__link">
+  <a href="#objectif-de-letude" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Création du poste maître
+        Objectif de l'étude
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Création du poste maître">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tableau-comparatif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tableau Comparatif
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyse-detaillee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analyse Détaillée
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyse Détaillée">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation-de-windows-11" class="md-nav__link">
+  <a href="#1-fog-project" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation de windows 11
+        1. FOG Project
       
     </span>
   </a>
@@ -639,10 +663,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation-des-logiciels-standards-de-lentreprise" class="md-nav__link">
+  <a href="#2-clonezilla-server-se" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation des logiciels standards de l'entreprise
+        2. Clonezilla Server (SE)
       
     </span>
   </a>
@@ -650,10 +674,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#changer-le-mot-de-passe-du-lutilisateur-administrateur-local" class="md-nav__link">
+  <a href="#3-microsoft-wds-mdt" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Changer le mot de passe du l'utilisateur Administrateur local
+        3. Microsoft WDS + MDT
       
     </span>
   </a>
@@ -662,6 +686,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choix-de-la-solution-fog-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choix de la Solution : FOG Project
+      
+    </span>
+  </a>
   
 </li>
       
@@ -682,52 +717,118 @@
 
 
 
-  <h1>Mission2</h1>
-
-<p><img alt="logo Millenuits" src="../img/millenuitlogofinal.jpg" /></p>
-<h2 id="creation-du-poste-maitre">Création du poste maître</h2>
-<h3 id="installation-de-windows-11">Installation de windows 11</h3>
-<p>Premièrement, créer la machine virtuelle sur Oracle VirtualBox.</p>
-<ol>
+<h1 id="comparatif-des-solutions-de-deploiement">Comparatif des Solutions de Déploiement</h1>
+<h2 id="objectif-de-letude">Objectif de l'étude</h2>
+<p>Dans le cadre du renouvellement du parc informatique de <strong>Mille Nuits</strong>, nous devons déployer une image Windows 11 standardisée sur 20 postes clients . Pour éviter une installation manuelle fastidieuse, nous avons comparé trois solutions du marché permettant d'industrialiser ce processus via le réseau.</p>
+<hr />
+<h2 id="tableau-comparatif">Tableau Comparatif</h2>
+<p>Nous avons analysé <strong>FOG Project</strong>, <strong>Clonezilla Server</strong> et <strong>Microsoft WDS/MDT</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Critères</th>
+<th><strong>FOG Project</strong> (Retenu)</th>
+<th><strong>Clonezilla Server</strong> (Alternative)</th>
+<th><strong>Microsoft WDS / MDT</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td>Open Source (Libre)</td>
+<td>Open Source (Libre)</td>
+<td>Propriétaire</td>
+</tr>
+<tr>
+<td><strong>Coût</strong></td>
+<td><strong>Gratuit</strong></td>
+<td><strong>Gratuit</strong></td>
+<td>Payant (Licences Windows Server + CALs)</td>
+</tr>
+<tr>
+<td><strong>OS Serveur</strong></td>
+<td>Linux (Debian, Ubuntu...)</td>
+<td>Linux (DRBL)</td>
+<td>Windows Server uniquement</td>
+</tr>
+<tr>
+<td><strong>Interface de gestion</strong></td>
+<td><strong>Interface Web complète</strong></td>
+<td>Ligne de commande / Texte</td>
+<td>Console MMC (Complexe)</td>
+</tr>
+<tr>
+<td><strong>Mode de déploiement</strong></td>
+<td>Unicast &amp; <strong>Multicast</strong></td>
+<td>Unicast &amp; Multicast</td>
+<td>Unicast &amp; Multicast</td>
+</tr>
+<tr>
+<td><strong>Gestion de parc</strong></td>
+<td>Oui (Inventaire, Snapins)</td>
+<td>Non (Clonage pur)</td>
+<td>Oui (Très complet)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="analyse-detaillee">Analyse Détaillée</h2>
+<h3 id="1-fog-project">1. FOG Project</h3>
+<p>Solution de clonage open-source basée sur une interface web.</p>
+<ul>
 <li>
-<p><strong>Paramétrage :</strong> </p>
+<p><strong>Fonctionnalités :</strong> Capture et déploiement d'images, gestion d'inventaire, déploiement de logiciels (Snapins), gestion des imprimantes.</p>
 </li>
 <li>
-<p>Iso w11</p>
+<p><strong>Points forts :</strong> Gratuit, interface web intuitive, gestion du <strong>Multicast</strong> (permet de cloner les 20 postes en même temps sans saturation), fonctionne sur le serveur Linux MN08 disponible.</p>
 </li>
-</ol>
-<p><img alt="logo Millenuits" src="../img/isoimg.png" /></p>
-<p>ne pas cocher : </p>
-<p><img alt="logo Millenuits" src="../img/nepscocher.png" /></p>
-<ul>
-<li>80go stockage</li>
-<li>ram 6</li>
+<li>
+<p><strong>Points faibles :</strong> Configuration initiale du réseau (DHCP/PXE) parfois délicate.</p>
+</li>
 </ul>
-<p><img alt="logo Millenuits" src="../img/capa.png" /></p>
-<ol>
-<li><strong>Lancement de la machine :</strong> </li>
-</ol>
-<p><img alt="logo Millenuits" src="../img/demarrage.png" /></p>
-<ol>
-<li><strong>Installation :</strong></li>
-</ol>
-<p>Suivre les instructions pour formater le disque et installer windows 11.</p>
-<h3 id="installation-des-logiciels-standards-de-lentreprise">Installation des logiciels standards de l'entreprise</h3>
-<p><strong>Liens :</strong> <br></p>
+<h3 id="2-clonezilla-server-se">2. Clonezilla Server (SE)</h3>
+<p>La version serveur du célèbre outil de clonage de disque.</p>
 <ul>
-<li><a href="https://www.firefox.com/fr/?utm_campaign=SET_DEFAULT_BROWSER">Firefox (dernière version)</a></li>
-<li><a href="https://fr.libreoffice.org/download/telecharger-libreoffice/">Libre office (26.2.1)</a></li>
-<li><a href="https://www.adobe.com/fr/acrobat/pdf-reader.html?mv=search&amp;mv2=paidsearch&amp;sdid=SGDJMC8N&amp;ef_id=Cj0KCQiA8KTNBhD_ARIsAOvp6DIfVuBXBhXD422lGjPr9T55OpTjM0fXg7VQ5bXoBAa2CfQmqVMSghcaAtUVEALw_wcB:G:s&amp;s_kwcid=AL!3085!3!759294729564!b!!g!!adobe%20acrobat%20reader!22688802426!184092151431&amp;gad_source=1&amp;gad_campaignid=22688802426&amp;gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DIfVuBXBhXD422lGjPr9T55OpTjM0fXg7VQ5bXoBAa2CfQmqVMSghcaAtUVEALw_wcB">Adobe Acrobat Reader (PDF)</a></li>
-<li><a href="https://images.videolan.org/vlc/index.fr.html">VLC Media Player</a></li>
+<li>
+<p><strong>Fonctionnalités :</strong> Clonage de masse efficace.</p>
+</li>
+<li>
+<p><strong>Points forts :</strong> Très léger, très rapide, gratuit.</p>
+</li>
+<li>
+<p><strong>Points faibles :</strong> Pas d'interface de gestion centralisée persistante (pas de base de données des machines), interface utilisateur "vieillissante" (ncurses), moins adapté à la gestion de parc sur le long terme.</p>
+</li>
 </ul>
-<h3 id="changer-le-mot-de-passe-du-lutilisateur-administrateur-local">Changer le mot de passe du l'utilisateur Administrateur local</h3>
-<p>mot de passe : Mille_2026</p>
+<h3 id="3-microsoft-wds-mdt">3. Microsoft WDS + MDT</h3>
+<p>La solution standard de Microsoft pour les entreprises.</p>
+<ul>
+<li>
+<p><strong>Fonctionnalités :</strong> Déploiement natif, injection de pilotes dynamique, personnalisation poussée.</p>
+</li>
+<li>
+<p><strong>Points forts :</strong> Intégration parfaite avec l'Active Directory et Windows.</p>
+</li>
+<li>
+<p><strong>Points faibles :</strong> <strong>Coût élevé</strong> (nécessite des licences Windows Server), lourd à mettre en place pour "seulement" 20 postes, incompatible avec notre contrainte de serveur Linux MN08.</p>
+</li>
+</ul>
+<hr />
+<h2 id="choix-de-la-solution-fog-project">Choix de la Solution : FOG Project</h2>
+<p>Conformément à la décision de la DSI , nous avons retenu <strong>FOG Project</strong>.</p>
+<p><strong>Justification du choix :</strong></p>
 <ol>
-<li>Aller dans paramètres </li>
-<li>Cliquer sur  Comptes</li>
-<li>Options de connexion</li>
-<li>Mot de passe </li>
-<li>Modifier le mot de passe ou le créer</li>
+<li>
+<p><strong>Coût :</strong> La solution est gratuite, contrairement aux solutions Microsoft .</p>
+</li>
+<li>
+<p><strong>Infrastructure :</strong> Elle s'installe nativement sur le serveur <strong>MN08</strong> (Linux) mis à disposition .</p>
+</li>
+<li>
+<p><strong>Efficacité :</strong> La gestion du Multicast permet de déployer les 19 postes restants simultanément en un temps record.</p>
+</li>
+<li>
+<p><strong>Gestion :</strong> L'interface Web permet une gestion centralisée des incidents et des tâches, facilitant la maintenance future.</p>
+</li>
 </ol>
 
 
