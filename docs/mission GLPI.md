@@ -102,7 +102,9 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 `sudo a2enmod rewrite`
 `sudo systemctl restart apache2`
 
-## Configuration de la suite via
+## Configuration de la suite via l'interface Web
+
+
 
 
 
