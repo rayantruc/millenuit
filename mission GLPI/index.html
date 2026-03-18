@@ -959,13 +959,12 @@ sudo mv /var/www/glpi/config /etc/glpi
 sudo chown www-data /var/lib/glpi/
 sudo mv /var/www/glpi/files /var/lib/glpi
 </code></pre>
-<pre><code>`sudo mkdir /var/log/glpi`
-`sudo chown www-data /var/log/glpi`
+<pre><code>sudo mkdir /var/log/glpi
+sudo chown www-data /var/log/glpi
 </code></pre>
-<p><code>sudo mkdir /var/log/glpi</code>
-<code>sudo chown www-data /var/log/glpi</code></p>
 <p><strong>Création de deux fichiers :</strong></p>
-<p><code>sudo nano /var/www/glpi/inc/deownstream.php</code></p>
+<pre><code>sudo nano /var/www/glpi/inc/deownstream.php
+</code></pre>
 <p><strong>contenant :</strong></p>
 <pre><code>&lt;?php
 define('GLPI_CONFIG_DIR', '/etc/glpi/');
@@ -974,6 +973,8 @@ require_once GLPI_CONFIG_DIR . '/local_define.php';
 }
 </code></pre>
 <p><strong>et</strong></p>
+<pre><code>`sudo nano /etc/glpi/local_define.php
+</code></pre>
 <p><code>sudo nano /etc/glpi/local_define.php</code></p>
 <p><strong>contenant</strong></p>
 <pre><code>&lt;?php
