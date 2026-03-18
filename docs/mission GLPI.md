@@ -58,15 +58,15 @@ sudo mv /var/www/glpi/files /var/lib/glpi
 ```
 
 ```
-`sudo mkdir /var/log/glpi`
-`sudo chown www-data /var/log/glpi`
+sudo mkdir /var/log/glpi
+sudo chown www-data /var/log/glpi
 ```
-`sudo mkdir /var/log/glpi`
-`sudo chown www-data /var/log/glpi`
 
 **Création de deux fichiers :**
 
-`sudo nano /var/www/glpi/inc/deownstream.php`
+```
+sudo nano /var/www/glpi/inc/deownstream.php
+```
 
 **contenant :**
 
@@ -80,6 +80,9 @@ require_once GLPI_CONFIG_DIR . '/local_define.php';
 
 **et**
 
+```
+`sudo nano /etc/glpi/local_define.php
+```
 `sudo nano /etc/glpi/local_define.php`
 
 **contenant**
