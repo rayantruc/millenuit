@@ -65,8 +65,13 @@ require_once GLPI_CONFIG_DIR . '/local_define.php';
 
 **contenant**
 
+```
+<?php
+define('GLPI_VAR_DIR', '/var/lib/glpi/files');
+define('GLPI_LOG_DIR', '/var/log/glpi');
+```
 
-
+## 5 - Configuration d'Apache2 pour GLPI
 
 
 
