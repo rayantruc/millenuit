@@ -46,19 +46,21 @@ sudo chown www-data /var/www/glpi/ -R
 ```
 
 ```
-sudo mkdir /etc/glpi`
-sudo chown www-data /etc/glpi/`
-sudo mv /var/www/glpi/config /etc/glpi`
+sudo mkdir /etc/glpi
+sudo chown www-data /etc/glpi/
+sudo mv /var/www/glpi/config /etc/glpi
 ```
 
-`sudo mkdir /etc/glpi`
-`sudo chown www-data /etc/glpi/`
-`sudo mv /var/www/glpi/config /etc/glpi`
+```
+sudo mkdir /var/lib/glpi
+sudo chown www-data /var/lib/glpi/
+sudo mv /var/www/glpi/files /var/lib/glpi
+```
 
-`sudo mkdir /var/lib/glpi`
-`sudo chown www-data /var/lib/glpi/`
-`sudo mv /var/www/glpi/files /var/lib/glpi`
-
+```
+`sudo mkdir /var/log/glpi`
+`sudo chown www-data /var/log/glpi`
+```
 `sudo mkdir /var/log/glpi`
 `sudo chown www-data /var/log/glpi`
 
