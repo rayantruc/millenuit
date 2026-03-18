@@ -61,6 +61,11 @@ require_once GLPI_CONFIG_DIR . '/local_define.php';
 
 **et**
 
+`sudo nano /etc/glpi/local_define.php`
+
+**contenant**
+
+
 
 
 
