@@ -666,6 +666,9 @@
 <h2 id="2-creation-de-la-base-de-donnees-pour-glpi">2 - Création de la base de données pour GLPI</h2>
 <p><code>sudo mariadb-secure-installation</code>
 <code>sudo mysql -u root -p</code></p>
+<p><code>CREATE DATABASE db_glpi;</code>
+<code>GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
+'MotDePasseRobuste';</code></p>
 
 
 
