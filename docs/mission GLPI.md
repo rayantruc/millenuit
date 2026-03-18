@@ -28,18 +28,15 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-CREATE DATABASE db_glpi;
-GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
-'MotDePasseRobuste';
-FLUSH PRIVILEGES;
-EXIT;
-
 ## 3 - Télécharger et déployer GLPI
 
-`cd /tmp`
-`wget https://github.com/glpi-project/glpi/releases/download/<VERSION>/glpi-
-`|VERSION|.tgz`
-`sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/`
+```
+cd /tmp
+wget https://github.com/glpi-project/glpi/releases/download/<VERSION>/glpi-
+|VERSION|.tgz
+sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/
+```
+
 
 *remplacer |VERSION| par la version de glpi souhaitée
 
