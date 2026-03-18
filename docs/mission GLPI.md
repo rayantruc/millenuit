@@ -21,6 +21,12 @@
 `FLUSH PRIVILEGES;`
 `EXIT;`
 
+## 3 - Télécharger et déployer GLPI
+
+`cd /tmp`
+`wget https://github.com/glpi-project/glpi/releases/download/<VERSION>/glpi-
+<VERSION>.tgz`
+
 
 
 
