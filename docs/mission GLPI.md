@@ -6,11 +6,16 @@
 
 **Php 8.2-fpm / mariadb / apache2 ainsi que les extensions php**
 
-sudo apt-get update && sudo apt-get upgrade`
-`sudo apt-get install apache2 php8.4-fpm mariadb-server`
-`sudo apt install php8.4-{curl,gd,intl,mysql,zip,bcmath,mbstring,xml,bz2}`
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install apache2 php8.4-fpm mariadb-server
+sudo apt install php8.4-{curl,gd,intl,mysql,zip,bcmath,mbstring,xml,bz2}
+```
+
 
 ## 2 - Création de la base de données pour GLPI
+
+
 
 `sudo mariadb-secure-installation`
 `sudo mysql -u root -p`
