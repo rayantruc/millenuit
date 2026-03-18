@@ -28,6 +28,10 @@
 <VERSION>.tgz`
 `sudo tar -xzvf glpi-<VERSION>.tgz -C /var/www/`
 
+*remplacer <VERSION> par la version de glpi souhaitée
+
+
+
 
 
 
