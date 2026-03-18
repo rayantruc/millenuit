@@ -32,17 +32,24 @@ EXIT;
 
 ```
 cd /tmp
-wget https://github.com/glpi-project/glpi/releases/download/<VERSION>/glpi-
+wget https://github.com/glpi-project/glpi/releases/download/|VERSION|/glpi-
 |VERSION|.tgz
 sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/
 ```
-
 
 *remplacer |VERSION| par la version de glpi souhaitée
 
 ## 4 - Organiser les répertoires, permissions et configuration
 
-`sudo chown www-data /var/www/glpi/ -R`
+```
+sudo chown www-data /var/www/glpi/ -R
+```
+
+```
+sudo mkdir /etc/glpi`
+sudo chown www-data /etc/glpi/`
+sudo mv /var/www/glpi/config /etc/glpi`
+```
 
 `sudo mkdir /etc/glpi`
 `sudo chown www-data /etc/glpi/`
