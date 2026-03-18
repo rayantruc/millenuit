@@ -973,9 +973,8 @@ require_once GLPI_CONFIG_DIR . '/local_define.php';
 }
 </code></pre>
 <p><strong>et</strong></p>
-<pre><code>`sudo nano /etc/glpi/local_define.php
+<pre><code>sudo nano /etc/glpi/local_define.php
 </code></pre>
-<p><code>sudo nano /etc/glpi/local_define.php</code></p>
 <p><strong>contenant</strong></p>
 <pre><code>&lt;?php
 define('GLPI_VAR_DIR', '/var/lib/glpi/files');
@@ -983,7 +982,9 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 </code></pre>
 <h2 id="5-configuration-dapache2-pour-glpi">5 - Configuration d'Apache2 pour GLPI</h2>
 <p><strong>Création d'un fichier</strong></p>
-<p><code>sudo nano /etc/apache2/sites-available/support.it-</code>connectlab.fr.conf`</p>
+<pre><code>sudo nano /etc/apache2/sites-available/support.it-
+connectlab.fr.conf
+</code></pre>
 <p><strong>contenant :</strong></p>
 <pre><code>&lt;VirtualHost *:80&gt;
 ServerName glpi.mondomaine.tld # à adapter
@@ -999,10 +1000,11 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 &lt;/VirtualHost&gt;
 </code></pre>
 <p><strong>Puis activer le site :</strong></p>
-<p><code>sudo a2ensite glpi.conf</code>
-<code>sudo a2dissite 000-default.conf</code>
-<code>sudo a2enmod rewrite</code>
-<code>sudo systemctl restart apache2</code></p>
+<pre><code>`sudo a2ensite glpi.conf`
+`sudo a2dissite 000-default.conf`
+`sudo a2enmod rewrite
+`sudo systemctl restart apache2
+</code></pre>
 <h2 id="configuration-de-la-suite-via-linterface-web">Configuration de la suite via l'interface Web</h2>
 
 
