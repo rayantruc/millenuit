@@ -15,16 +15,24 @@ sudo apt install php8.4-{curl,gd,intl,mysql,zip,bcmath,mbstring,xml,bz2}
 
 ## 2 - Création de la base de données pour GLPI
 
+```
+sudo mariadb-secure-installation
+sudo mysql -u root -p
+```
 
+```
+CREATE DATABASE db_glpi;
+GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
+'MotDePasseRobuste';
+FLUSH PRIVILEGES;
+EXIT;
+```
 
-`sudo mariadb-secure-installation`
-`sudo mysql -u root -p`
-
-`CREATE DATABASE db_glpi;`
-`GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
-'MotDePasseRobuste';`
-`FLUSH PRIVILEGES;`
-`EXIT;`
+CREATE DATABASE db_glpi;
+GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
+'MotDePasseRobuste';
+FLUSH PRIVILEGES;
+EXIT;
 
 ## 3 - Télécharger et déployer GLPI
 
