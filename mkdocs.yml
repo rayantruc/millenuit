@@ -1,4 +1,4 @@
-site_name: mission 1 mille nuits
+site_name: MilleNuits
 
 theme:
   name: material
@@ -13,3 +13,16 @@ theme:
     - navigation.tabs
     - navigation.top
     - content.code.copy
+
+nav:
+  - Accueil: index.md
+
+  - Mission 1 - Documentation:
+      - Installation MkDocs: mission1.md
+
+  - Mission 2 - Documentation:
+      - Installation Poste client: mission2.md
+
+  - Mission 3 - Documentation:
+      - Mise en place FOG: mission3.md
+      - Comparatif & Solutions: comparatif.md

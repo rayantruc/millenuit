@@ -1,0 +1,142 @@
+![logo Millenuits|554](img/millenuitlogofinal.jpg)
+## Installation de git et git desktop
+Git permettras de modifier notre documentation sur un depot local, de la pousser sur un depot publique et de la partager a l'aide d'un lien avec github pages.
+### Installation de git
+L'installation de Git est plutôt simple et directe, il suffit de suivre le processus d'installation a partir du fichier d'installation disponible sur le site officiel
+
+![logo Millenuits|363](img/git.png)
+
+### Installation de github desktop 
+Github desktop rendras plus facile la gestion du dépôt mais celle ci n'est pas nécessaire.
+Similairement il suffit d'utiliser le fichier de téléchargement officiel et de se connecter a son compte github afin d'avoir accès a ses dépôts.
+
+![logo Millenuits|614](img/desktop.png)
+
+Nous avons maintenant accès a github et a nos dépôts publiques
+
+![desktop|614](img/desktops.png)
+
+## Installation d'obsidian
+
+Obsidian sert d'éditeur de texte en markdown pour nous faciliter la création de la documentation, il permettras aussi d'effectuer le lien avec git a l'aide d'une extension et de pull, commit et push automatiquement nos documentations pour être sur qu'elle soit toujours a jour.
+
+Comme le reste des applications l'installation d'obsisian se fait a travers le fichier d'installation disponible sur leur site officiel
+![obsidian|614](img/obsidian.png)
+
+
+## Mise en place d'Mkdocs
+
+Mk docs est l'outil qui permettras de transformer le coffre fort obsidian markdown en site statique html.
+
+Si l'ordinateur possède une version récente de python la commande est la suivante:
+
+`python -m pip install mkdocs python -m mkdocs`
+
+celle si nous permettras d'installer mkdocs.
+Ensuite:
+
+`python -m mkdocs`
+
+nous permettras de lancer mkdocs pour vérifier son bon fonctionnement.
+
+l'installation étant terminée il faut créer un dossier pour le markdown et s'y déplacer avec ces commande:
+
+`python -m mkdocs new millenuit`
+`cd millenuit
+
+Ceci vas créer un fichier yml et md il suffiras de modifier son fichier md et de lancer cette commande pour créer un site statique a partir du markdown:
+
+`python -m mkdocs serve`
+
+le site vas ensuite être créer et seras disponible a l'adresse de l'hôte
+## Mise en place finale
+
+### Arborescence 
+```
+
+\Github 
+   |
+   |__ \millenuit
+           |
+           |____________________________________
+              |            |                   |    
+              \.github     \.obsidian          \docs
+              repo github   vault obsidian     dossier mkdocs
+```
+
+### créer un depot github
+
+Pour pouvoir synchroniser toutes les applications il faut d'abord transformer le dossier mkdocs en dépôt github a l'aide de github desktop (ou du bash git)
+
+
+![repo|335](img/git_repo.png)
+
+après ca le dossier \.github seras créer et le dossier millenuit seras considéré comme un dépôt github, on pourras donc transformer ce dépôt local en dépôt publique et pousser nos modifications.
+
+### créer un vault obsidian
+
+![vault|588](img/vault.png)
+
+Il suffit de sélectionner "Ouvrir un dosser comme coffre" et de choisir le dossier principal donc /millenuit dans notre cas. Ceci vas créer le dossier /.obsidian et transformer le dossier en coffre obsidian.
+
+### Connexion entre git et obsidian
+
+Pour pouvoir pousser nos création automatique vers le depot github après les avoir modifiées sur obsidian il faudras installer le module Git dans obsidian en parcourant les modules complémentaires.
+
+![module|536](img/module.png)
+
+Si git est correctement mis en place on devrait pouvoir avoir accès a cette page.
+![vault|537](img/module_git.png)
+
+Avec la configuration si dessus obsidian effecturas un pull pour mettre le depot a jour, puis un commit des dernières modifications et un push vers le depot publique, ceci toutes les minutes.
+
+## L'automatisation d'Mkdocs sur github avec github actions
+
+Au lieu de manuellement créer le site avec mkdocs on automatisera sa création a travers un fichier yml déposé sur github qui serviras de bot afin de lancer les commandes nécessaires a la création du site, aussi il faut avoir au préalable activé github pages dans les workflow.
+
+```
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main   
+
+permissions:
+  contents: write   
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material  
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+```
+
+ce fichier nommé mkdocs.yml et déposé dans les workflows permets la création automatique d'un site avec mkdocs a chaque modification du dépôt.
+
+Le site est ensuite est ensuite disponible a l'adresse fournie par github pages.
+
+A présent toute modification faite sur obsidian seras automatiquement envoyée ver le dépôt publique github qui lui créeras automatiquement un site a partir des fichiers présents.
+
+
