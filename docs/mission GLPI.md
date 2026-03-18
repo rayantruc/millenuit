@@ -43,7 +43,11 @@
 `sudo mv /var/www/glpi/files /var/lib/glpi`
 
 `sudo mkdir /var/log/glpi`
-``
+`sudo chown www-data /var/log/glpi`
+
+**Création de deux fichiers :**
+
+`sudo nano /var/www/glpi/inc/deowns`
 
 
 
