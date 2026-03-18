@@ -4,4 +4,8 @@
 ---
 ## 1 - Prérequis
 
-**Php 8.2-fpm / mariadb / apache2 ainsi qu
+**Php 8.2-fpm / mariadb / apache2 ainsi que les extensions php**
+
+
+
+
