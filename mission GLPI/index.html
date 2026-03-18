@@ -670,6 +670,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuration-de-la-suite-via" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration de la suite via
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -752,6 +763,11 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 &lt;/VirtualHost&gt;
 </code></pre>
 <p><strong>Puis activer le site :</strong></p>
+<p><code>sudo a2ensite glpi.conf</code>
+<code>sudo a2dissite 000-default.conf</code>
+<code>sudo a2enmod rewrite</code>
+<code>sudo systemctl restart apache2</code></p>
+<h2 id="configuration-de-la-suite-via">Configuration de la suite via</h2>
 
 
 
