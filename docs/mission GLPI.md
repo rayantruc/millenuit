@@ -14,3 +14,8 @@
 
 `sudo mariadb-secure-installation`
 `sudo mysql -u root -p`
+
+`CREATE DATABASE db_glpi;`
+`GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
+'MotDePasseRobuste';`
+
