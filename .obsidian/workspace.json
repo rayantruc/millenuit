@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/mission1.md",
+                "file": "docs/mission GLPI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mission1"
+              "title": "mission GLPI"
             }
           }
         ]
@@ -186,11 +186,11 @@
   },
   "active": "01f287a419c6abac",
   "lastOpenFiles": [
+    "docs/mission1.md",
     "docs/index.md",
     "docs/mission GLPI.md",
     "docs/mission3.md",
     "docs/mission2.md",
-    "docs/mission1.md",
     "Sans titre.md",
     "docs/Sans titre",
     "site/comparatif/index.html",

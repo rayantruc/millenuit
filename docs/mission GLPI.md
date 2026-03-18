@@ -75,6 +75,10 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 
 **Création d'un fichier**
 
+`sudo nano /etc/apache2/sites-available/support.it-
+`connectlab.fr.conf`
+
+**contenant : **
 
 
 
