@@ -121,10 +121,10 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 **Puis activer le site :**
 
 ```
-`sudo a2ensite glpi.conf`
-`sudo a2dissite 000-default.conf`
-`sudo a2enmod rewrite
-`sudo systemctl restart apache2
+sudo a2ensite glpi.conf
+sudo a2dissite 000-default.conf
+sudo a2enmod rewrite
+sudo systemctl restart apache2
 ```
 
 ## Configuration de la suite via l'interface Web
