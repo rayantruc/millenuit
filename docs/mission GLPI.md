@@ -78,7 +78,24 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 `sudo nano /etc/apache2/sites-available/support.it-
 `connectlab.fr.conf`
 
-**contenant : **
+**contenant :**
+
+```
+<VirtualHost *:80>
+ServerName glpi.mondomaine.tld # à adapter
+DocumentRoot /var/www/glpi/public
+<Directory /var/www/glpi/public>
+Require all granted
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]
+</Directory>
+</VirtualHost>
+```
+
+**Puis activer le site :**
 
 
 
