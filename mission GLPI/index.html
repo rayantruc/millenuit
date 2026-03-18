@@ -659,6 +659,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#5-configuration-dapache2-pour-glpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 - Configuration d'Apache2 pour GLPI
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -719,6 +730,11 @@ require_once GLPI_CONFIG_DIR . '/local_define.php';
 <p><strong>et</strong></p>
 <p><code>sudo nano /etc/glpi/local_define.php</code></p>
 <p><strong>contenant</strong></p>
+<pre><code>&lt;?php
+define('GLPI_VAR_DIR', '/var/lib/glpi/files');
+define('GLPI_LOG_DIR', '/var/log/glpi');
+</code></pre>
+<h2 id="5-configuration-dapache2-pour-glpi">5 - Configuration d'Apache2 pour GLPI</h2>
 
 
 
