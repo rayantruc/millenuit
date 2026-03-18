@@ -943,13 +943,18 @@ EXIT;
 </code></pre>
 <h2 id="3-telecharger-et-deployer-glpi">3 - Télécharger et déployer GLPI</h2>
 <pre><code>cd /tmp
-wget https://github.com/glpi-project/glpi/releases/download/&lt;VERSION&gt;/glpi-
+wget https://github.com/glpi-project/glpi/releases/download/|VERSION|/glpi-
 |VERSION|.tgz
 sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/
 </code></pre>
 <p>*remplacer |VERSION| par la version de glpi souhaitée</p>
 <h2 id="4-organiser-les-repertoires-permissions-et-configuration">4 - Organiser les répertoires, permissions et configuration</h2>
-<p><code>sudo chown www-data /var/www/glpi/ -R</code></p>
+<pre><code>sudo chown www-data /var/www/glpi/ -R
+</code></pre>
+<pre><code>sudo mkdir /etc/glpi`
+sudo chown www-data /etc/glpi/`
+sudo mv /var/www/glpi/config /etc/glpi`
+</code></pre>
 <p><code>sudo mkdir /etc/glpi</code>
 <code>sudo chown www-data /etc/glpi/</code>
 <code>sudo mv /var/www/glpi/config /etc/glpi</code></p>
