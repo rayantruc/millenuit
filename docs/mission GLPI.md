@@ -30,8 +30,14 @@
 
 *remplacer |VERSION| par la version de glpi souhaitée
 
-## 4 - Organiser les répertoires, permissions et 
+## 4 - Organiser les répertoires, permissions et configuration
 
+`sudo chown www-data /var/www/glpi/ -R`
+
+``
+``
+``
+``
 
 
 
