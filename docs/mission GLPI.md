@@ -73,6 +73,9 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 
 ## 5 - Configuration d'Apache2 pour GLPI
 
+**Création d'un fichier**
+
+
 
 
 
