@@ -47,8 +47,16 @@
 
 **Création de deux fichiers :**
 
-`sudo nano /var/www/glpi/inc/deowns`
+`sudo nano /var/www/glpi/inc/deownstream.php`
 
+**contenant :**
+
+` ``` 
+{  
+"firstName": "John",   
+"lastName": "Smith", 
+"age": 25 
+}   ``` 
 
 
 
