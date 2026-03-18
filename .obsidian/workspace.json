@@ -11,14 +11,10 @@
             "id": "55634162a8ffa2b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/comparatif.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "comparatif"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "f3b5f4f433223420",
@@ -170,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,36 +182,35 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
-    "site/search/search_index.json",
-    "site/search",
-    "site/img/mille/index.html",
-    "site/img/mille",
+    "site/comparatif/index.html",
+    "site/comparatif",
+    "docs/Installation de nouveaux postes clients.md",
     "site/mission3/index.html",
     "site/mission3",
     "site/mission2/index.html",
     "site/mission2",
     "site/mission1/index.html",
     "site/mission1",
-    "site/comparatif/index.html",
-    "site/assets/images/favicon.png",
     "site/img/vault.png",
     "site/img/obsidian.png",
     "site/img/nepscocher.png",
     "site/img/module_git.png",
     "site/img/module.png",
     "site/img/millenuitlogofinal.jpg",
+    "site/img/mille/index.html",
+    "site/img/mille",
     "site/img/isoimg.png",
     "site/img/git_repo.png",
     "site/img/git.png",
+    "site/assets/javascripts/lunr/min/lunr.zh.min.js",
+    "site/assets/images/favicon.png",
     "docs/mission3.md",
-    "docs/comparatif.md",
     "docs/mission2.md",
     "docs/mission1.md",
-    "docs/mssion1.md",
-    "docs/index.md",
+    "docs/comparatif.md",
     "docs/kali.md",
-    "docs/Untitled.md",
     "docs/img/mille.md",
+    "docs/index.md",
     "docs/about.md",
     "mission/Untitled.md"
   ]
