@@ -699,8 +699,10 @@
 <p>*remplacer |VERSION| par la version de glpi souhaitée</p>
 <h2 id="4-organiser-les-repertoires-permissions-et-configuration">4 - Organiser les répertoires, permissions et configuration</h2>
 <p><code>sudo chown www-data /var/www/glpi/ -R</code></p>
-<p><code></code>
-<code></code></p>
+<p><code>sudo mkdir /etc/glpi</code>
+<code>sudo chown www-data /etc/glpi/</code>
+<code>sudo mv /var/www/glpi/config /etc/glpi</code></p>
+<p><code>sudo mkdir /var/lib/glpi</code></p>
 
 
 
