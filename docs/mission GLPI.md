@@ -25,10 +25,12 @@
 
 `cd /tmp`
 `wget https://github.com/glpi-project/glpi/releases/download/<VERSION>/glpi-
-|VERSION|.tgz`
+`|VERSION|.tgz`
 `sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/`
 
-`remplacer |VERSION| par la version de glpi souhaitée`
+*remplacer |VERSION| par la version de glpi souhaitée
+
+## 4 - Organiser les répertoires, permissions et 
 
 
 
