@@ -1000,10 +1000,10 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 &lt;/VirtualHost&gt;
 </code></pre>
 <p><strong>Puis activer le site :</strong></p>
-<pre><code>`sudo a2ensite glpi.conf`
-`sudo a2dissite 000-default.conf`
-`sudo a2enmod rewrite
-`sudo systemctl restart apache2
+<pre><code>sudo a2ensite glpi.conf
+sudo a2dissite 000-default.conf
+sudo a2enmod rewrite
+sudo systemctl restart apache2
 </code></pre>
 <h2 id="configuration-de-la-suite-via-linterface-web">Configuration de la suite via l'interface Web</h2>
 
