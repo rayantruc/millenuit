@@ -932,13 +932,20 @@ sudo apt-get install apache2 php8.4-fpm mariadb-server
 sudo apt install php8.4-{curl,gd,intl,mysql,zip,bcmath,mbstring,xml,bz2}
 </code></pre>
 <h2 id="2-creation-de-la-base-de-donnees-pour-glpi">2 - Création de la base de données pour GLPI</h2>
-<p><code>sudo mariadb-secure-installation</code>
-<code>sudo mysql -u root -p</code></p>
-<p><code>CREATE DATABASE db_glpi;</code>
-<code>GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
-'MotDePasseRobuste';</code>
-<code>FLUSH PRIVILEGES;</code>
-<code>EXIT;</code></p>
+<pre><code>sudo mariadb-secure-installation
+sudo mysql -u root -p
+</code></pre>
+<pre><code>CREATE DATABASE db_glpi;
+GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
+'MotDePasseRobuste';
+FLUSH PRIVILEGES;
+EXIT;
+</code></pre>
+<p>CREATE DATABASE db_glpi;
+GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
+'MotDePasseRobuste';
+FLUSH PRIVILEGES;
+EXIT;</p>
 <h2 id="3-telecharger-et-deployer-glpi">3 - Télécharger et déployer GLPI</h2>
 <p><code>cd /tmp</code>
 <code>wget https://github.com/glpi-project/glpi/releases/download/&lt;VERSION&gt;/glpi-</code>|VERSION|.tgz<code></code>sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/`</p>
