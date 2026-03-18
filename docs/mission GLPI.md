@@ -34,10 +34,11 @@
 
 `sudo chown www-data /var/www/glpi/ -R`
 
-``
-``
-``
-``
+`sudo mkdir /etc/glpi`
+`sudo chown www-data /etc/glpi/`
+`sudo mv /var/www/glpi/config /etc/glpi`
+
+`sudo mkdir /var/lib/glpi`
 
 
 
