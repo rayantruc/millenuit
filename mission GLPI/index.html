@@ -941,14 +941,12 @@ GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
 FLUSH PRIVILEGES;
 EXIT;
 </code></pre>
-<p>CREATE DATABASE db_glpi;
-GRANT ALL PRIVILEGES ON db_glpi.* TO 'glpi_adm'@localhost IDENTIFIED BY
-'MotDePasseRobuste';
-FLUSH PRIVILEGES;
-EXIT;</p>
 <h2 id="3-telecharger-et-deployer-glpi">3 - Télécharger et déployer GLPI</h2>
-<p><code>cd /tmp</code>
-<code>wget https://github.com/glpi-project/glpi/releases/download/&lt;VERSION&gt;/glpi-</code>|VERSION|.tgz<code></code>sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/`</p>
+<pre><code>cd /tmp
+wget https://github.com/glpi-project/glpi/releases/download/&lt;VERSION&gt;/glpi-
+|VERSION|.tgz
+sudo tar -xzvf glpi-|VERSION|.tgz -C /var/www/
+</code></pre>
 <p>*remplacer |VERSION| par la version de glpi souhaitée</p>
 <h2 id="4-organiser-les-repertoires-permissions-et-configuration">4 - Organiser les répertoires, permissions et configuration</h2>
 <p><code>sudo chown www-data /var/www/glpi/ -R</code></p>
