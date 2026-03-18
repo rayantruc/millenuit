@@ -737,7 +737,21 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 <h2 id="5-configuration-dapache2-pour-glpi">5 - Configuration d'Apache2 pour GLPI</h2>
 <p><strong>Création d'un fichier</strong></p>
 <p><code>sudo nano /etc/apache2/sites-available/support.it-</code>connectlab.fr.conf`</p>
-<p>**contenant : **</p>
+<p><strong>contenant :</strong></p>
+<pre><code>&lt;VirtualHost *:80&gt;
+ServerName glpi.mondomaine.tld # à adapter
+DocumentRoot /var/www/glpi/public
+&lt;Directory /var/www/glpi/public&gt;
+Require all granted
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [QSA,L]
+&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+<p><strong>Puis activer le site :</strong></p>
 
 
 
