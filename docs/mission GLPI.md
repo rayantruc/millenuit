@@ -81,9 +81,8 @@ require_once GLPI_CONFIG_DIR . '/local_define.php';
 **et**
 
 ```
-`sudo nano /etc/glpi/local_define.php
+sudo nano /etc/glpi/local_define.php
 ```
-`sudo nano /etc/glpi/local_define.php`
 
 **contenant**
 
@@ -97,8 +96,10 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 
 **Création d'un fichier**
 
-`sudo nano /etc/apache2/sites-available/support.it-
-`connectlab.fr.conf`
+```
+sudo nano /etc/apache2/sites-available/support.it-
+connectlab.fr.conf
+```
 
 **contenant :**
 
@@ -119,10 +120,12 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 
 **Puis activer le site :**
 
+```
 `sudo a2ensite glpi.conf`
 `sudo a2dissite 000-default.conf`
-`sudo a2enmod rewrite`
-`sudo systemctl restart apache2`
+`sudo a2enmod rewrite
+`sudo systemctl restart apache2
+```
 
 ## Configuration de la suite via l'interface Web
 
