@@ -19,8 +19,7 @@ sudo apt-get install kea-dhcp4-server
 
 Vous pouvez ensuite vérifier l'état du service : 
 
-```
  ```
-sudo systemctl status kea-dhcp4-server
-```
-```
+ sudo systemctl status kea-dhcp4-server
+ ```
+ 
