@@ -29,3 +29,6 @@ nav:
 
   - Mission 4 - Documentation:
       - Mise en place de GLPI: mission GLPI.md
+
+  - Mission 5 - Documentation:
+      - Mise en place du Serveur DHCP: mission5.md
