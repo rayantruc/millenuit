@@ -130,6 +130,6 @@ sudo systemctl restart apache2
 ## Configuration de la suite via l'interface Web
 
 
-
+![logo Millenuits|614](img/glpi1.png)
 
 
