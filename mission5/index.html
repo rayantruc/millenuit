@@ -985,8 +985,52 @@ sudo apt-get install kea-dhcp4-server
 <pre><code>sudo mv /etc/kea/kea-dhcp4.conf /etc/kea/kea-dhcp4.conf.bkp
 </code></pre>
 <p>Puis, créez et éditez le fichier de configuration du serveur DHCP via cette commande :</p>
-<p>```
-sudo nano /etc/kea/kea-dhcp4.conf</p>
+<pre><code>sudo nano /etc/kea/kea-dhcp4.conf
+</code></pre>
+<pre><code>{
+    &quot;Dhcp4&quot;: {
+        &quot;interfaces-config&quot;: {
+            &quot;interfaces&quot;: [
+                &quot;ens33&quot;
+            ]
+        },
+        &quot;valid-lifetime&quot;: 691200,
+        &quot;renew-timer&quot;: 345600,
+        &quot;rebind-timer&quot;: 604800,
+        &quot;authoritative&quot;: true,
+        &quot;lease-database&quot;: {
+            &quot;type&quot;: &quot;memfile&quot;,
+            &quot;persist&quot;: true,
+            &quot;name&quot;: &quot;/var/lib/kea/kea-leases4.csv&quot;,
+            &quot;lfc-interval&quot;: 3600
+        },
+        &quot;subnet4&quot;: [
+            {
+                &quot;subnet&quot;: &quot;192.168.14.0/24&quot;,
+                &quot;pools&quot;: [
+                    {
+                        &quot;pool&quot;: &quot;192.168.14.100 - 192.168.14.120&quot;
+                    }
+                ],
+                &quot;option-data&quot;: [
+                    {
+                        &quot;name&quot;: &quot;domain-name-servers&quot;,
+                        &quot;data&quot;: &quot;192.168.14.201&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;domain-search&quot;,
+                        &quot;data&quot;: &quot;it-connect.local&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;routers&quot;,
+                        &quot;data&quot;: &quot;192.168.14.2&quot;
+                    }
+                ]
+            }
+        ]
+    }
+}
+</code></pre>
 
 
 
