@@ -131,7 +131,7 @@ sudo systemctl status kea-dhcp4-server
 
 ## Création de plusieurs plages pour nos sous réseaux
 
-Pour la création de différentes 
+Pour la création de différentes plages, suivre cette démarche autant de fois que nécessaire tout en adaptant le code à votre situation :
 
 ```
   "subnet4": [
