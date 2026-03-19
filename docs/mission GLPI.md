@@ -151,3 +151,9 @@ et le mot de passe associé.
 ![logo Millenuits|614](img/glpi7.png)
 
 ![logo Millenuits|614](img/glpi8.png)
+
+![logo Millenuits|614](img/glpi9.png)
+
+Nous allons donc nous connecter avec le compte glpi et le mot de passe glpi .
+
+![logo Millenuits|614](img/glpi10.png)
