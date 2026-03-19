@@ -25,3 +25,5 @@ Vous pouvez ensuite vérifier l'état du service :
 
 ## Configuration du serveur DHCP KEA
 
+À partir de la console, affichez la configuration IP de votre machine pour identifier le nom de l'interface réseau. Dans cet exemple, il s'agit de l'interface nommée "**ens33**".
+
