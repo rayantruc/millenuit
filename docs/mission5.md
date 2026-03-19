@@ -133,3 +133,4 @@ sudo systemctl status kea-dhcp4-server
 
 L'agent relais DHCP est indispensable pour rediriger les utilisateurs sur le bon sous réseau et ainsi pouvoir leurs fournir les IP correspondantes.
 
+Faire ceci pour chaque interfaces/sous-interfaces 
