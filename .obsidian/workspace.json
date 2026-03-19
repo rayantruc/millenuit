@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8868967a9c3f9fd2",
+        "id": "ad8e49d63d3817ec",
         "type": "tabs",
         "children": [
           {
-            "id": "01f287a419c6abac",
+            "id": "55634162a8ffa2b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
     "id": "f3b5f4f433223420",
@@ -170,7 +170,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,9 +185,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "01f287a419c6abac",
+  "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
-    "docs/img/glpi10.png",
     "docs/img/glpi9.png",
     "docs/img/glpi8.png",
     "docs/img/glpi7.png",
@@ -195,27 +195,29 @@
     "docs/img/glpi4.png",
     "docs/img/glpi3.png",
     "docs/img/glpi2.png",
+    "docs/img/glpi10.png",
     "docs/img/glpi1.png",
     "docs/mission2.md",
-    "docs/mission1.md",
-    "docs/mission GLPI.md",
-    "docs/index.md",
     "docs/mission3.md",
+    "docs/mission GLPI.md",
+    "docs/mission1.md",
+    "docs/index.md",
+    "Pasted image 20260312145233.png",
+    "docs/comparatif.md",
     "Sans titre.md",
-    "docs/Sans titre",
-    "site/comparatif/index.html",
-    "site/comparatif",
-    "docs/Installation de nouveaux postes clients.md",
+    "site/search/search_index.json",
+    "site/search",
+    "site/img/mille/index.html",
+    "site/img/mille",
     "site/mission3/index.html",
     "site/mission3",
     "site/mission2/index.html",
     "site/mission2",
     "site/mission1/index.html",
     "site/mission1",
-    "site/img/vault.png",
-    "site/img/mille/index.html",
-    "docs/comparatif.md",
+    "docs/mssion1.md",
     "docs/kali.md",
+    "docs/Untitled.md",
     "docs/img/mille.md",
     "docs/about.md",
     "mission/Untitled.md"
