@@ -982,8 +982,11 @@ sudo apt-get install kea-dhcp4-server
 </code></pre>
 <p>en image : </p>
 <p>Nous allons partir sur un fichier de configuration vierge, car le fichier d'origine contient beaucoup d'informations. Nous allons renommer le fichier de configuration par défaut, car il peut être utile afin d'avoir un exemple :</p>
-<pre><code>sudo mv /etc/
+<pre><code>sudo mv /etc/kea/kea-dhcp4.conf /etc/kea/kea-dhcp4.conf.bkp
 </code></pre>
+<p>Puis, créez et éditez le fichier de configuration du serveur DHCP via cette commande :</p>
+<p>```
+sudo nano /etc/kea/kea-dhcp4.conf</p>
 
 
 
