@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/mission GLPI.md",
+                "file": "docs/mission1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mission GLPI"
+              "title": "mission1"
             }
           }
         ]
