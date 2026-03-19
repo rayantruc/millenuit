@@ -22,4 +22,6 @@ Vous pouvez ensuite vérifier l'état du service :
  ```
  sudo systemctl status kea-dhcp4-server
  ```
- 
+
+## Configuration du serveur DHCP KEA
+
