@@ -122,4 +122,6 @@ address,hwaddr,client_id,valid_lifetime,expire,subnet_id,fqdn_fwd,fqdn_rev,hostn
 ```
  et 
  
+ ``` 
 sudo systemctl status kea-dhcp4-server
+```
