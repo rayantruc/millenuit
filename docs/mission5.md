@@ -114,3 +114,12 @@ sudo journalctl -xe | grep -e kea
 cat /var/lib/kea/kea-leases4.csv
 ```
 
+Il y a bien un bail DHCP dans la base de données du serveur. La première ligne correspond aux en-têtes du fichier CSV, tandis que la seconde correspond au bail DHCP de la machine "**Ubuntu2404**".
+
+```
+address,hwaddr,client_id,valid_lifetime,expire,subnet_id,fqdn_fwd,fqdn_rev,hostname,state,user_context
+192.168.14.100,00:0c:29:0a:6f:c3,01:00:0c:29:0a:6f:c3,691200,1733931089,1,0,0,ubuntu2404,0,
+```
+ et 
+ 
+sudo systemctl status kea-dhcp4-server
