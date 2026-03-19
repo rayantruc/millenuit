@@ -13,5 +13,14 @@ Avant toute installation vérifiez bien de remplir tout ces critères :
 La première étape consiste à effectuer la mise à jour du cache des paquets du système et à installer le paquet correspondant au serveur DHCP IPv4 :
 
 ```
+sudo apt-get update  
+sudo apt-get install kea-dhcp4-server
+```
 
+Vous pouvez ensuite vérifier l'état du service : 
+
+```
+ ```
+sudo systemctl status kea-dhcp4-server
+```
 ```
