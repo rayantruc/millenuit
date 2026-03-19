@@ -129,7 +129,7 @@ sudo systemctl status kea-dhcp4-server
  ```
 
 
-## Création de plusieur
+## Création de plusieurs plages pour nos sous réseaux
 
 
 
