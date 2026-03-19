@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ad8e49d63d3817ec",
+        "id": "8868967a9c3f9fd2",
         "type": "tabs",
         "children": [
           {
-            "id": "55634162a8ffa2b4",
+            "id": "01f287a419c6abac",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "f3b5f4f433223420",
@@ -170,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,38 +184,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "55634162a8ffa2b4",
+  "active": "01f287a419c6abac",
   "lastOpenFiles": [
     "docs/mission2.md",
-    "docs/mission3.md",
-    "docs/mission GLPI.md",
     "docs/mission1.md",
+    "docs/mission GLPI.md",
     "docs/index.md",
-    "Pasted image 20260312145233.png",
-    "Pasted image 20260312131701.png",
-    "docs/comparatif.md",
+    "docs/mission3.md",
     "Sans titre.md",
-    "site/search/search_index.json",
-    "site/search",
-    "site/img/mille/index.html",
-    "site/img/mille",
+    "docs/Sans titre",
+    "site/comparatif/index.html",
+    "site/comparatif",
+    "docs/Installation de nouveaux postes clients.md",
     "site/mission3/index.html",
     "site/mission3",
     "site/mission2/index.html",
     "site/mission2",
     "site/mission1/index.html",
     "site/mission1",
-    "site/assets/images/favicon.png",
     "site/img/vault.png",
     "site/img/obsidian.png",
     "site/img/nepscocher.png",
     "site/img/module_git.png",
     "site/img/module.png",
     "site/img/millenuitlogofinal.jpg",
+    "site/img/mille/index.html",
     "site/img/isoimg.png",
-    "docs/mssion1.md",
+    "site/img/git_repo.png",
+    "site/img/git.png",
+    "site/assets/images/favicon.png",
+    "docs/comparatif.md",
     "docs/kali.md",
-    "docs/Untitled.md",
     "docs/img/mille.md",
     "docs/about.md",
     "mission/Untitled.md"
