@@ -1065,6 +1065,12 @@ sudo apt-get install kea-dhcp4-server
 <h2 id="verifications">Vérifications</h2>
 <pre><code>cat /var/lib/kea/kea-leases4.csv
 </code></pre>
+<p>Il y a bien un bail DHCP dans la base de données du serveur. La première ligne correspond aux en-têtes du fichier CSV, tandis que la seconde correspond au bail DHCP de la machine "<strong>Ubuntu2404</strong>".</p>
+<pre><code>address,hwaddr,client_id,valid_lifetime,expire,subnet_id,fqdn_fwd,fqdn_rev,hostname,state,user_context
+192.168.14.100,00:0c:29:0a:6f:c3,01:00:0c:29:0a:6f:c3,691200,1733931089,1,0,0,ubuntu2404,0,
+</code></pre>
+<p>et </p>
+<p>sudo systemctl status kea-dhcp4-server</p>
 
 
 
