@@ -107,3 +107,10 @@ Si le serveur DHCP ne démarre pas, vérifiez les journaux. Vous pouvez utiliser
 ```
 sudo journalctl -xe | grep -e kea
 ```
+
+## Vérifications 
+
+```
+cat /var/lib/kea/kea-leases4.csv
+```
+
