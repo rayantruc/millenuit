@@ -870,6 +870,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#verifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vérifications
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -937,6 +948,17 @@
     <span class="md-ellipsis">
       
         Configuration du serveur DHCP KEA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vérifications
       
     </span>
   </a>
@@ -1039,6 +1061,9 @@ sudo apt-get install kea-dhcp4-server
 <p><strong>La configuration est maintenant terminée.</strong> Vous pouvez effectuer un test dès maintenant.</p>
 <p>Si le serveur DHCP ne démarre pas, vérifiez les journaux. Vous pouvez utiliser cette commande :</p>
 <pre><code>sudo journalctl -xe | grep -e kea
+</code></pre>
+<h2 id="verifications">Vérifications</h2>
+<pre><code>cat /var/lib/kea/kea-leases4.csv
 </code></pre>
 
 
