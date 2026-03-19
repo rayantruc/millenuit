@@ -1096,7 +1096,12 @@ sudo apt-get install kea-dhcp4-server
 <p><code>sudo systemctl status kea-dhcp4-server</code></p>
 <h2 id="mise-en-place-dun-agent-relais-dhcp">Mise en place d'un agent relais DHCP</h2>
 <p>L'agent relais DHCP est indispensable pour rediriger les utilisateurs sur le bon sous réseau et ainsi pouvoir leurs fournir les IP correspondantes.</p>
-<p>Faire ceci pour chaque interfaces/sous-interfaces </p>
+<p>Faire ceci pour chaque interfaces/sous-interfaces (mettre ) :</p>
+<pre><code>Router(config-if)#ip helper-address 10.255.255.253
+Router(config-if)#no shutdown # On active l’interface
+Router(config-if)#exit
+Router(config)#exit
+</code></pre>
 
 
 
