@@ -94,7 +94,7 @@ Avec la configuration si dessus obsidian effecturas un pull pour mettre le depot
 
 Au lieu de manuellement créer le site avec mkdocs on automatisera sa création a travers un fichier yml déposé sur github qui serviras de bot afin de lancer les commandes nécessaires a la création du site, aussi il faut avoir au préalable activé github pages dans les workflow.
 
-```
+```yaml
 name: Deploy MkDocs
 
 on:
