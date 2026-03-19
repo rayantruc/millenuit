@@ -148,4 +148,6 @@ et le mot de passe associé.
 
 ![logo Millenuits|614](img/glpi6.png)
 
-![logo Millenuits|614](img/glpi5.png)
+![logo Millenuits|614](img/glpi7.png)
+
+![logo Millenuits|614](img/glpi8.png)
