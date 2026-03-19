@@ -1020,9 +1020,10 @@ sudo apt-get install kea-dhcp4-server
                     },
                     {
                         &quot;name&quot;: &quot;domain-search&quot;,
-                        &quot;data&quot;: &quot;nom de d&quot;
+                        &quot;data&quot;: &quot;nom de domaine&quot;
                     },
                     {
+                    //passerelle
                         &quot;name&quot;: &quot;routers&quot;,
                         &quot;data&quot;: &quot;192.168.14.2&quot;
                     }
@@ -1032,6 +1033,8 @@ sudo apt-get install kea-dhcp4-server
     }
 }
 </code></pre>
+<p>Quand la configuration est prête, enregistrez le fichier et relancez le service du serveur DHCP :</p>
+<p>sudo systemctl restart kea-dhcp4-server.service</p>
 
 
 
