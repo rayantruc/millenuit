@@ -69,6 +69,7 @@ sudo nano /etc/kea/kea-dhcp4.conf
                 "subnet": "192.168.14.0/24",
                 "pools": [
                     {
+                    //ici la plage ip
                         "pool": "192.168.14.100 - 192.168.14.120"
                     }
                 ],
@@ -79,7 +80,7 @@ sudo nano /etc/kea/kea-dhcp4.conf
                     },
                     {
                         "name": "domain-search",
-                        "data": "it-connect.local"
+                        "data": "nom de d"
                     },
                     {
                         "name": "routers",
@@ -91,3 +92,4 @@ sudo nano /etc/kea/kea-dhcp4.conf
     }
 }
 ```
+
