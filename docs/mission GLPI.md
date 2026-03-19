@@ -147,3 +147,5 @@ local, sur le même serveur que GLPI. Puis, nous indiquons notre utilisateur glp
 et le mot de passe associé.
 
 ![logo Millenuits|614](img/glpi6.png)
+
+![logo Millenuits|614](img/glpi5.png)
