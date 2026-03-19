@@ -132,7 +132,30 @@ sudo systemctl status kea-dhcp4-server
 ## Création de plusieurs plages pour nos sous réseaux
 
 
-
+  "subnet4": [
+            {
+                "id": 1,
+                "subnet": "172.40.0.0/24",
+                "pools": [
+                    {
+                        "pool": "172.40.0.50 - 172.40.0.200"
+                    }
+                ],
+                "option-data": [
+                    {
+                        "name": "routers",
+                        "data": "172.40.0.254"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "subnet": "172.40.1.0/25",
+                "pools": [
+                    {
+                        "pool": "172.40.1.20 - 172.40.1.100"
+                    }
+                ],
 
 ## Mise en place d'un agent relais DHCP
 
