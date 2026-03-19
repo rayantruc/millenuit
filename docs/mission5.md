@@ -43,3 +43,51 @@ Puis, créez et éditez le fichier de configuration du serveur DHCP via cette co
 
 ```
 sudo nano /etc/kea/kea-dhcp4.conf
+```
+
+
+```
+{
+    "Dhcp4": {
+        "interfaces-config": {
+            "interfaces": [
+                "ens33"
+            ]
+        },
+        "valid-lifetime": 691200,
+        "renew-timer": 345600,
+        "rebind-timer": 604800,
+        "authoritative": true,
+        "lease-database": {
+            "type": "memfile",
+            "persist": true,
+            "name": "/var/lib/kea/kea-leases4.csv",
+            "lfc-interval": 3600
+        },
+        "subnet4": [
+            {
+                "subnet": "192.168.14.0/24",
+                "pools": [
+                    {
+                        "pool": "192.168.14.100 - 192.168.14.120"
+                    }
+                ],
+                "option-data": [
+                    {
+                        "name": "domain-name-servers",
+                        "data": "192.168.14.201"
+                    },
+                    {
+                        "name": "domain-search",
+                        "data": "it-connect.local"
+                    },
+                    {
+                        "name": "routers",
+                        "data": "192.168.14.2"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
