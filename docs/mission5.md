@@ -96,4 +96,14 @@ sudo nano /etc/kea/kea-dhcp4.conf
 
 Quand la configuration est prête, enregistrez le fichier et relancez le service du serveur DHCP :
 
+```
 sudo systemctl restart kea-dhcp4-server.service
+```
+
+**La configuration est maintenant terminée.** Vous pouvez effectuer un test dès maintenant.
+
+Si le serveur DHCP ne démarre pas, vérifiez les journaux. Vous pouvez utiliser cette commande :
+
+```
+sudo journalctl -xe | grep -e kea
+```
