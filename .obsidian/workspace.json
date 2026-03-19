@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/mission GLPI.md",
+                "file": "docs/mission3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mission GLPI"
+              "title": "mission3"
             }
           }
         ]
@@ -187,10 +187,10 @@
   },
   "active": "55634162a8ffa2b4",
   "lastOpenFiles": [
+    "docs/mission GLPI.md",
     "docs/mission3.md",
     "docs/mission1.md",
     "docs/mission2.md",
-    "docs/mission GLPI.md",
     "docs/index.md",
     "Pasted image 20260312145233.png",
     "Pasted image 20260312131701.png",
