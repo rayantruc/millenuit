@@ -19,7 +19,7 @@ L'installation s'effectue en ligne de commande via le script officiel.
 
 Nous utilisons Git pour récupérer la dernière version stable.
 
-```
+```bash
 sudo -i
 apt-get update && apt-get install git -y
 git clone [https://github.com/FOGProject/fogproject.git](https://github.com/FOGProject/fogproject.git) /opt/fogproject
@@ -27,7 +27,7 @@ git clone [https://github.com/FOGProject/fogproject.git](https://github.com/FOGP
 
 ### Étape 2.2 : Lancement du script d'installation
 
-```
+```bash
 cd /opt/fogproject/bin
 ./installfog.sh
 ```
