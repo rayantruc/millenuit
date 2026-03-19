@@ -133,3 +133,17 @@ sudo systemctl restart apache2
 ![logo Millenuits|614](img/glpi1.png)
 
 
+![logo Millenuits|614](img/glpi2.png)
+
+![logo Millenuits|614](img/glpi3.png)
+
+![logo Millenuits|614](img/glpi4.png)
+
+![logo Millenuits|614](img/glpi5.png)
+
+Nous devons renseigner les informations pour se connecter à la base de données.
+Nous indiquons localhost en tant que serveur SQL puisque MariaDB est installé en
+local, sur le même serveur que GLPI. Puis, nous indiquons notre utilisateur glpi_adm
+et le mot de passe associé.
+
+![logo Millenuits|614](img/glpi6.png)
