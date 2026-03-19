@@ -33,6 +33,8 @@ ip a
 
 en image : 
 
+![logo Millenuits|614](img/dhcp.png)
+
 Nous allons partir sur un fichier de configuration vierge, car le fichier d'origine contient beaucoup d'informations. Nous allons renommer le fichier de configuration par défaut, car il peut être utile afin d'avoir un exemple :
 
 ```
