@@ -27,3 +27,9 @@ Vous pouvez ensuite vérifier l'état du service :
 
 À partir de la console, affichez la configuration IP de votre machine pour identifier le nom de l'interface réseau. Dans cet exemple, il s'agit de l'interface nommée "**ens33**".
 
+```
+ip a
+```
+
+en image : 
+
