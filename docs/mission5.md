@@ -129,11 +129,16 @@ sudo systemctl status kea-dhcp4-server
  ```
 
 
+## Création de plusieur
+
+
+
+
 ## Mise en place d'un agent relais DHCP
 
 L'agent relais DHCP est indispensable pour rediriger les utilisateurs sur le bon sous réseau et ainsi pouvoir leurs fournir les IP correspondantes.
 
-Faire ceci pour chaque interfaces/sous-interfaces (mettre ) :
+Faire ceci pour chaque interfaces/sous-interfaces (mettre l'ip de notre serveur DHCP) :
 
 ```
 Router(config-if)#ip helper-address 10.255.255.253
