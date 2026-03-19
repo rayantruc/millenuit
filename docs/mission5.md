@@ -80,9 +80,10 @@ sudo nano /etc/kea/kea-dhcp4.conf
                     },
                     {
                         "name": "domain-search",
-                        "data": "nom de d"
+                        "data": "nom de domaine"
                     },
                     {
+                    //passerelle
                         "name": "routers",
                         "data": "192.168.14.2"
                     }
@@ -93,3 +94,6 @@ sudo nano /etc/kea/kea-dhcp4.conf
 }
 ```
 
+Quand la configuration est prête, enregistrez le fichier et relancez le service du serveur DHCP :
+
+sudo systemctl restart kea-dhcp4-server.service
