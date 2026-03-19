@@ -13,11 +13,9 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "docs/mission GLPI.md",
-                "mode": "source",
-                "source": false
+                "file": "docs/mission GLPI.md"
               },
-              "icon": "lucide-file",
+              "icon": "lucide-image",
               "title": "mission GLPI"
             }
           },
