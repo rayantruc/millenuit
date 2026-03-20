@@ -22,5 +22,9 @@ Ici nous voyons donc nos différents volumes logiques.
 Je vais personnellement mettre au point un snapshot pour mon ajoutHome, grâce à la commande suivante : 
 
 ```
-sudo lvcreate -L 0.5G -s -n snaphome /dev/Da
+sudo lvcreate -L 0.5G -s -n snaphome /dev/Home/ajoutHome 
 ```
+
+Nous voyons donc apparaitre ceci si tout fonctionne bien : 
+
+![logo Millenuits|614](img/deb1.png)
