@@ -19,4 +19,8 @@ Normalement on voit apparaître :
 ![logo Millenuits|614](img/deb1.png)
 
 Ici nous voyons donc nos différents volumes logiques.
-Je vais personnellement mettre au point un snapshot pour mon ajoutHome, gr
+Je vais personnellement mettre au point un snapshot pour mon ajoutHome, grâce à la commande suivante : 
+
+```
+sudo lvcreate -L 0.5G -s -n snaphome /dev/Da
+```
