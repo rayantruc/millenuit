@@ -56,4 +56,6 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
  
 1) Si ce type de message apparaît lors d'un première connexion, c'est normal, lors de la première connexion au serveur, le client enregistre la clé publique du serveur, pour ainsi vérifier l'identité du serveurs lors des prochaines connexions.
 
-2) Donc forcément si nous avons répondu "yes" au préalable, ce message ne réapparaîtra plus 
+2) Donc forcément si nous avons répondu "yes" au préalable, ce message ne réapparaîtra plus, étant donné que nous avons déjà stocké sa clé publique.
+
+3) 
