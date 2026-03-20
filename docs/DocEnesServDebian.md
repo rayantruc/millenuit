@@ -14,4 +14,4 @@ Ensuite nous allons identifier le volume logique pour lequel nous voulons créer
 sudo lvs
 ```
 
-Normalement on voit app
+Normalement on voit apparaître : 
