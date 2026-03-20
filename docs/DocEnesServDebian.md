@@ -16,4 +16,6 @@ sudo lvs
 
 Normalement on voit apparaître : 
 
-![logo Millenuits|614](img/glpi1.png)
+![logo Millenuits|614](img/deb1.png)
+
+Ici nous voyons donc nos différents volumes logiques
