@@ -18,4 +18,5 @@ Normalement on voit apparaître :
 
 ![logo Millenuits|614](img/deb1.png)
 
-Ici nous voyons donc nos différents volumes logiques
+Ici nous voyons donc nos différents volumes logiques.
+Je vais personnellement mettre au point un snapshot pour mon ajoutHome, gr
