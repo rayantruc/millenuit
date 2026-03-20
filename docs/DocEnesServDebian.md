@@ -40,3 +40,10 @@ Nous voyons donc apparaitre ceci si tout fonctionne bien :
 ![logo Millenuits|614](img/deb2.png)
 
 A chaud si nous retournons sur un ancien snapshot, il est important de reboot
+
+
+
+
+
+
+## OpenSSH
