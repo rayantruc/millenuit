@@ -15,3 +15,5 @@ sudo lvs
 ```
 
 Normalement on voit apparaître : 
+
+![logo Millenuits|614](img/glpi1.png)

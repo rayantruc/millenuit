@@ -185,12 +185,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d302979e2538997",
+  "active": "d3b88ccf115d2646",
   "lastOpenFiles": [
-    "docs/mission5.md",
-    "docs/DocEnesServDebian.md",
-    "docs/img/module.png",
     "docs/mission GLPI.md",
+    "docs/DocEnesServDebian.md",
+    "docs/img/deb2.png",
+    "docs/img/deb1.png",
+    "docs/mission5.md",
+    "docs/img/module.png",
     "docs/img/dhcp.png",
     "docs/mission3.md",
     "docs/mission1.md",
@@ -203,8 +205,6 @@
     "docs/mission2.md",
     "docs/img/glpi8.png",
     "docs/img/glpi7.png",
-    "docs/img/glpi6.png",
-    "docs/img/glpi3.png",
     "Sans titre.md",
     "docs/Sans titre",
     "site/comparatif/index.html",
