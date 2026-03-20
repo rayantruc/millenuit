@@ -54,4 +54,4 @@ ECDSA key fingerprint is SHA256:...
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 ```
  
- Si ce type de message apparaît lors d'un première connexion, c'est normal  
+ Si ce type de message apparaît lors d'un première connexion, c'est normal, lors de la première connexion au serveur   
