@@ -27,4 +27,4 @@ sudo lvcreate -L 0.5G -s -n snaphome /dev/Home/ajoutHome
 
 Nous voyons donc apparaitre ceci si tout fonctionne bien : 
 
-![logo Millenuits|614](img/deb1.png)
+![logo Millenuits|614](img/deb2.png)
