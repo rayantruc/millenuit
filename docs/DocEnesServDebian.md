@@ -58,4 +58,5 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 
 2) Donc forcément si nous avons répondu "yes" au préalable, ce message ne réapparaîtra plus, étant donné que nous avons déjà stocké sa clé publique.
 
-3) `/etc/ssh/ssh_host_*`
+3) `/etc/ssh/ssh_host_*` est l'emplacement où sont stockées les paires de clés.
+ 
