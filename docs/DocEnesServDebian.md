@@ -47,3 +47,11 @@ A chaud si nous retournons sur un ancien snapshot, il est important de reboot
 
 
 ## OpenSSH
+
+```
+The authenticity of host 'serveur.example.com (192.168.1.10)' can't be established.
+ECDSA key fingerprint is SHA256:...
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+```
+ 
+ Si ce type de message apparaît lors d'un première connexion, c'est normal  
