@@ -54,4 +54,6 @@ ECDSA key fingerprint is SHA256:...
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 ```
  
- Si ce type de message apparaît lors d'un première connexion, c'est normal, lors de la première connexion au serveur, le client enregistre la clé publique du serveur, pour ainsi vérifier l'identité   
+1) Si ce type de message apparaît lors d'un première connexion, c'est normal, lors de la première connexion au serveur, le client enregistre la clé publique du serveur, pour ainsi vérifier l'identité du serveurs lors des prochaines connexions.
+
+2) Donc forcément si nous avo
