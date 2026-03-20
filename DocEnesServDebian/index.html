@@ -901,7 +901,10 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 </code></pre>
 <p>1) Si ce type de message apparaît lors d'un première connexion, c'est normal, lors de la première connexion au serveur, le client enregistre la clé publique du serveur, pour ainsi vérifier l'identité du serveurs lors des prochaines connexions.</p>
 <p>2) Donc forcément si nous avons répondu "yes" au préalable, ce message ne réapparaîtra plus, étant donné que nous avons déjà stocké sa clé publique.</p>
-<p>3) <code>/etc/ssh/ssh_host_*</code> est l'emplacement où sont stockées les paires de clés.</p>
+<p>3) <code>/etc/ssh/ssh_host_*</code> est l'emplacement où sont stockées les paires de clés.
+        <code>ssh_host_ed25519_key</code>|Clé privée Ed25519 (recommandée)|
+|<code>ssh_host_ed25519_key.pub</code>|Clé publique Ed25519|
+|<code>ssh_host_rsa_key</code>|Clé privée RSA (obsolète, à éviter)|</p>
 
 
 
