@@ -25,12 +25,14 @@
             "id": "74965417ea5d46c9",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.7"
+                "file": "docs/mission5.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Notes de version 1.12.7"
+              "icon": "lucide-file",
+              "title": "mission5"
             }
           },
           {
@@ -214,8 +216,10 @@
   },
   "active": "74965417ea5d46c9",
   "lastOpenFiles": [
-    "docs/mission5.md",
+    "docs/mission3.md",
     "docs/mission2.md",
+    "docs/mission1.md",
+    "docs/mission5.md",
     "docs/mission GLPI.md",
     "docs/index.md",
     "docs/DocEnesServDebian.md",
@@ -229,8 +233,6 @@
     "docs/img/module.png",
     "docs/img/isoimg.png",
     "docs/img/glpi4.png",
-    "docs/mission3.md",
-    "docs/mission1.md",
     "docs/img/glpi8.png",
     "docs/img/glpi7.png",
     "Sans titre.md",
