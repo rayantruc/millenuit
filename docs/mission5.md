@@ -106,13 +106,13 @@ sudo systemctl restart kea-dhcp4-server.service
 
 Si le serveur DHCP ne démarre pas, vérifiez les journaux. Vous pouvez utiliser cette commande :
 
-```
+```shell
 sudo journalctl -xe | grep -e kea
 ```
 
 ## Vérifications 
 
-```
+```shell
 cat /var/lib/kea/kea-leases4.csv
 ```
 
@@ -124,7 +124,7 @@ address,hwaddr,client_id,valid_lifetime,expire,subnet_id,fqdn_fwd,fqdn_rev,hostn
 ```
  et 
  
- ``` 
+ ``` shell
 sudo systemctl status kea-dhcp4-server
  ```
 
