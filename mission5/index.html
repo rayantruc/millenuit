@@ -1106,17 +1106,18 @@ sudo apt-get install kea-dhcp4-server
 </code></pre>
 <p><strong>La configuration est maintenant terminée.</strong> Vous pouvez effectuer un test dès maintenant.</p>
 <p>Si le serveur DHCP ne démarre pas, vérifiez les journaux. Vous pouvez utiliser cette commande :</p>
-<pre><code>sudo journalctl -xe | grep -e kea
+<pre><code class="language-shell">sudo journalctl -xe | grep -e kea
 </code></pre>
 <h2 id="verifications">Vérifications</h2>
-<pre><code>cat /var/lib/kea/kea-leases4.csv
+<pre><code class="language-shell">cat /var/lib/kea/kea-leases4.csv
 </code></pre>
 <p>Il y a bien un bail DHCP dans la base de données du serveur. La première ligne correspond aux en-têtes du fichier CSV, tandis que la seconde correspond au bail DHCP de la machine "<strong>Ubuntu2404</strong>".</p>
 <pre><code>address,hwaddr,client_id,valid_lifetime,expire,subnet_id,fqdn_fwd,fqdn_rev,hostname,state,user_context
 192.168.14.100,00:0c:29:0a:6f:c3,01:00:0c:29:0a:6f:c3,691200,1733931089,1,0,0,ubuntu2404,0,
 </code></pre>
 <p>et </p>
-<p><code>sudo systemctl status kea-dhcp4-server</code></p>
+<p><code>shell
+sudo systemctl status kea-dhcp4-server</code></p>
 <h2 id="creation-de-plusieurs-plages-pour-nos-sous-reseaux">Création de plusieurs plages pour nos sous réseaux</h2>
 <p>Pour la création de différentes plages, suivre cette démarche autant de fois que nécessaire tout en adaptant le code à votre situation :</p>
 <pre><code>  &quot;subnet4&quot;: [
