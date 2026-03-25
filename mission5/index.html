@@ -1037,11 +1037,12 @@
     - Une connexion internet afin de télécharger les paquets d'installation </p>
 <h2 id="installation-du-serveur-dhcp-kea">Installation du serveur DHCP KEA</h2>
 <p>La première étape consiste à effectuer la mise à jour du cache des paquets du système et à installer le paquet correspondant au serveur DHCP IPv4 :</p>
-<pre><code>sudo apt-get update  
+<pre><code class="language-shell">sudo apt-get update  
 sudo apt-get install kea-dhcp4-server
 </code></pre>
 <p>Vous pouvez ensuite vérifier l'état du service : </p>
-<p><code>sudo systemctl status kea-dhcp4-server</code></p>
+<p><code>shell
+ sudo systemctl status kea-dhcp4-server</code></p>
 <h2 id="configuration-du-serveur-dhcp-kea">Configuration du serveur DHCP KEA</h2>
 <p>À partir de la console, affichez la configuration IP de votre machine pour identifier le nom de l'interface réseau. Dans cet exemple, il s'agit de l'interface nommée "<strong>ens33</strong>".</p>
 <pre><code>ip a
@@ -1049,10 +1050,10 @@ sudo apt-get install kea-dhcp4-server
 <p>en image : </p>
 <p><img alt="logo Millenuits|614" src="../img/dhcp.png" /></p>
 <p>Nous allons partir sur un fichier de configuration vierge, car le fichier d'origine contient beaucoup d'informations. Nous allons renommer le fichier de configuration par défaut, car il peut être utile afin d'avoir un exemple :</p>
-<pre><code>sudo mv /etc/kea/kea-dhcp4.conf /etc/kea/kea-dhcp4.conf.bkp
+<pre><code class="language-shell">sudo mv /etc/kea/kea-dhcp4.conf /etc/kea/kea-dhcp4.conf.bkp
 </code></pre>
 <p>Puis, créez et éditez le fichier de configuration du serveur DHCP via cette commande :</p>
-<pre><code>sudo nano /etc/kea/kea-dhcp4.conf
+<pre><code class="language-shell">sudo nano /etc/kea/kea-dhcp4.conf
 </code></pre>
 <pre><code>{
     &quot;Dhcp4&quot;: {
