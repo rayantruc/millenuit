@@ -98,7 +98,7 @@ sudo nano /etc/kea/kea-dhcp4.conf
 
 Quand la configuration est prête, enregistrez le fichier et relancez le service du serveur DHCP :
 
-```
+```shell
 sudo systemctl restart kea-dhcp4-server.service
 ```
 
