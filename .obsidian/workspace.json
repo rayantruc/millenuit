@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "01f287a419c6abac",
+            "id": "d3b88ccf115d2646",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,37 +20,8 @@
               "icon": "lucide-file",
               "title": "mission3"
             }
-          },
-          {
-            "id": "74965417ea5d46c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/mission5.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "mission5"
-            }
-          },
-          {
-            "id": "d3b88ccf115d2646",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,25 +185,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "74965417ea5d46c9",
+  "active": "d3b88ccf115d2646",
   "lastOpenFiles": [
-    "docs/mission3.md",
-    "docs/mission5.md",
-    "docs/mission2.md",
-    "docs/mission1.md",
-    "docs/comparatif.md",
     "docs/DocEnesServDebian.md",
-    "docs/index.md",
     "docs/mission GLPI.md",
-    "docs/img/dhcp.png",
     "docs/img/deb2.png",
     "docs/img/deb1.png",
+    "docs/mission5.md",
+    "docs/img/module.png",
+    "docs/img/dhcp.png",
+    "docs/mission3.md",
+    "docs/mission1.md",
+    "docs/index.md",
     "docs/img/mille.md",
     "docs/img/glpi9.png",
     "docs/img/glpi5.png",
-    "docs/img/module.png",
     "docs/img/isoimg.png",
     "docs/img/glpi4.png",
+    "docs/mission2.md",
     "docs/img/glpi8.png",
     "docs/img/glpi7.png",
     "Sans titre.md",
@@ -247,6 +217,7 @@
     "site/mission1/index.html",
     "site/mission1",
     "site/img/mille/index.html",
+    "docs/comparatif.md",
     "docs/kali.md",
     "docs/Untitled.md",
     "docs/about.md",
