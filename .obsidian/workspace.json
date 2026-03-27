@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "docs/img/demarrage.png"
+                "file": "docs/img/deb2.png"
               },
               "icon": "lucide-image",
-              "title": "demarrage"
+              "title": "deb2"
             }
           }
         ]
@@ -183,15 +183,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d3b88ccf115d2646",
+  "active": "3d302979e2538997",
   "lastOpenFiles": [
+    "docs/img/deb1.png",
+    "docs/img/debi2.png",
+    "docs/img/demarrage.png",
     "docs/img/debi8.png",
     "docs/img/debi7.png",
     "docs/img/debi6.png",
     "docs/img/debi5.png",
     "docs/img/debi4.png",
     "docs/img/debi3.png",
-    "docs/img/debi2.png",
     "docs/img/deb2.png",
     "docs/img/capa.png",
     "docs/DocEnesServDebian.md",
@@ -199,8 +201,6 @@
     "docs/index.md",
     "docs/mission2.md",
     "docs/mission1.md",
-    "Pasted image 20260312135612.png",
-    "Pasted image 20260312145233.png",
     "docs/mission5.md",
     "docs/mission4.md",
     "docs/mission3.md",
