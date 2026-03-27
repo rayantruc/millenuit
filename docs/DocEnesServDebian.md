@@ -53,7 +53,7 @@ df -h
 
 ![logo Millenuits|614](img/debi4.png)
 
-![logo Millenuits|614](img/debi5.png)
+
 
 ![logo Millenuits|614](img/debi6.png)
 
