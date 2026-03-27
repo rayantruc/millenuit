@@ -3,6 +3,8 @@
 ## Ajout d'un nouveau disque avec LVM
 
 
+On veut obtenir les informations concernant le VG
+
 
 
 ![logo Millenuits|614](img/debi2.png)
