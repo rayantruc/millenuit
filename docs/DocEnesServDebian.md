@@ -141,3 +141,6 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 		`ssh_host_ed25519_key` --> Clé privée Ed25519 (recommandée)
 		`ssh_host_ed25519_key.pub` --> Clé publique Ed25519
 		`ssh_host_rsa_key` --> Clé privée RSA (obsolète, à éviter)
+
+
+S
