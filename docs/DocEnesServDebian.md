@@ -69,7 +69,11 @@ sudo mkfs.ext4 /dev/vgsio1/lvsrv
 
 ![logo Millenuits|614](img/debi7.png)
 
+Montage du disque dur sur le système 
 
+```
+sudo mount /dev/vgsio1
+```
 
 ![logo Millenuits|614](img/debi8.png)
 
