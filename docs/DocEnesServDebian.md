@@ -9,7 +9,11 @@ On veut obtenir les informations concernant le VG
 sudo vgdisplay
 ```
 
-Ensuite,
+Ensuite, nous ajoutons un nouveau disque dans un groupe de volume existant
+
+```
+sudo vgex
+```
 
 ![logo Millenuits|614](img/debi1.png)
 
