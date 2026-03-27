@@ -158,6 +158,12 @@ sudo systemctl restart ssh
 ```
 
 
-Maintenant, générons nos clés, pour cela nous allons nous servir de l'algorithme ed 
+Maintenant, générons nos clés, pour cela nous allons nous servir de l'algorithme ed25519
+
+```
+ssh-keygen -t ed25519 -C "efratakcin@protonmail.com"
+```
+
+Cela nous genere donc une clé public, ainsi que la clé privée associée 
 
 
