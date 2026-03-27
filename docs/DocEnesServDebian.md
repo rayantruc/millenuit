@@ -25,7 +25,12 @@ sudo vgdisplay
 
 ![logo Millenuits|614](img/debi2.png)
 
-On voit donc ici à l'avant dernière ligne que c'est 
+On voit donc ici à l'avant dernière ligne que c'est bon :
+
+```
+Free PE / Size          2815 / <11.00 GiB
+```
+
 
 
 ![logo Millenuits|614](img/debi3.png)
