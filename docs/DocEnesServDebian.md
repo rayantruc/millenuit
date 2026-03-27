@@ -158,4 +158,6 @@ sudo systemctl restart ssh
 ```
 
 
+Maintenant, générons nos clés, pour cela nous allons nous servir de l'algorithme ed 
+
 
