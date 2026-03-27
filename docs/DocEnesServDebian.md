@@ -17,8 +17,15 @@ sudo vgextend vgsio1 /dev/sdb
 
 ![logo Millenuits|614](img/debi1.png)
 
-On refait notre vgdisplay pour vérifier que
+On refait notre vgdisplay pour vérifier que notre nouveau disque est bien ajouté 
 
+```
+sudo vgdisplay
+```
+
+![logo Millenuits|614](img/debi2.png)
+
+On voit donc ici à l'avant dernière ligne que c'est 
 
 
 ![logo Millenuits|614](img/debi3.png)
