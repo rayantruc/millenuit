@@ -877,6 +877,7 @@
 
   <h1>DocEnesServDebian</h1>
 
+<hr />
 <h2 id="ajout-dun-nouveau-disque-avec-lvm">Ajout d'un nouveau disque avec LVM</h2>
 <p>On veut obtenir les informations concernant le VG</p>
 <pre><code>sudo vgdisplay
@@ -912,9 +913,10 @@
 </code></pre>
 <p><img alt="logo Millenuits|614" src="../img/debi7.png" /></p>
 <p>Montage du disque dur sur le système </p>
-<pre><code>sudo mount /dev/vgsio1
+<pre><code>sudo mount /dev/vgsio1/lvsrv /srv
 </code></pre>
 <p><img alt="logo Millenuits|614" src="../img/debi8.png" /></p>
+<hr />
 <h2 id="creation-de-snapshots-pour-volumes-logiques">Création de snapshots pour volumes logiques</h2>
 <p>Commencer par s'assurer qu'il reste de la place dans le groupe de volume avec la commande : </p>
 <pre><code>sudo vgs
