@@ -1,5 +1,9 @@
 
 
+
+
+
+----------------------------------------------------------------
 ## Ajout d'un nouveau disque avec LVM
 
 
@@ -72,15 +76,12 @@ sudo mkfs.ext4 /dev/vgsio1/lvsrv
 Montage du disque dur sur le système 
 
 ```
-sudo mount /dev/vgsio1
+sudo mount /dev/vgsio1/lvsrv /srv
 ```
 
 ![logo Millenuits|614](img/debi8.png)
 
-
-
-
-
+--------------------------------------------------------------------------
 ## Création de snapshots pour volumes logiques 
 
 Commencer par s'assurer qu'il reste de la place dans le groupe de volume avec la commande : 
