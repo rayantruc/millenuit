@@ -11,14 +11,12 @@
             "id": "d3b88ccf115d2646",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "docs/DocEnesServDebian.md",
-                "mode": "source",
-                "source": false
+                "file": "docs/img/demarrage.png"
               },
-              "icon": "lucide-file",
-              "title": "DocEnesServDebian"
+              "icon": "lucide-image",
+              "title": "demarrage"
             }
           }
         ]
@@ -187,7 +185,6 @@
   },
   "active": "d3b88ccf115d2646",
   "lastOpenFiles": [
-    "docs/mission5.md",
     "docs/img/debi8.png",
     "docs/img/debi7.png",
     "docs/img/debi6.png",
@@ -195,17 +192,19 @@
     "docs/img/debi4.png",
     "docs/img/debi3.png",
     "docs/img/debi2.png",
-    "docs/img/debi1.png",
-    "docs/mission4.md",
-    "docs/mission3.md",
+    "docs/img/deb2.png",
+    "docs/img/capa.png",
     "docs/DocEnesServDebian.md",
     "docs/mission GLPI.md",
-    "docs/img/deb2.png",
-    "docs/img/deb1.png",
-    "docs/mission1.md",
     "docs/index.md",
-    "docs/img/mille.md",
     "docs/mission2.md",
+    "docs/mission1.md",
+    "Pasted image 20260312135612.png",
+    "Pasted image 20260312145233.png",
+    "docs/mission5.md",
+    "docs/mission4.md",
+    "docs/mission3.md",
+    "docs/img/mille.md",
     "Sans titre.md",
     "docs/Sans titre",
     "site/comparatif/index.html",
