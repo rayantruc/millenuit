@@ -982,6 +982,9 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 <p>Premièrement, les bonnes pratiques sont de faire une sauvegardes avant toutes modifications </p>
 <pre><code>sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
 </code></pre>
+<p>Ensuite, redémarrer le service après modifications </p>
+<pre><code>sudo systemctl restart ssh
+</code></pre>
 
 
 
