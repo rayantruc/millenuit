@@ -31,7 +31,7 @@ On voit donc ici à l'avant dernière ligne que c'est bon :
 Free PE / Size          2815 / <11.00 GiB
 ```
 
-
+On augmente désormais la taille 
 
 ![logo Millenuits|614](img/debi3.png)
 
