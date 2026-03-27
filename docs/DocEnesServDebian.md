@@ -143,4 +143,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 		`ssh_host_rsa_key` --> Clé privée RSA (obsolète, à éviter)
 
 
-S
+**Sécuriser les connexions ssh
+
+
+
