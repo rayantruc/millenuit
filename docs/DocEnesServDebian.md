@@ -61,11 +61,15 @@ sudo lvcreate -L 3G -n lvsrv vgsio1
 
 ![logo Millenuits|614](img/debi6.png)
 
-Désormais, il faut formater notre lv en ext4 
+Désormais, il faut formater notre LV en ext4 
 
-
+```
+sudo mkfs.ext4 /dev/vgsio1/lvsrv
+```
 
 ![logo Millenuits|614](img/debi7.png)
+
+
 
 ![logo Millenuits|614](img/debi8.png)
 
