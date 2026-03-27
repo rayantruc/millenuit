@@ -12,10 +12,14 @@ sudo vgdisplay
 Ensuite, nous ajoutons un nouveau disque dans un groupe de volume existant
 
 ```
-sudo vgex
+sudo vgextend vgsio1 /dev/sdb
 ```
 
 ![logo Millenuits|614](img/debi1.png)
+
+On refait notre vgdisplay pour vérifier que
+
+
 
 ![logo Millenuits|614](img/debi3.png)
 
