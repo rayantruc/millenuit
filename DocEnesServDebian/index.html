@@ -985,7 +985,10 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 <p>Ensuite, redémarrer le service après modifications </p>
 <pre><code>sudo systemctl restart ssh
 </code></pre>
-<p>Maintenant, générons nos clés, pour cela nous allons nous servir de l'algorithme ed </p>
+<p>Maintenant, générons nos clés, pour cela nous allons nous servir de l'algorithme ed25519</p>
+<pre><code>ssh-keygen -t ed25519 -C &quot;efratakcin@protonmail.com&quot;
+</code></pre>
+<p>Cela nous genere donc une clé public, ainsi que la clé privée associée </p>
 
 
 
