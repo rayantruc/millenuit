@@ -53,7 +53,11 @@ df -h
 
 ![logo Millenuits|614](img/debi4.png)
 
-Maintenant, il faut créer notre volume logique "lvsrv" dans notre VG
+Maintenant, il faut créer notre volume logique "lvsrv" dans notre VG "vgsio1"
+
+```
+sudo lvcreate -L 3G -n lvsrv vgsio
+```
 
 ![logo Millenuits|614](img/debi6.png)
 
