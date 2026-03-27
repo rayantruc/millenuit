@@ -907,7 +907,9 @@
 <pre><code>sudo lvcreate -L 3G -n lvsrv vgsio1
 </code></pre>
 <p><img alt="logo Millenuits|614" src="../img/debi6.png" /></p>
-<p>Désormais, il faut formater notre lv en ext4 </p>
+<p>Désormais, il faut formater notre LV en ext4 </p>
+<pre><code>sudo mkfs.ext4 /dev/vgsio1/lvsrv
+</code></pre>
 <p><img alt="logo Millenuits|614" src="../img/debi7.png" /></p>
 <p><img alt="logo Millenuits|614" src="../img/debi8.png" /></p>
 <h2 id="creation-de-snapshots-pour-volumes-logiques">Création de snapshots pour volumes logiques</h2>
