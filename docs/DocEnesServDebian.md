@@ -151,5 +151,11 @@ Premièrement, les bonnes pratiques sont de faire une sauvegardes avant toutes m
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
 ```
 
+Ensuite, redémarrer le service après modifications 
+
+```
+sudo systemctl restart ssh
+```
+
 
 
