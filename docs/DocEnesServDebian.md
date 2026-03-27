@@ -56,10 +56,14 @@ df -h
 Maintenant, il faut créer notre volume logique "lvsrv" dans notre VG "vgsio1"
 
 ```
-sudo lvcreate -L 3G -n lvsrv vgsio
+sudo lvcreate -L 3G -n lvsrv vgsio1
 ```
 
 ![logo Millenuits|614](img/debi6.png)
+
+Désormais, il faut formater notre lv en ext4 
+
+
 
 ![logo Millenuits|614](img/debi7.png)
 
