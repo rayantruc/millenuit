@@ -53,7 +53,7 @@ df -h
 
 ![logo Millenuits|614](img/debi4.png)
 
-
+Maintenant, il faut créer notre volume logique "lvsrv" dans notre VG
 
 ![logo Millenuits|614](img/debi6.png)
 
