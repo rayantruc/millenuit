@@ -145,5 +145,11 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 
 **Sécuriser les connexions ssh
 
-Premierement 
+Premièrement, les bonnes pratiques sont de faire une sauvegardes avant toutes modifications 
+
+```
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
+```
+
+
 
