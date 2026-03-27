@@ -41,6 +41,8 @@ sudo lvextend  -L +4G /dev/vgsio1/lvhome
 
 Après augmenté la taille de notre volume logique, il est important de redimensionner le système de fichier utilisé
 
+
+
 ![logo Millenuits|614](img/debi4.png)
 
 ![logo Millenuits|614](img/debi5.png)
