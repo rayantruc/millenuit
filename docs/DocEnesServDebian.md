@@ -2,9 +2,9 @@
 
 ## Ajout d'un nouveau disque avec LVM
 
-![logo Millenuits|614](img/deb1.png)
+![logo Millenuits|614](img/debi1.png)
 
-![logo Millenuits|614](img/deb1.png)
+![logo Millenuits|614](img/debi2.png)
 
 ![logo Millenuits|614](img/deb1.png)
 
