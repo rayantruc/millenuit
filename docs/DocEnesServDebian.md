@@ -31,7 +31,11 @@ On voit donc ici à l'avant dernière ligne que c'est bon :
 Free PE / Size          2815 / <11.00 GiB
 ```
 
-On augmente désormais la taille 
+On augmente désormais la taille du volume logique souhaité, ici "lvhome"
+
+```
+sudo lvextend  -L +4G /dev/vgsio1/lvhome
+```
 
 ![logo Millenuits|614](img/debi3.png)
 
