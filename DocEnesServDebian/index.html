@@ -882,9 +882,10 @@
 <pre><code>sudo vgdisplay
 </code></pre>
 <p>Ensuite, nous ajoutons un nouveau disque dans un groupe de volume existant</p>
-<pre><code>sudo vgex
+<pre><code>sudo vgextend vgsio1 /dev/sdb
 </code></pre>
 <p><img alt="logo Millenuits|614" src="../img/debi1.png" /></p>
+<p>On refait notre vgdisplay pour vérifier que</p>
 <p><img alt="logo Millenuits|614" src="../img/debi3.png" /></p>
 <p><img alt="logo Millenuits|614" src="../img/debi4.png" /></p>
 <p><img alt="logo Millenuits|614" src="../img/debi5.png" /></p>
