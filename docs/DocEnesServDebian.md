@@ -164,6 +164,8 @@ Maintenant, générons nos clés, pour cela nous allons nous servir de l'algorit
 ssh-keygen -t ed25519 -C "efratakcin@protonmail.com"
 ```
 
-Cela nous genere donc une clé public, ainsi que la clé privée associée 
+Cela nous génère donc une clé public, ainsi que la clé privée associée 
+
+
 
 
