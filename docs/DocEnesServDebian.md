@@ -42,7 +42,13 @@ sudo lvextend  -L +4G /dev/vgsio1/lvhome
 Après augmenté la taille de notre volume logique, il est important de redimensionner le système de fichier utilisé
 
 ```
-sudo btrfs filesystem
+sudo btrfs filesystem resize max /home
+```
+
+Ensuite vérifions que tout est en ordre 
+
+```
+df -h
 ```
 
 ![logo Millenuits|614](img/debi4.png)
