@@ -5,9 +5,11 @@
 
 On veut obtenir les informations concernant le VG
 
+```
+sudo vgdisplay
+```
 
-
-![logo Millenuits|614](img/debi2.png)
+![logo Millenuits|614](img/debi1.png)
 
 ![logo Millenuits|614](img/debi3.png)
 
