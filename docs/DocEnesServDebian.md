@@ -39,6 +39,8 @@ sudo lvextend  -L +4G /dev/vgsio1/lvhome
 
 ![logo Millenuits|614](img/debi3.png)
 
+Après augmenté la taille de notre vo
+
 ![logo Millenuits|614](img/debi4.png)
 
 ![logo Millenuits|614](img/debi5.png)
