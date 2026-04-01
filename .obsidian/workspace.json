@@ -13,10 +13,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "docs/img/deb2.png"
+                "file": "docs/img/deb1.png"
               },
               "icon": "lucide-image",
-              "title": "deb2"
+              "title": "deb1"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "3d302979e2538997",
   "lastOpenFiles": [
+    "docs/img/deb2.png",
     "docs/img/deb1.png",
     "docs/img/debi2.png",
     "docs/img/demarrage.png",
@@ -194,7 +195,6 @@
     "docs/img/debi5.png",
     "docs/img/debi4.png",
     "docs/img/debi3.png",
-    "docs/img/deb2.png",
     "docs/img/capa.png",
     "docs/DocEnesServDebian.md",
     "docs/mission GLPI.md",
