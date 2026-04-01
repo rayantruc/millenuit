@@ -11,12 +11,14 @@
             "id": "d3b88ccf115d2646",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "docs/img/deb1.png"
+                "file": "docs/mission4.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "deb1"
+              "icon": "lucide-file",
+              "title": "mission4"
             }
           }
         ]
@@ -183,10 +185,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d302979e2538997",
+  "active": "d3b88ccf115d2646",
   "lastOpenFiles": [
-    "docs/img/deb2.png",
+    "docs/mission2.md",
+    "docs/mission3.md",
+    "docs/mission4.md",
+    "docs/mission5.md",
+    "docs/mission GLPI.md",
+    "docs/img/debi1.png",
     "docs/img/deb1.png",
+    "docs/img/deb2.png",
     "docs/img/debi2.png",
     "docs/img/demarrage.png",
     "docs/img/debi8.png",
@@ -194,16 +202,9 @@
     "docs/img/debi6.png",
     "docs/img/debi5.png",
     "docs/img/debi4.png",
-    "docs/img/debi3.png",
-    "docs/img/capa.png",
     "docs/DocEnesServDebian.md",
-    "docs/mission GLPI.md",
     "docs/index.md",
-    "docs/mission2.md",
     "docs/mission1.md",
-    "docs/mission5.md",
-    "docs/mission4.md",
-    "docs/mission3.md",
     "docs/img/mille.md",
     "Sans titre.md",
     "docs/Sans titre",
