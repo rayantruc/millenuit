@@ -19,7 +19,7 @@
     
     
       
-        <title>Documentation : Mise en place de Windows Server 2019 (AD DS & DNS) - MilleNuits</title>
+        <title>Mission7 - MilleNuits</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#documentation-mise-en-place-de-windows-server-2019-ad-ds-dns" class="md-skip">
+        <a href="#prerequis" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Documentation : Mise en place de Windows Server 2019 (AD DS &amp; DNS)
+              Mission7
             
           </span>
         </div>
@@ -818,8 +818,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -828,121 +826,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-parametres-de-linfrastructure" class="md-nav__link">
+  <a href="#prerequis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Paramètres de l'Infrastructure
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-preparation-du-systeme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Préparation du Système
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Préparation du Système">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#configuration-de-la-carte-reseau" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration de la carte réseau
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#nommage-du-serveur" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Nommage du serveur
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-installation-des-roles-ad-ds-et-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Installation des Rôles AD DS et DNS
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-promotion-du-controleur-de-domaine" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Promotion du Contrôleur de Domaine
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-configuration-post-installation-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Configuration Post-Installation (DNS)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Configuration Post-Installation (DNS)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creation-de-la-zone-de-recherche-inversee" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Création de la Zone de recherche inversée
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-preparation-du-client-windowslinux" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Préparation du Client (Windows/Linux)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-joindre-le-client-au-domaine-windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Joindre le client au Domaine (Windows)
+        Prérequis
       
     </span>
   </a>
@@ -966,185 +853,12 @@
 
 
 
-<h1 id="documentation-mise-en-place-de-windows-server-2019-ad-ds-dns">Documentation : Mise en place de Windows Server 2019 (AD DS &amp; DNS)</h1>
-<p>Cette documentation décrit la procédure de déploiement d'un <strong>Contrôleur de Domaine (DC)</strong> incluant les rôles <strong>Active Directory Domain Services</strong> et <strong>DNS</strong>.</p>
-<h2 id="1-parametres-de-linfrastructure">1. Paramètres de l'Infrastructure</h2>
-<ul>
-<li>
-<p><strong>Adresse IP du serveur :</strong> <code>172.16.54.25</code></p>
-</li>
-<li>
-<p><strong>Masque de sous-réseau :</strong> <code>255.255.255.0</code> </p>
-</li>
-<li>
-<p><strong>OS :</strong> Windows Server 2019 Standard </p>
-</li>
-<li>
-<p><strong>Utilisateur :</strong> Administrateur local</p>
-</li>
-</ul>
-<hr />
-<h2 id="2-preparation-du-systeme">2. Préparation du Système</h2>
-<h3 id="configuration-de-la-carte-reseau">Configuration de la carte réseau</h3>
-<p>Avant d'installer les rôles, la configuration IP doit être statique.</p>
-<ol>
-<li>
-<p>Allez dans <strong>Centre Réseau et partage</strong> &gt; <strong>Modifier les paramètres de la carte</strong>.</p>
-</li>
-<li>
-<p>Propriétés de <strong>Protocole Internet version 4 (TCP/IPv4)</strong> :</p>
-<ul>
-<li>
-<p>Adresse IP : <code>172.16.54.25</code></p>
-</li>
-<li>
-<p>Masque : <code>255.255.255.0</code></p>
-</li>
-<li>
-<p>Passerelle : <code>172.16.54.252</code> (ou l'IP de votre routeur)</p>
-</li>
-<li>
-<p>DNS Préféré : <code>127.0.0.1, 8.8.8.8</code> (Le serveur consultera sa propre base DNS).</p>
-</li>
-</ul>
-</li>
-</ol>
-<h3 id="nommage-du-serveur">Nommage du serveur</h3>
-<ol>
-<li>
-<p>Dans le <strong>Gestionnaire de serveur</strong>, cliquez sur <strong>Serveur local</strong>.</p>
-</li>
-<li>
-<p>Cliquez sur le nom actuel pour le modifier (ex: <code>SRV-AD-01</code>).</p>
-</li>
-<li>
-<p><strong>Redémarrez impérativement</strong> après le changement de nom.</p>
-</li>
-</ol>
-<hr />
-<h2 id="3-installation-des-roles-ad-ds-et-dns">3. Installation des Rôles AD DS et DNS</h2>
-<ol>
-<li>
-<p>Dans le <strong>Gestionnaire de serveur</strong>, cliquez sur <strong>Gérer</strong> &gt; <strong>Ajouter des rôles et fonctionnalités</strong>.</p>
-</li>
-<li>
-<p>Type d'installation : <strong>Installation basée sur un rôle ou une fonctionnalité</strong>.</p>
-</li>
-<li>
-<p>Sélection du serveur : Sélectionnez <code>SRV-AD-01</code> (172.16.54.25).</p>
-</li>
-<li>
-<p>Rôles de serveurs :</p>
-<ul>
-<li>
-<p>Cochez <strong>Services de domaine Active Directory</strong>.</p>
-</li>
-<li>
-<p>Acceptez l'ajout des fonctionnalités requises.</p>
-</li>
-<li>
-<p>Cochez <strong>Serveur DNS</strong>.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Cliquez sur <strong>Suivant</strong> jusqu'à la fin et lancez l'installation.</p>
-</li>
-</ol>
-<hr />
-<h2 id="4-promotion-du-controleur-de-domaine">4. Promotion du Contrôleur de Domaine</h2>
-<p>Une fois l'installation terminée :</p>
-<ol>
-<li>
-<p>Cliquer sur l'icône <strong>Drapeau jaune</strong> (Notifications) et choisissez <strong>Promouvoir ce serveur en contrôleur de domaine</strong>.</p>
-</li>
-<li>
-<p><strong>Opération de déploiement</strong> : Sélectionnez <strong>Ajouter une nouvelle forêt</strong>.</p>
-<ul>
-<li><em>Nom de domaine racine</em> : Entrez votre nom de domaine (ex: <code>MN54.lan</code>).</li>
-</ul>
-</li>
-<li>
-<p><strong>Options du contrôleur</strong> :</p>
-<ul>
-<li>
-<p>Niveau fonctionnel : <code>Windows Server 2016</code>.</p>
-</li>
-<li>
-<p>Saisissez un mot de passe de restauration (<strong>DSRM</strong>).</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Options DNS</strong> : L'avertissement sur la délégation est normal, cliquez sur <strong>Suivant</strong>.</p>
-</li>
-<li>
-<p><strong>Chemins d'accès</strong> : Laissez par défaut (<code>C:\Windows\NTDS</code> et <code>SYSVOL</code>).</p>
-</li>
-<li>
-<p><strong>Vérification</strong> : Si les tests de prérequis réussissent, cliquez sur <strong>Installer</strong>.</p>
-<blockquote>
-<p>Le serveur redémarrera automatiquement.</p>
-</blockquote>
-</li>
-</ol>
-<hr />
-<h2 id="5-configuration-post-installation-dns">5. Configuration Post-Installation (DNS)</h2>
-<p>Pour assurer une résolution de noms parfaite sur votre réseau <code>172.16.54.0/24</code> :</p>
-<h3 id="creation-de-la-zone-de-recherche-inversee">Création de la Zone de recherche inversée</h3>
-<ol>
-<li>
-<p>Ouvrez l'outil <strong>DNS</strong> (via le menu Outils).</p>
-</li>
-<li>
-<p>Faites un clic droit sur <strong>Zones de recherche inversée</strong> &gt; <strong>Nouvelle zone</strong>.</p>
-</li>
-<li>
-<p>Choisissez <strong>Zone principale</strong> &gt; <strong>Vers tous les serveurs DNS de ce domaine</strong>.</p>
-</li>
-<li>
-<p>Sélectionnez <strong>Zone de recherche inversée IPv4</strong>.</p>
-</li>
-<li>
-<p>ID Réseau : Entrez les trois premiers octets de votre IP : <code>172.16.54</code>.</p>
-</li>
-<li>
-<p>Terminez l'assistant.</p>
-</li>
-</ol>
-<h2 id="6-preparation-du-client-windowslinux">6. Préparation du Client (Windows/Linux)</h2>
-<p>Avant d'essayer de vous connecter, le client doit pouvoir "résoudre" le nom du domaine <code>MN54.lan</code>.</p>
-<ul>
-<li>
-<p><strong>DNS :</strong> Modifiez les paramètres réseau du client pour que son <strong>DNS Primaire</strong> soit l'adresse IP de votre contrôleur de domaine (AD).</p>
-</li>
-<li>
-<p><strong>Test :</strong> Ouvrez un terminal (CMD ou Shell) et tapez :</p>
-<p>Bash</p>
-<p><code>ping MN54.lan</code></p>
-<p>Si cela ne répond pas, la connexion échouera.</p>
-</li>
-</ul>
-<hr />
-<h2 id="2-joindre-le-client-au-domaine-windows">2. Joindre le client au Domaine (Windows)</h2>
-<p>Si vous voulez que l'utilisateur se connecte avec sa session AD :</p>
-<ol>
-<li>
-<p>Allez dans <strong>Paramètres &gt; Système &gt; À propos de &gt; Paramètres avancés du système</strong>.</p>
-</li>
-<li>
-<p>Onglet <strong>Nom de l'ordinateur</strong>, cliquez sur <strong>Modifier</strong>.</p>
-</li>
-<li>
-<p>Sélectionnez <strong>Domaine</strong>, tapez <code>MN54.lan</code>.</p>
-</li>
-<li>
-<p>Entrez les identifiants d'un administrateur du domaine.</p>
-</li>
-<li>
-<p>Redémarrez.</p>
-</li>
-</ol>
+  <h1>Mission7</h1>
+
+<p><img alt="logo Millenuits" src="../img/millenuitlogofinal.jpg" /></p>
+<h2 id="prerequis">Prérequis</h2>
+<p>Avant toute installation vérifiez bien de remplir tout ces critères :
+    - Posséder dans notre contexte l'iso de trueNAS</p>
 
 
 
