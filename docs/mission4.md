@@ -110,3 +110,5 @@ Pour assurer une résolution de noms parfaite sur votre réseau `172.16.54.0/24`
 5. ID Réseau : Entrez les trois premiers octets de votre IP : `172.16.54`.
     
 6. Terminez l'assistant.
+
+## 6. 
