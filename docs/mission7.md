@@ -71,9 +71,7 @@ _Note : N'utilisez pas de permissions POSIX pour l'AD, cela cause des erreurs de
     
 3. **ACL Type :** Sélectionner impérativement **NFSv4**.
     
-4. **ACL Mode :** Passthrough.
-    
-5. Cliquer sur **Save**.
+4. Cliquer sur **Save**.
     
 
 ---
