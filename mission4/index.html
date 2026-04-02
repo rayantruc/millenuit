@@ -928,13 +928,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#6-preparation-du-client-windowslinux" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.
+        6. Préparation du Client (Windows/Linux)
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-joindre-le-client-au-domaine-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Joindre le client au Domaine (Windows)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-acceder-au-partage-truenas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Accéder au partage TrueNAS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Accéder au partage TrueNAS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sur-windows-explorateur-de-fichiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sur Windows (Explorateur de fichiers) :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1101,7 +1140,57 @@
 <p>Terminez l'assistant.</p>
 </li>
 </ol>
-<h2 id="6">6.</h2>
+<h2 id="6-preparation-du-client-windowslinux">6. Préparation du Client (Windows/Linux)</h2>
+<p>Avant d'essayer de vous connecter, le client doit pouvoir "résoudre" le nom du domaine <code>MN54.lan</code>.</p>
+<ul>
+<li>
+<p><strong>DNS :</strong> Modifiez les paramètres réseau du client pour que son <strong>DNS Primaire</strong> soit l'adresse IP de votre contrôleur de domaine (AD).</p>
+</li>
+<li>
+<p><strong>Test :</strong> Ouvrez un terminal (CMD ou Shell) et tapez :</p>
+<p>Bash</p>
+<p><code>ping MN54.lan</code></p>
+<p>Si cela ne répond pas, la connexion échouera.</p>
+</li>
+</ul>
+<hr />
+<h2 id="2-joindre-le-client-au-domaine-windows">2. Joindre le client au Domaine (Windows)</h2>
+<p>Si vous voulez que l'utilisateur se connecte avec sa session AD :</p>
+<ol>
+<li>
+<p>Allez dans <strong>Paramètres &gt; Système &gt; À propos de &gt; Paramètres avancés du système</strong>.</p>
+</li>
+<li>
+<p>Onglet <strong>Nom de l'ordinateur</strong>, cliquez sur <strong>Modifier</strong>.</p>
+</li>
+<li>
+<p>Sélectionnez <strong>Domaine</strong>, tapez <code>MN54.lan</code>.</p>
+</li>
+<li>
+<p>Entrez les identifiants d'un administrateur du domaine.</p>
+</li>
+<li>
+<p>Redémarrez.</p>
+</li>
+</ol>
+<hr />
+<h2 id="3-acceder-au-partage-truenas">3. Accéder au partage TrueNAS</h2>
+<p>Une fois que le client est sur le réseau (même s'il n'est pas joint au domaine, il peut s'authentifier) :</p>
+<h3 id="sur-windows-explorateur-de-fichiers">Sur Windows (Explorateur de fichiers) :</h3>
+<ol>
+<li>
+<p>Tapez <code>\\IP_DE_TRUENAS</code> dans la barre d'adresse.</p>
+</li>
+<li>
+<p>Une fenêtre d'authentification s'ouvre.</p>
+</li>
+<li>
+<p><strong>Utilisateur :</strong> <code>MN54\nassio</code> (ou le nom de l'utilisateur AD créé).</p>
+</li>
+<li>
+<p><strong>Mot de passe :</strong> Le mot de passe défini dans l'AD.</p>
+</li>
+</ol>
 
 
 
