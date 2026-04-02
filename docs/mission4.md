@@ -144,19 +144,3 @@ Si vous voulez que l'utilisateur se connecte avec sa session AD :
     
 5. Redémarrez.
     
-
----
-
-## 3. Accéder au partage TrueNAS
-
-Une fois que le client est sur le réseau (même s'il n'est pas joint au domaine, il peut s'authentifier) :
-
-### Sur Windows (Explorateur de fichiers) :
-
-1. Tapez `\\IP_DE_TRUENAS` dans la barre d'adresse.
-    
-2. Une fenêtre d'authentification s'ouvre.
-    
-3. **Utilisateur :** `MN54\nassio` (ou le nom de l'utilisateur AD créé).
-    
-4. **Mot de passe :** Le mot de passe défini dans l'AD.
