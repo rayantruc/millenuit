@@ -35,3 +35,7 @@ nav:
       
   - Mission 6 - Documentation:
       - Mise en place de Windows Server 2019: mission6.md
+      
+  - Mission 7 - Documentation:
+      - Mise en place d'un NAS avec Authentificatiion Active Directory : mission7.md
+      
