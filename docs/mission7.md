@@ -20,7 +20,7 @@
     
     - Aller dans **Network > Global Configuration**.
         
-    - **Nameserver 1 :** L'IP de votre contrôleur de domaine AD.
+    - **Nameserver 1 :** 172.16.54.25.
         
     - **Domain :** `MN54.lan`.
         
@@ -33,9 +33,9 @@
 
 1. Aller dans **Storage > Create Pool**.
     
-2. Nommer le pool (ex: `TANK`).
+2. Nommer le pool (ex: `partage`).
     
-3. Sélectionner les disques et choisir le layout (ex: Mirror pour 2 disques).
+3. Sélectionner le dique
     
 4. Cliquer sur **Create**.
     
@@ -44,7 +44,7 @@
 
 ## 4. Jonction au Domaine Active Directory
 
-C'est ici que vous connectez TrueNAS à votre infrastructure Windows.
+C'est ici que vous connectez TrueNAS à l'infrastructure Windows.
 
 1. Aller dans **Credentials > Directory Services > Active Directory**.
     
