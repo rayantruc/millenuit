@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/mission5.md",
+                "file": "docs/mission6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mission5"
+              "title": "mission6"
             }
           }
         ]
@@ -187,8 +187,8 @@
   },
   "active": "c3c104788e379ad6",
   "lastOpenFiles": [
-    "docs/mission6.md",
     "docs/mission5.md",
+    "docs/mission6.md",
     "docs/mission3.md",
     "docs/mission4.md",
     "docs/img/deb2.png",
