@@ -120,6 +120,6 @@ _Note : N'utilisez pas de permissions POSIX pour l'AD, cela cause des erreurs de
     
 2. Taper `\\IP_DU_TRUENAS` ou `\\nom_du_nas.MN54.lan`.
     
-3. Entrer les identifiants de l'utilisateur AD (ex: `nassio` / mot de passe AD).
+3. Entrer les identifiants de l'utilisateur AD (ex: `nassio` / mot de passe AD)..
     
 
