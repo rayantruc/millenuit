@@ -111,4 +111,52 @@ Pour assurer une résolution de noms parfaite sur votre réseau `172.16.54.0/24`
     
 6. Terminez l'assistant.
 
-## 6. 
+## 6. Préparation du Client (Windows/Linux)
+
+Avant d'essayer de vous connecter, le client doit pouvoir "résoudre" le nom du domaine `MN54.lan`.
+
+- **DNS :** Modifiez les paramètres réseau du client pour que son **DNS Primaire** soit l'adresse IP de votre contrôleur de domaine (AD).
+    
+- **Test :** Ouvrez un terminal (CMD ou Shell) et tapez :
+    
+    Bash
+    
+    ```
+    ping MN54.lan
+    ```
+    
+    Si cela ne répond pas, la connexion échouera.
+    
+
+---
+
+## 2. Joindre le client au Domaine (Windows)
+
+Si vous voulez que l'utilisateur se connecte avec sa session AD :
+
+1. Allez dans **Paramètres > Système > À propos de > Paramètres avancés du système**.
+    
+2. Onglet **Nom de l'ordinateur**, cliquez sur **Modifier**.
+    
+3. Sélectionnez **Domaine**, tapez `MN54.lan`.
+    
+4. Entrez les identifiants d'un administrateur du domaine.
+    
+5. Redémarrez.
+    
+
+---
+
+## 3. Accéder au partage TrueNAS
+
+Une fois que le client est sur le réseau (même s'il n'est pas joint au domaine, il peut s'authentifier) :
+
+### Sur Windows (Explorateur de fichiers) :
+
+1. Tapez `\\IP_DE_TRUENAS` dans la barre d'adresse.
+    
+2. Une fenêtre d'authentification s'ouvre.
+    
+3. **Utilisateur :** `MN54\nassio` (ou le nom de l'utilisateur AD créé).
+    
+4. **Mot de passe :** Le mot de passe défini dans l'AD.
