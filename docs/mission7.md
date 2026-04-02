@@ -3,9 +3,9 @@
 
 ## 1. Prérequis Matériels & Réseau
 
-- **Système :** 8 Go RAM minimum (ECC recommandée), un SSD dédié au boot.
+- **Système :** 8 Go RAM minimum (ECC recommandée), un disque dédié au boot et un dique pour le stockage.
     
-- **DNS :** L'adresse IP du contrôleur de domaine (AD) doit être accessible.
+- **DNS :** L'adresse IP du contrôleur de domaine (AD) doit être accessible ex: 172.16.54.33.
     
 - **Compte de Service :** Créer un utilisateur dans l'AD nommé **`nas`** avec le mot de passe **`etudiant_007`**.
     
