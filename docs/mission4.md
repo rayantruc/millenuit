@@ -29,9 +29,9 @@ Avant d'installer les rôles, la configuration IP doit être statique.
         
     - Masque : `255.255.255.0`
         
-    - Passerelle : `172.16.54.1` (ou l'IP de votre routeur)
+    - Passerelle : `172.16.54.252` (ou l'IP de votre routeur)
         
-    - DNS Préféré : `127.0.0.1` (Le serveur consultera sa propre base DNS).
+    - DNS Préféré : `127.0.0.1, 8.8.8.8` (Le serveur consultera sa propre base DNS).
         
 
 ### Nommage du serveur
@@ -70,7 +70,7 @@ Avant d'installer les rôles, la configuration IP doit être statique.
 
 Une fois l'installation terminée :
 
-1. Cliquez sur l'icône **Drapeau jaune** (Notifications) et choisissez **Promouvoir ce serveur en contrôleur de domaine**.
+1. Cliquer sur l'icône **Drapeau jaune** (Notifications) et choisissez **Promouvoir ce serveur en contrôleur de domaine**.
     
 2. **Opération de déploiement** : Sélectionnez **Ajouter une nouvelle forêt**.
     
