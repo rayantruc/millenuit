@@ -74,7 +74,7 @@ Une fois l'installation terminée :
     
 2. **Opération de déploiement** : Sélectionnez **Ajouter une nouvelle forêt**.
     
-    - _Nom de domaine racine_ : Entrez votre nom de domaine (ex: `mondomaine.local`).
+    - _Nom de domaine racine_ : Entrez votre nom de domaine (ex: `MN54.lan`).
         
 3. **Options du contrôleur** :
     
