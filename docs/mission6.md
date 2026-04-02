@@ -1,7 +1,5 @@
 # Documentation : Mise en place de Windows Server 2019 (AD DS & DNS)
 
-Cette documentation décrit la procédure de déploiement d'un **Contrôleur de Domaine (DC)** incluant les rôles **Active Directory Domain Services** et **DNS**.
-
 ## 1. Paramètres de l'Infrastructure
 
 - **Adresse IP du serveur :** `172.16.54.25`
@@ -142,5 +140,5 @@ Si vous voulez que l'utilisateur se connecte avec sa session AD :
     
 4. Entrez les identifiants d'un administrateur du domaine.
     
-5. Redémarrez.
+5. Redémarrer.
     
