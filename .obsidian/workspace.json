@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/mission7.md",
+                "file": "docs/mission GLPI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mission7"
+              "title": "mission GLPI"
             }
           }
         ]
@@ -187,14 +187,14 @@
   },
   "active": "d3b88ccf115d2646",
   "lastOpenFiles": [
-    "docs/mission6.md",
+    "docs/mission1.md",
     "docs/mission7.md",
+    "docs/mission6.md",
     "docs/mission5.md",
     "docs/mission GLPI.md",
     "docs/mission2.md",
     "docs/mission3.md",
     "conflict-files-obsidian-git.md",
-    "docs/mission1.md",
     "millenuitlogofinal.jpg",
     "Pasted image 20260312135612.png",
     "Sans titre.md",
