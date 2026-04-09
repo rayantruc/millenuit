@@ -1206,7 +1206,12 @@ echo &quot;&lt;h1&gt;Salut mon chou ! Ton Apache Docker fonctionne !&lt;/h1&gt;&
 <p>Ensuite la mise à feu :</p>
 <pre><code>docker compose up -d
 </code></pre>
-<p>Puis vér</p>
+<p>Puis vérification :</p>
+<pre><code>docker ps
+</code></pre>
+<p>Tester la connexion : </p>
+<pre><code>docker exec -it mysql-container mysql -u root -p
+</code></pre>
 
 
 
