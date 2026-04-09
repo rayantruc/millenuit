@@ -1129,6 +1129,18 @@ echo &quot;&lt;h1&gt;Salut mon chou ! Ton Apache Docker fonctionne !&lt;/h1&gt;&
 <p>Rédiger le yml :</p>
 <pre><code>nano docker-compose.yml
 </code></pre>
+<p>et coller le code suivant dedans</p>
+<pre><code>services:
+  mon-serveur-web:
+    image: httpd:latest
+    container_name: apache-container
+    ports:
+      - &quot;8080:80&quot;
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    restart: always
+</code></pre>
+<p>Ensuite, lancer le tout : </p>
 
 
 
