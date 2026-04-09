@@ -17,16 +17,14 @@ theme:
 nav:
   - Accueil: index.md
 
-  - Mission 1 - Documentation:
+  - SP2:
       - Installation MkDocs: mission1.md
-
-  - Mission 2 - Documentation:
       - Installation Poste client: mission2.md
 
   - Mission 3 - Documentation:
       - Mise en place FOG: mission3.md
       - Comparatif & Solutions: comparatif.md
-
+      
   - Mission 4 - Documentation:
       - Mise en place de GLPI: mission GLPI.md
 
@@ -35,3 +33,7 @@ nav:
       
   - Mission 6 - Documentation:
       - Mise en place de Windows Server 2019: mission6.md
+      
+  - Mission 7 - Documentation:
+      - Mise en place d'un NAS avec Authentificatiion Active Directory : mission7.md
+      
