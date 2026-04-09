@@ -61,3 +61,19 @@ Rédiger le yml :
 nano docker-compose.yml
 ```
 
+et coller le code suivant dedans
+
+```
+services:
+  mon-serveur-web:
+    image: httpd:latest
+    container_name: apache-container
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    restart: always
+```
+
+Ensuite, lancer le tout : 
+
