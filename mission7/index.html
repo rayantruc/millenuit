@@ -1080,7 +1080,9 @@
 sudo apt install ca-certificates curl gnupg
 </code></pre>
 <p>Pour que debian fasse confiance aux paquets docker : </p>
-<pre><code>
+<pre><code>sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
 </code></pre>
 
 
