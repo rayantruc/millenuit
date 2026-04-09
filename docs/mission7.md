@@ -49,3 +49,15 @@ Créer un dossier dédié :
  ```
 
 Création de la page d'accueil : 
+
+```
+mkdir html
+echo "<h1>Salut mon chou ! Ton Apache Docker fonctionne !</h1>" > html/index.html
+```
+
+Rédiger le yml :
+
+```
+nano docker-compose.yml
+```
+
