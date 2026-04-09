@@ -142,4 +142,15 @@ Ensuite la mise à feu :
 docker compose up -d
 ```
 
-Puis vér
+Puis vérification :
+
+```
+docker ps
+```
+
+Tester la connexion : 
+
+```
+docker exec -it mysql-container mysql -u root -p
+```
+
