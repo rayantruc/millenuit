@@ -154,4 +154,10 @@ Tester la connexion :
 docker exec -it mysql-container mysql -u root -p
 ```
 
-Ensuite, il faut régler 
+Ensuite, il faut régler le par-feu :
+
+```
+sudo ufw allow 3306/tcp
+sudo ufw status
+```
+
