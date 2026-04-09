@@ -99,3 +99,5 @@ création d'un dossier local pour stocker les fichiers :
 ```
 mkdir mysql_data
 ```
+
+Modifier le contenu du fichier .yml
