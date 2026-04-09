@@ -109,5 +109,37 @@ nano docker-compose.yml
 et remplacer le code existant par celui-ci :
 
 ```
+services:
+  mon-serveur-web:
+    image: httpd:latest
+    container_name: apache-container
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    restart: always
+
+  ma-base-de-donnees:
+    image: mysql:8.0
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MonSuperMotDePasse123!
+      MYSQL_DATABASE: ma_boutique
+      MYSQL_USER: user_apache
+      MYSQL_PASSWORD: PasswordUser789*
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+```
+
+Changer évidemment les mots de passe !!
+
+Ensuite la mise à feu :
 
 ```
+docker compose up -d
+```
+
+Puis vér
