@@ -9,3 +9,9 @@
 sudo apt update 
 sudo apt install ca-certificates curl gnupg
 ```
+
+Pour que debian fasse confiance aux paquets docker : 
+
+```
+
+```
