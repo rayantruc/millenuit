@@ -91,5 +91,11 @@ docker ps
 ## 3 - Installation de MYSQL
 
 ```
+cd ~/mon-apache
+```
 
+création d'un dossier local pour stocker les fichiers :
+
+```
+mkdir mysql_data
 ```
