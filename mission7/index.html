@@ -1084,6 +1084,13 @@ sudo apt install ca-certificates curl gnupg
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 </code></pre>
+<p>Configuration du dépôt :</p>
+<pre><code>echo \
+  &quot;deb [arch=&quot;$(dpkg --print-architecture)&quot; signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  &quot;$(. /etc/os-release &amp;&amp; echo &quot;$VERSION_CODENAME&quot;)&quot; stable&quot; | \
+  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</code></pre>
+<p>Installer le moteur Docker</p>
 
 
 
