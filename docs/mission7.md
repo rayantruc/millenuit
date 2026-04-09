@@ -42,4 +42,10 @@ sudo docker run hello-world
 
 ## Installation d'Apache sous Docker Compose
 
-Créer un dossier dédié
+Créer un dossier dédié :
+
+ ```
+ mkdir ~/mon-apache && cd ~/mon-apache
+ ```
+
+Création de la page d'accueil : 
