@@ -40,3 +40,6 @@ Vérification du bon fonctionnement :
 sudo docker run hello-world
 ```
 
+## Installation d'Apache sous Docker Compose
+
+Créer un dossier dédié
