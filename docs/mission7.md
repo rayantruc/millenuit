@@ -77,3 +77,13 @@ services:
 
 Ensuite, lancer le tout : 
 
+```
+docker compose up -d
+```
+
+Vérification : 
+
+```
+docker ps
+```
+
