@@ -100,4 +100,14 @@ création d'un dossier local pour stocker les fichiers :
 mkdir mysql_data
 ```
 
-Modifier le contenu du fichier .yml
+Modifier le contenu du fichier docker-compose.yml
+
+```
+nano docker-compose.yml
+```
+
+et remplacer le code existant par celui-ci :
+
+```
+
+```
