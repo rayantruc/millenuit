@@ -27,4 +27,5 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-Installer le moteur Docker
+Installer le moteur Docker, l'interface et Docker Compose :
+
