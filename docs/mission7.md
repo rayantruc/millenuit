@@ -154,3 +154,4 @@ Tester la connexion :
 docker exec -it mysql-container mysql -u root -p
 ```
 
+Ensuite, il faut régler 
