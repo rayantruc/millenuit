@@ -1,125 +1,163 @@
-#  Documentation : Mise en place TrueNAS SCALE
 ![logo Millenuits](img/millenuitlogofinal.jpg)
 
-## 1. Prérequis Matériels & Réseau
+## Documentation - Installation du serveur MN21
 
-- **Système :** 8 Go RAM minimum (ECC recommandée), un disque dédié au boot et un dique pour le stockage.
-    
-- **DNS :** L'adresse IP du contrôleur de domaine (AD) doit être accessible ex: 172.16.54.33.
-    
-- **Compte de Service :** Créer un utilisateur dans l'AD nommé **`nas`** avec le mot de passe **`etudiant_007`**.
-    
 
----
+## 1 - Installation de docker sous debian 12
 
-## 2. Installation et Initialisation
+```
+sudo apt update 
+sudo apt install ca-certificates curl gnupg
+```
 
-1. **Installation :** Booter sur l'ISO TrueNAS SCALE, installer sur le disque de boot, définir le mot de passe `admin`.
-    
-2. **Réseau (Network) :**
-    
-    - Aller dans **Network > Global Configuration**.
-        
-    - **Nameserver 1 :** 172.16.54.25.
-        
-    - **Domain :** `MN54.lan`.
-        
-    - _Ceci est vital pour que le NAS puisse "résoudre" le nom du domaine._
-        
+Pour que debian fasse confiance aux paquets docker : 
 
----
+```
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+```
 
-## 3. Configuration du Stockage (Pool)
+Configuration du dépôt :
 
-1. Aller dans **Storage > Create Pool**.
-    
-2. Nommer le pool (ex: `partage`).
-    
-3. Sélectionner le dique
-    
-4. Cliquer sur **Create**.
-    
+```
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
 
----
+Installer le moteur Docker, l'interface et Docker Compose :
 
-## 4. Jonction au Domaine Active Directory
+```
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
 
-C'est ici que vous connectez TrueNAS à l'infrastructure Windows.
+Vérification du bon fonctionnement : 
 
-1. Aller dans **Credentials > Directory Services > Active Directory**.
-    
-2. **Domain Name :** `MN54.lan`.
-    
-3. **Domain Account :** `nas` (le compte créé précédemment).
-    
-4. **Domain Password :** `etudiant_007`.
-    
-5. Cocher **Enable** et **Save**.
-    
-6. **Vérification :** Le statut doit afficher **HEALTHY**. Si vous avez une `KeyError`, vérifiez le DNS et l'heure système (elle doit être identique à l'AD).
-    
+```
+sudo docker run hello-world
+```
 
----
+## 2 - Installation d'Apache sous Docker Compose
 
-## 5. Création du Dataset avec Permissions NFSv4
+Créer un dossier dédié :
 
-_Note : N'utilisez pas de permissions POSIX pour l'AD, cela cause des erreurs de "Mask" ou de "User_Obj"._
+ ```
+ mkdir ~/mon-apache && cd ~/mon-apache
+ ```
 
-1. Dans **Storage**, cliquer sur les trois points du Pool > **Add Dataset**.
-    
-2. **Nom :** `Partage_AD`.
-    
-3. **ACL Type :** Sélectionner impérativement **NFSv4**.
-    
-4. Cliquer sur **Save**.
-    
+Création de la page d'accueil : 
 
----
+```
+mkdir html
+echo "<h1>Salut mon chou ! Ton Apache Docker fonctionne !</h1>" > html/index.html
+```
 
-## 6. Gestion des Accès Utilisateurs
+Rédiger le yml :
 
-1. Sur le nouveau Dataset, cliquer sur **Edit Permissions** dans le widget Permissions.
-    
-2. Cliquer sur **Use ACL Manager**.
-    
-3. Choisir le preset **NFS4_RESTRICTED**.
-    
-4. **Ajouter l'utilisateur AD :**
-    
-    - Cliquer sur **Add Item**.
-        
-    - **Who :** User.
-        
-    - **User :** Taper l'utilisateur AD (ex: `MN54\nassio`).
-        
-    - **Permissions :** `Modify` ou `Full Control`.
-        
-5. Cocher **Apply permissions recursively** et cliquer sur **Save**.
-    
+```
+nano docker-compose.yml
+```
 
----
+et coller le code suivant dedans
 
-## 7. Partage SMB (Accès Windows)
+```
+services:
+  mon-serveur-web:
+    image: httpd:latest
+    container_name: apache-container
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    restart: always
+```
 
-1. Aller dans **Shares > Windows Shares (SMB) > Add**.
-    
-2. **Path :** `/mnt/TANK/Partage_AD`.
-    
-3. **Name :** `Partage_AD`.
-    
-4. Cliquer sur **Save**.
-    
-5. Vérifier dans **System Settings > Services** que le service **SMB** est activé (Running) et en démarrage automatique.
-    
+Ensuite, lancer le tout : 
 
----
+```
+docker compose up -d
+```
 
-## 8. Connexion depuis un Client (Windows)
+Vérification : 
 
-1. Sur le PC client, ouvrir l'explorateur de fichiers.
-    
-2. Taper `\\IP_DU_TRUENAS` ou `\\nom_du_nas.MN54.lan`.
-    
-3. Entrer les identifiants de l'utilisateur AD (ex: `nassio` / mot de passe AD)..
-    
+```
+docker ps
+```
+
+
+## 3 - Installation de MYSQL
+
+```
+cd ~/mon-apache
+```
+
+création d'un dossier local pour stocker les fichiers :
+
+```
+mkdir mysql_data
+```
+
+Modifier le contenu du fichier docker-compose.yml
+
+```
+nano docker-compose.yml
+```
+
+et remplacer le code existant par celui-ci :
+
+```
+services:
+  mon-serveur-web:
+    image: httpd:latest
+    container_name: apache-container
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    restart: always
+
+  ma-base-de-donnees:
+    image: mysql:8.0
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MonSuperMotDePasse123!
+      MYSQL_DATABASE: ma_boutique
+      MYSQL_USER: user_apache
+      MYSQL_PASSWORD: PasswordUser789*
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+```
+
+Changer évidemment les mots de passe !!
+
+Ensuite la mise à feu :
+
+```
+docker compose up -d
+```
+
+Puis vérification :
+
+```
+docker ps
+```
+
+Tester la connexion : 
+
+```
+docker exec -it mysql-container mysql -u root -p
+```
+
+Ensuite, il faut régler le par-feu :
+
+```
+sudo ufw allow 3306/tcp
+sudo ufw status
+```
 
