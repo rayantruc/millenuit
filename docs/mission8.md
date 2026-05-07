@@ -31,6 +31,8 @@ Un réseau sans fil dédié est déployé pour permettre une mobilité sécuris�
     
 - **Diffusion** : SSID masqué (Hidden) pour limiter la visibilité du réseau.
 ![logo Millenuits|363](img/wifi.png)
+- Avec une authentification WPA2 et un mot de passe
+
 
 ## 5. Fiche de Recette (Tests de validation)
 
