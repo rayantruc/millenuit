@@ -41,6 +41,8 @@ Un réseau sans fil dédié est déployé pour permettre une mobilité sécuris�
 - Ici on peut voir les adresses distribuées
 
 ![logo Millenuits|363](img/wifi2.png)
+
+- Voici la configuration réseau du point d'accès
 ## 5. Fiche de Recette (Tests de validation)
 
 | **Test**            | **Description**                                     | **Résultat Attendu**                                       |
