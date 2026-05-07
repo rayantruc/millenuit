@@ -1,3 +1,4 @@
+# Documentation - SP4 - MIssion 2
 ## 1. Présentation de la mission
 
 L'entreprise **Mille Nuits** souhaite isoler ses équipes de développement dans un sous-réseau spécifique pour améliorer la sécurité et la gestion des flux. Cette mission consiste à configurer un environnement réseau étanche, incluant une segmentation par VLAN et un accès Wi-Fi protégé.
