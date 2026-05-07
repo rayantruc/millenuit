@@ -33,10 +33,14 @@ Un réseau sans fil dédié est déployé pour permettre une mobilité sécuris�
 ![logo Millenuits|363](img/wifi.png)
 - Avec une authentification WPA2 et un mot de passe
 
-![logo Millenuits|363](img/wifi2.png)
+![logo Millenuits|363](img/wifi4.png)
 - Ainsi qu'un DHCP qui desserviras des adresses aux clients du wifi
 
 ![logo Millenuits|363](img/wifi3.png)
+
+- Ici on peut voir les adresses distribuées
+
+![logo Millenuits|363](img/wifi2.png)
 ## 5. Fiche de Recette (Tests de validation)
 
 | **Test**            | **Description**                                     | **Résultat Attendu**                                       |
