@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9de4ab0fe2c421b7",
+        "id": "b64bdd1270475da7",
         "type": "tabs",
         "children": [
           {
-            "id": "d10608b7918c1a3a",
+            "id": "2df9cce94bfbf54d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,11 +184,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d10608b7918c1a3a",
+  "active": "2df9cce94bfbf54d",
   "lastOpenFiles": [
-    "docs/mission7.md",
+    "docs/img/wifi.png",
+    "docs/img/wifi2.png",
     "docs/mission8.md",
+    "img/wifi.md",
+    "img",
     "docs/mission1.md",
+    "docs/img/obsidian.png",
+    "docs/img/wifi4.png",
+    "docs/img/wifi3.png",
+    "docs/mission7.md",
     "docs/mission2.md",
     "docs/mission3.md",
     "docs/mission5.md",
