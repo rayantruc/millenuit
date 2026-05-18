@@ -22,16 +22,9 @@ nav:
       - Outil de déploiement de poste : mission3.md
       - Comparatif et Solutions : comparatif.md
       - Outil de gestion d'incidents : mission GLPI.md
-      
-  - Mission 4 - Documentation:
-      - Mise en place de GLPI: mission GLPI.md
 
-  - Mission 5 - Documentation:
-      - Mise en place du Serveur DHCP: mission5.md
-      
-  - Mission 6 - Documentation:
+  - SP3:
       - Mise en place de Windows Server 2019: mission6.md
-      
-  - Mission 7 - Documentation:
+      - Mise en place du Serveur DHCP: mission5.md
       - Mise en place d'un NAS avec Authentificatiion Active Directory : mission7.md
       
