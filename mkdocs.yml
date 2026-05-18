@@ -13,17 +13,15 @@ theme:
     - navigation.tabs
     - navigation.top
     - content.code.copy
-
 nav:
   - Accueil: index.md
 
   - SP2:
       - Installation MkDocs: mission1.md
       - Installation Poste client: mission2.md
-
-  - Mission 3 - Documentation:
-      - Mise en place FOG: mission3.md
-      - Comparatif & Solutions: comparatif.md
+      - Outil de déploiement de poste : mission3.md
+        - Comparatif et Solutions : comparatif.md
+      - Outil de gestion d'incidents : mission GLPI.md
       
   - Mission 4 - Documentation:
       - Mise en place de GLPI: mission GLPI.md
