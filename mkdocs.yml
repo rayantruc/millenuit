@@ -20,7 +20,7 @@ nav:
       - Installation MkDocs: mission1.md
       - Installation Poste client: mission2.md
       - Outil de déploiement de poste : mission3.md
-        - Comparatif et Solutions : comparatif.md
+      - Comparatif et Solutions : comparatif.md
       - Outil de gestion d'incidents : mission GLPI.md
       
   - Mission 4 - Documentation:
